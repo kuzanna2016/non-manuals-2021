@@ -6,6 +6,6 @@ Materials from the Functional Data Analysis of Non-manual Marking of Questions i
 The repository contains:
 *  FDA_tutorial.ipynb - Functional Data Analysis
 *  statistical_analysis.R - statistical analysis
-*  preprocessing module, that contains raw files, data combination scripts, bias prediction models, cross-validation scripts, distance calculations, scripts for plotting.
+*  /preprocessing - a module, that contains raw files, data combination scripts, bias prediction models, cross-validation scripts, distance calculations, scripts for plotting.
 
 More detailed description is in progress.
