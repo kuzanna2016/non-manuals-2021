@@ -1,5 +1,5 @@
 # non-manuals-2021
-Materials from the Functional Data Analysis of Non-manual Marking of Questions in Sign Languages
+Materials from "Functional Data Analysis of Non-manual Marking of Questions in Sign Languages"
 
 [We used this OpenFace tutorial for face landmark extraction](https://colab.research.google.com/gist/jcheong0428/c16146b386ea60fab888b56e8e5ee747/openface_shared.ipynb)
 
