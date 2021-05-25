@@ -1,0 +1,10 @@
+Input:/content//drive/MyDrive/OpenFace/deaf/dev.upala/part_q_neut_dev.upala_mir.mp4
+Input full path:/content//drive/MyDrive/OpenFace/deaf/dev.upala/part_q_neut_dev.upala_mir.mp4
+Camera parameters:1312.5,1312.5,960,540
+Output csv:part_q_neut_dev.upala_mir.csv
+Gaze: 0
+AUs: 0
+Landmarks 2D: 0
+Landmarks 3D: 1
+Pose: 1
+Shape parameters: 0
