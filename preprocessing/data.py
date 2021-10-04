@@ -14,7 +14,7 @@ import json
 
 from .elan import Elan
 from .open_face import OpenFace
-from .model import Model
+from bias_detection.model import Model
 from .const import CATEGORICAL, BROWS, STYPE, PLOTS_FP, CV_FP
 
 

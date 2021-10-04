@@ -1,40 +1,9 @@
 from enum import Enum
 
-POS_FP='C:/Users/Mi/Desktop/HSE/SIGN/курсовая 2020/data/export_elan/pos_dict'
 SAVE_TO = 'saved/'
 CV_FP = 'cross-validation/'
 PLOTS_FP = 'plots/'
 RAW_FP = 'raw_files/'
-
-def rate_to_delay(rate):
-    if rate >= 30:
-        return 133
-    elif 30 > rate >= 28.22:
-        return 141
-    elif 28.22 > rate >= 28.14:
-        return 142
-    elif 28.14 > rate >= 23.09:
-        return 173
-    elif 23.09 > rate >= 22.88:
-        return 174
-    elif 22.88 > rate >= 22.81:
-        return 175
-    elif 22.81 > rate >= 19.54:
-        return 204
-    elif 19.54 > rate >= 19.24:
-        return 207
-    elif 19.24 > rate >= 19.22:
-        return 208
-    elif 19.22 > rate >= 16.58:
-        return 241
-    elif 16.58 > rate >= 14.73:
-        return 271
-    elif 14.73 > rate >= 14.68:
-        return 272
-    elif 14.68 > rate >= 14.60:
-        return 273
-    elif 14.60 > rate:
-        return 274
 
 
 class INDEX:
@@ -49,6 +18,7 @@ class CATEGORICAL:
     POS = 'pos'
     FRAME = 'frame'
     BROWS = 'brows'
+    NORM_IXS = 'norm_ix'
 
 
 

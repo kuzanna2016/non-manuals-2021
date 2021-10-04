@@ -78,13 +78,13 @@ class OpenFace:
                                    point_2=points['point'][0],
                                    override=override)
 
-    def save(self, fp='dev/raw files/'):
+    def save(self, fp='dev/output/'):
         self.df.to_csv(fp + 'open_face_old.csv', sep='\t')
         if self.transposed is not None:
             self.transposed.to_csv(fp + 'open_face_transposed.csv', sep='\t')
 
     @staticmethod
-    def load(fp='/raw files/'):
+    def load(fp='/output/'):
         df = None
         transposed = None
         if os.path.isfile(fp + 'open_face.csv'):

@@ -6,7 +6,7 @@ import warnings
 
 
 from .data import Data
-from .model import Model
+from bias_detection.model import Model
 from .const import features, CATEGORICAL, SAVE_TO, CV_FP, RAW_FP
 
 
