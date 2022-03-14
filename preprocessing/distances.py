@@ -2,11 +2,12 @@ import numpy as np
 from scipy.spatial.transform import Rotation as R
 import matplotlib.pyplot as plt
 from tqdm import tqdm
+
 tqdm.pandas()
 
 
 def distance(p1, p2):
-    squared_dist = np.sum((p1-p2)**2, axis=1)
+    squared_dist = np.sum((p1 - p2) ** 2, axis=1)
     dist = np.sqrt(squared_dist)
     return dist
 
@@ -29,7 +30,7 @@ def foot_perp_line(p, p1_line, p2_line):
     try:
         point = p1_line + np.dot(ap, ab) / np.dot(ab, ab) * ab
     except ZeroDivisionError:
-        point = np.array([0,0])
+        point = np.array([0, 0])
     return point
 
 
@@ -67,11 +68,11 @@ def distance_perp_plane(points, plane_points, parallel_plane='xz', rotate_angles
     if to_plot:
         plot_plane([a, b, c, d], plane_points + points.tolist())
     if rotate_angles is not None:
-        norm = rotate_plane(np.array([a,b,c]), rotate_angles, dims)
+        norm = rotate_plane(np.array([a, b, c]), rotate_angles, dims)
         a, b, c = norm
         d = np.dot(norm, plane_points[0])
         if to_plot:
-            plot_plane([a,b,c,d], plane_points + points.tolist())
+            plot_plane([a, b, c, d], plane_points + points.tolist())
 
     coef = np.array([a, b, c])
     norm = np.abs(np.dot(points, coef) - d)
@@ -190,37 +191,42 @@ def find_perp(df, brow_points, perp_points, axes='XYZ', dist='line', plot_face=F
                 p1 = [[f'{ax}_{point}' for ax in axes] for point in range(47)]
             else:
                 p1 = [[f'{ax}_{brow_point}' for ax in axes] for brow_point in brow_points]
-            df[column_names] = df.progress_apply(lambda row: distance_perp_plane(points=np.array([row[p].to_numpy(dtype='float') for p in p1]),
-                                                                                 plane_points=[row[p].to_numpy(dtype='float') for p in points],
-                                                                                 rotate_angles=row[['pose_Rx',
-                                                                                                    'pose_Ry',
-                                                                                                    'pose_Rz']].to_numpy(dtype='float'),
-                                                                                 to_plot=plot_face
-                                                                                 ),
-                                                axis=1,
-                                                result_type='expand')
+            df[column_names] = df.progress_apply(
+                lambda row: distance_perp_plane(points=np.array([row[p].to_numpy(dtype='float') for p in p1]),
+                                                plane_points=[row[p].to_numpy(dtype='float') for p in points],
+                                                rotate_angles=row[['pose_Rx',
+                                                                   'pose_Ry',
+                                                                   'pose_Rz']].to_numpy(dtype='float'),
+                                                to_plot=plot_face
+                                                ),
+                axis=1,
+                result_type='expand'
+            )
         else:
             raise ValueError('wrong dist')
     else:
         raise ValueError('wrong number of axes')
 
     if dist == 'line':
-        df[column_names] = df.progress_apply(lambda row: distance_perp_line(np.array([row[p].to_numpy(dtype='float') for p in p1]),
-                                                                                      row[p2].to_numpy(dtype='float'),
-                                                                                      row[p3].to_numpy(dtype='float')),
-                                             axis=1,
-                                             result_type='expand')
-
+        df[column_names] = df.progress_apply(
+            lambda row: distance_perp_line(np.array([row[p].to_numpy(dtype='float') for p in p1]),
+                                           row[p2].to_numpy(dtype='float'),
+                                           row[p3].to_numpy(dtype='float')),
+            axis=1,
+            result_type='expand')
 
 
 def find_foot(df, brow_point, perp_point_1, perp_point_2):
     column_name = f'{brow_point}perp{perp_point_1}_{perp_point_2}_foot_'
     df[[column_name + 'x', column_name + 'y']] = df.apply(lambda row: foot_perp_line(row[[f'x_{brow_point}',
-                                                                                              f'y_{brow_point}']].to_numpy(dtype='float'),
-                                                                                         row[[f'x_{perp_point_1}',
-                                                                                              f'y_{perp_point_1}']].to_numpy(dtype='float'),
-                                                                                         row[[f'x_{perp_point_2}',
-                                                                                              f'y_{perp_point_2}']].to_numpy(dtype='float')),
+                                                                                          f'y_{brow_point}']].to_numpy(
+        dtype='float'),
+                                                                                     row[[f'x_{perp_point_1}',
+                                                                                          f'y_{perp_point_1}']].to_numpy(
+                                                                                         dtype='float'),
+                                                                                     row[[f'x_{perp_point_2}',
+                                                                                          f'y_{perp_point_2}']].to_numpy(
+                                                                                         dtype='float')),
                                                           axis=1,
                                                           result_type='expand')
 
@@ -243,23 +249,23 @@ def find_dist(df, points_1, point_2, dim=2):
                                          result_type='expand')
 
 
-def find_mean_dist(df, inner_brows, outer_brows, point_2, dim=3, override=False):
+def find_mean_dist(df, inner_brows, outer_brows, point_2, dim=3):
     l_brow, r_brow = inner_brows
     column_name = f'inner_dist{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns:
         find_dist(df, inner_brows + outer_brows, point_2, dim=dim)
         df[column_name] = df[[f'dist{l_brow}_{point_2}_3d', f'dist{r_brow}_{point_2}_3d']].mean(axis=1)
 
     l_brow, r_brow = outer_brows
     column_name = f'outer_dist{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns:
         df[column_name] = df[[f'dist{l_brow}_{point_2}_3d', f'dist{r_brow}_{point_2}_3d']].mean(axis=1)
 
 
-def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2, override=False):
+def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2):
     l_brow, r_brow = inner_brows
     column_name = f'inner_perp_dist{point_1}_{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns:
         find_perp(df,
                   brow_points=inner_brows + outer_brows,
                   perp_points=[point_1, point_2],
@@ -269,29 +275,28 @@ def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2, override
 
     l_brow, r_brow = outer_brows
     column_name = f'outer_perp_dist{point_1}_{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns:
         df[column_name] = df[[f'{l_brow}perp{point_1}_{point_2}_3d',
                               f'{r_brow}perp{point_1}_{point_2}_3d']].mean(axis=1)
 
 
-def find_mean_perp_plane_dist(df, inner_brows, outer_brows, perp_points, override=False, plot_face=False):
+def find_mean_perp_plane_dist(df, inner_brows, outer_brows, perp_points):
     points_str = "_".join(map(str, perp_points))
 
     l_brow, r_brow = inner_brows
     column_name = f'inner_perp_plane_dist{points_str}_3d'
 
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns:
         find_perp(df,
                   brow_points=inner_brows + outer_brows,
                   perp_points=perp_points,
-                  dist='plane',
-                  plot_face=plot_face)
+                  dist='plane')
         df[column_name] = df[[f'{l_brow}perp_plane{points_str}_3d',
                               f'{r_brow}perp_plane{points_str}_3d']].mean(axis=1)
 
     l_brow, r_brow = outer_brows
     column_name = f'outer_perp_plane_dist{points_str}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns:
         df[column_name] = df[[f'{l_brow}perp_plane{points_str}_3d',
                               f'{r_brow}perp_plane{points_str}_3d']].mean(axis=1)
 
@@ -312,7 +317,7 @@ def plot_plane(plane, points, fp=None):
                 parallel_axis = i
             else:
                 lims = ax.get_w_lims()
-                grid.append(np.linspace(*lims[i*2:i*2+2], 10))
+                grid.append(np.linspace(*lims[i * 2:i * 2 + 2], 10))
         if len(grid) == 2:
             grid = np.meshgrid(*grid)
         elif len(grid) > 2:
@@ -323,9 +328,9 @@ def plot_plane(plane, points, fp=None):
     else:
         x = np.linspace(*ax.get_xlim(), 10)
         z = np.linspace(*ax.get_zlim(), 10)
-        grid = np.meshgrid(x,z)
+        grid = np.meshgrid(x, z)
         a, b, c, d = plane
-        grid.insert(1,(d - a * grid[0] - c * grid[1]) / b)
+        grid.insert(1, (d - a * grid[0] - c * grid[1]) / b)
 
     # plot the mesh. Each array is 2D, so we flatten them to 1D arrays
     lims = ax.get_w_lims()
