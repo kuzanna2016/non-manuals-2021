@@ -1,156 +1,189 @@
 import os
 import pandas as pd
 import numpy as np
-import pickle
 import cv2
+import argparse
 
-from .extractors import proper_name
-from .const import rate_to_delay, CATEGORICAL, STYPE, POS_FP
+from extractors import proper_name
+from const import rate_to_delay, CATEGORICAL, STYPE, POS_DICT, RAW_FP, SAVE_TO
 
-class Elan:
+parser = argparse.ArgumentParser()
+parser.add_argument("--elan_fp", default=os.path.join(RAW_FP, 'elan.tsv'), type=str,
+                    help="Path to a .tsv Elan file with annotated videos")
+parser.add_argument("--meta_fp", default=os.path.join(RAW_FP, 'meta_video.tsv'), type=str,
+                    help="Path to a .tsv file with meta information about videos")
+parser.add_argument("--videos_fp", default=None, type=list,
+                    help="Path to a folder with videos, to get meta information, will be used recursively")
+parser.add_argument("--save_to", default=SAVE_TO, type=str, help="Save path")
 
-    def __init__(self,
-                 elan,
-                 meta_video,
-                 save_to,
-                 preprocessed=False,
-                 ):
-        self.elan = elan
-        self.meta_video = meta_video
-        self.save_to = save_to
-        if not preprocessed:
-            self._preprocess_elan()
-        self._set_means()
-        self.filtered_videos = self.elan[CATEGORICAL.VIDEO_NAME].unique()
-        self.st_no_brows = self._find_st_no_brows()
 
-    @classmethod
-    def from_csv(cls, fp, save_to):
-        elan = pd.read_csv(fp + 'elan.tsv', sep='\t', index_col=0)
-        meta_video = pd.read_csv(fp + 'meta_video.tsv', sep='\t', index_col=0)
-        return cls(elan=elan, save_to=save_to, meta_video=meta_video, preprocessed=True)
+def custom_postproc(elan, save_to, **kwargs):
+    elan = _set_main_sign(elan)
+    elan = _drop_no_brow_no_sign_rows(elan)
+    elan = _filter_videos_on_number_of_signs(elan)
+    elan = _set_pos(elan)
 
-    def save_elan(self, fp):
-        self.elan.to_csv(fp + 'elan.tsv', sep='\t')
-        self.meta_video.to_csv(fp + 'meta_video.tsv', sep='\t')
+    dur_mean, pos_start_mean, pos_end_mean = _set_means(elan)
+    filtered_videos = elan[CATEGORICAL.VIDEO_NAME].unique()
+    st_no_brows = _find_st_no_brows(elan)
+    return elan
 
-    @classmethod
-    def from_scratch(cls, elan_fp, save_to, video_fp=None, meta_video_fp=None):
-        elan = pd.read_csv(elan_fp, sep='\t')
-        if meta_video_fp is not None:
-            meta_video = pd.read_csv(meta_video_fp, sep='\t')
-        elif video_fp is None:
-            raise ValueError('if no meta_video, video_fp must be given')
-        else:
-            meta_video = cls._get_meta_video(video_fp)
-        return cls(elan=elan, meta_video=meta_video, save_to=save_to)
 
-    def _preprocess_elan(self):
-        # changing default column names and dropping useless columns
-        self.elan['Файл'] = self.elan['Файл'].str.replace('\.eaf', '', regex=True)
-        self.elan.rename(columns={'Время начала - миллисекунды': 'start_ms',
-                             'Время окончания - миллисекунды': 'end_ms',
-                             'Файл': CATEGORICAL.VIDEO_NAME},
-                    inplace=True)
-        self.elan.drop(columns=['Путь к файлу'], inplace=True)
-        # making clean
-        self.elan[CATEGORICAL.VIDEO_NAME] = self.elan[CATEGORICAL.VIDEO_NAME].apply(proper_name)
-        self.elan[[CATEGORICAL.STYPE,
-              CATEGORICAL.SENTENCE,
-              CATEGORICAL.SPEAKER]] = self.elan[CATEGORICAL.VIDEO_NAME].str.split('-', expand=True)
+def _set_means(elan):
+    dur_mean = (elan.groupby([CATEGORICAL.STYPE,
+                              CATEGORICAL.VIDEO_NAME])['frame_count'].max()
+                .groupby(CATEGORICAL.STYPE).mean().round())
 
-        self._shift_elan()
-        self._set_main_sign()
-        self._drop_no_brow_no_sign_rows()
-        self._filter_videos_on_number_of_signs()
-        self._set_pos(pos_fp=POS_FP)
+    pos_start_mean = elan.groupby([CATEGORICAL.STYPE, CATEGORICAL.POS]).start_frames.mean().round()
+    pos_end_mean = elan.groupby([CATEGORICAL.STYPE, CATEGORICAL.POS]).end_frames.mean().round()
+    return dur_mean, pos_start_mean, pos_end_mean
 
-    def _set_means(self):
-        self.dur_mean = (self.elan.groupby([CATEGORICAL.STYPE,
-                                            CATEGORICAL.VIDEO_NAME])['frame_count'].max()
-                         .groupby(CATEGORICAL.STYPE).mean().round())
 
-        self.pos_start_mean = self.elan.groupby([CATEGORICAL.STYPE, CATEGORICAL.POS]).start_frames.mean().round()
-        self.pos_end_mean = self.elan.groupby([CATEGORICAL.STYPE, CATEGORICAL.POS]).end_frames.mean().round()
+def _filter_videos_on_number_of_signs(elan):
+    no_wh = (elan[elan[CATEGORICAL.STYPE] != STYPE.WH.value]
+             .groupby([CATEGORICAL.VIDEO_NAME])
+             .filter(lambda x: x['main_sign'].nunique() == 2))
+    wh = (elan[elan[CATEGORICAL.STYPE] == STYPE.WH.value]
+          .groupby([CATEGORICAL.VIDEO_NAME])
+          .filter(lambda x: x['main_sign'].nunique() == 3))
+    elan = pd.concat([no_wh, wh])
+    return elan
 
-    def _filter_videos_on_number_of_signs(self):
-        no_wh = (self.elan[self.elan[CATEGORICAL.STYPE] != STYPE.WH.value]
-                 .groupby([CATEGORICAL.VIDEO_NAME])
-                 .filter(lambda x: x['main_sign'].nunique() == 2))
-        wh = (self.elan[self.elan[CATEGORICAL.STYPE] == STYPE.WH.value]
-              .groupby([CATEGORICAL.VIDEO_NAME])
-              .filter(lambda x: x['main_sign'].nunique() == 3))
-        self.elan = pd.concat([no_wh, wh])
 
-    def _set_pos(self, pos_fp):
-        with open(pos_fp, 'rb') as f:
-            pos_dict = pickle.load(f)
-        self.elan[CATEGORICAL.POS] = self.elan.apply(lambda x: pos_dict[x.sentence][x.main_sign] if type(x.main_sign) == str else None, axis=1)
+def _set_pos(elan):
+    with open(os.path.join(RAW_FP, POS_DICT)) as f:
+        pos_dict_text = f.read()
+    pos_pairs = pos_dict_text.splitlines()
+    pos_dict = {}
+    for pair in pos_pairs:
+        k, v = pair.split('\t')
+        pos_dict[k] = v
+    elan[CATEGORICAL.POS] = elan.apply(
+        lambda x: pos_dict[x.main_sign] if type(x.main_sign) == str else None,
+        axis=1
+    )
+    return elan
 
-    def _set_main_sign(self):
-        def merge(row):
-            right, left, signer, sentence = row['right-hand'], row['left-hand'], row[CATEGORICAL.SPEAKER], row[CATEGORICAL.SENTENCE]
-            if signer == 'mira':
-                if sentence == 'mama_ust' or sentence == 'dom_post':
-                    sign = right
-                else:
-                    sign = left
-            else:
+
+def _set_main_sign(elan):
+    def merge(row):
+        right, left, signer, sentence = row['right-hand'], row['left-hand'], row[CATEGORICAL.SPEAKER], row[
+            CATEGORICAL.SENTENCE]
+        if signer == 'mira':
+            if sentence == 'mama_ust' or sentence == 'dom_post':
                 sign = right
-            return sign
+            else:
+                sign = left
+        else:
+            sign = right
+        return sign
 
-        self.elan['main_sign'] = self.elan.apply(merge, axis=1)
+    elan['main_sign'] = elan.apply(merge, axis=1)
+    return elan
 
-    def _drop_no_brow_no_sign_rows(self):
-        self.elan.dropna(how='all', subset=['brows', 'main_sign'])
 
-    @staticmethod
-    def _get_meta_video(video_fp):
-        meta_video = []
-        for x in ['deaf', 'hearing']:
-            path_sentence = video_fp + x + '/'
-            sentences = os.listdir(path=path_sentence)
-            for sentence in sentences:
-                path_files = path_sentence + f'{sentence}/'
-                files = os.listdir(path=path_files)
-                for file in files:
-                    if file.endswith('.mp4'):
-                        path_video = path_files + file
-                        vidcap = cv2.VideoCapture(path_video)
-                        meta_video.append({CATEGORICAL.VIDEO_NAME: file[:-4], 'fps': vidcap.get(cv2.CAP_PROP_FPS),
-                                           'frame_count': int(vidcap.get(cv2.CAP_PROP_FRAME_COUNT))})
-        meta_video = pd.DataFrame(meta_video)
-        # making clean video_name
-        meta_video.video_name.apply(proper_name, inplace=True)
-        return meta_video
+def _drop_no_brow_no_sign_rows(elan):
+    elan.dropna(how='all', subset=['brows', 'main_sign'])
+    return elan
 
-    def _shift_elan(self):
-        def ms_to_frames(row, meta_video, start='start'):
-            video_name = row['video_name']
 
-            fps = meta_video.fps[meta_video.video_name == video_name].values[0]
-            frame_count = meta_video.frame_count[meta_video.video_name == video_name].values[0]
+def get_meta_video(videos_fp, _normalize_video_names_func):
+    meta_video = []
+    for fp, folders, files in os.walk(videos_fp):
+        for file in files:
+            if file.endswith('.mp4'):
+                path_video = fp + file
+                vidcap = cv2.VideoCapture(path_video)
+                meta_video.append({CATEGORICAL.VIDEO_NAME: file[:-4], 'fps': vidcap.get(cv2.CAP_PROP_FPS),
+                                   'frame_count': int(vidcap.get(cv2.CAP_PROP_FRAME_COUNT))})
+    meta_video = pd.DataFrame(meta_video)
+    # video names normalization
+    meta_video.video_name.apply(_normalize_video_names_func, inplace=True)
+    return meta_video
 
-            duration = frame_count / fps
-            delay = rate_to_delay(fps)
-            spf = frame_count / (duration * 1000 - delay)
-            return np.ceil((row[f'{start}_ms'] - delay) * spf)
 
-        self.elan['start_frames'] = self.elan.apply(ms_to_frames, axis=1, meta_video=self.meta_video)
-        self.elan['end_frames'] = self.elan.apply(ms_to_frames, axis=1, start='end', meta_video=self.meta_video)
-        self.elan = self.elan.merge(self.meta_video[['frame_count', 'video_name']], on=['video_name'], how='left')
+def shift_elan(elan, meta_video):
+    def ms_to_frames(row, meta_video, start='start'):
+        video_name = row['video_name']
 
-    def _find_st_no_brows(self):
-        statements = self.elan[self.elan[CATEGORICAL.STYPE] == STYPE.ST.value]
-        st_w_brows = statements.groupby(CATEGORICAL.VIDEO_NAME)['brows'].value_counts()
-        st_w_brows = st_w_brows.reset_index(0)[CATEGORICAL.VIDEO_NAME].to_numpy()
-        st_no_brows = np.setdiff1d(statements[CATEGORICAL.VIDEO_NAME].unique(), st_w_brows)
-        return st_no_brows
+        fps = meta_video.fps[meta_video.video_name == video_name].values[0]
+        frame_count = meta_video.frame_count[meta_video.video_name == video_name].values[0]
 
-    def _find_frames_no_brows(self):
-        statements = self.elan[self.elan[CATEGORICAL.STYPE] == STYPE.ST.value]
+        duration = frame_count / fps
+        delay = rate_to_delay(fps)
+        spf = frame_count / (duration * 1000 - delay)
+        return np.ceil((row[f'{start}_ms'] - delay) * spf)
 
-        st_w_brows = statements.groupby(CATEGORICAL.VIDEO_NAME)['brows'].value_counts()
-        st_w_brows = st_w_brows.reset_index(0)[CATEGORICAL.VIDEO_NAME].to_numpy()
-        st_no_brows = np.setdiff1d(statements[CATEGORICAL.VIDEO_NAME].unique(), st_w_brows)
-        return st_no_brows
+    elan['start_frames'] = elan.apply(ms_to_frames, axis=1, meta_video=meta_video)
+    elan['end_frames'] = elan.apply(ms_to_frames, axis=1, start='end', meta_video=meta_video)
+    elan = elan.merge(meta_video[['frame_count', 'video_name']], on=['video_name'], how='left')
+    return elan
+
+
+def _find_st_no_brows(elan):
+    statements = elan[elan[CATEGORICAL.STYPE] == STYPE.ST.value]
+    st_w_brows = statements.groupby(CATEGORICAL.VIDEO_NAME)['brows'].value_counts()
+    st_w_brows = st_w_brows.reset_index(0)[CATEGORICAL.VIDEO_NAME].to_numpy()
+    st_no_brows = np.setdiff1d(statements[CATEGORICAL.VIDEO_NAME].unique(), st_w_brows)
+    return st_no_brows
+
+
+def _find_frames_no_brows(elan):
+    statements = elan[elan[CATEGORICAL.STYPE] == STYPE.ST.value]
+    st_w_brows = statements.groupby(CATEGORICAL.VIDEO_NAME)['brows'].value_counts()
+    st_w_brows = st_w_brows.reset_index(0)[CATEGORICAL.VIDEO_NAME].to_numpy()
+    st_no_brows = np.setdiff1d(statements[CATEGORICAL.VIDEO_NAME].unique(), st_w_brows)
+    return st_no_brows
+
+
+def preprocess_elan(elan_fp,
+                    meta_fp=None,
+                    videos_fp=None,
+                    save_to='.',
+                    _normalize_video_names_func=proper_name,
+                    _custom_postprocessing=custom_postproc,
+                    ):
+    '''
+    :param elan_fp: path to a .tsv Elan file with annotated videos
+    :param meta_fp: path to a .tsv file with meta information about videos
+    :param videos_fp: path or list of paths to a folder with videos, to get meta information
+    :param save_to: path to a folder where to save the results
+    :param _normalize_video_names_func: function that normalizes str representation of video name to stype-sentence-speaker format
+    :return:
+    '''
+    elan = pd.read_csv(elan_fp, sep='\t')
+
+    # changing default column names and dropping useless columns
+    elan['Файл'] = elan['Файл'].str.replace('\.eaf', '', regex=True)
+    elan.rename(columns={'Время начала - миллисекунды': 'start_ms',
+                         'Время окончания - миллисекунды': 'end_ms',
+                         'Файл': CATEGORICAL.VIDEO_NAME},
+                inplace=True)
+    elan.drop(columns=['Путь к файлу'], inplace=True)
+
+    # video names normalization
+    elan[CATEGORICAL.VIDEO_NAME] = elan[CATEGORICAL.VIDEO_NAME].apply(_normalize_video_names_func)
+    elan[[CATEGORICAL.STYPE,
+          CATEGORICAL.SENTENCE,
+          CATEGORICAL.SPEAKER]] = elan[CATEGORICAL.VIDEO_NAME].str.split('-', expand=True)
+
+    videos_meta = None
+    if meta_fp is not None:
+        videos_meta = pd.read_csv(meta_fp, sep='\t', index_col=0)
+    elif videos_fp is not None:
+        videos_meta = get_meta_video(videos_fp, _normalize_video_names_func)
+
+    if videos_meta is not None:
+        elan = shift_elan(elan, videos_meta)
+        videos_meta.to_csv(os.path.join(save_to, 'videos_meta.tsv'), sep='\t')
+    if _custom_postprocessing is not None:
+        elan = _custom_postprocessing(elan, save_to)
+    elan.to_csv(os.path.join(save_to, 'elan_preprocessed.tsv'), sep='\t', index=False)
+
+
+if __name__ == "__main__":
+    args = parser.parse_args([] if "__file__" not in globals() else None)
+    preprocess_elan(args.elan_fp,
+                    meta_fp=args.meta_fp,
+                    videos_fp=args.videos_fp,
+                    save_to=args.save_to, )
