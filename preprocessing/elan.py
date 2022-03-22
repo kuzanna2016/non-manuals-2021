@@ -1,7 +1,9 @@
 import os
 import pandas as pd
 import numpy as np
+import json
 import cv2
+from collections import defaultdict
 import argparse
 
 from extractors import proper_name
@@ -26,6 +28,18 @@ def custom_postproc(elan, save_to, **kwargs):
     dur_mean, pos_start_mean, pos_end_mean = _set_means(elan)
     filtered_videos = elan[CATEGORICAL.VIDEO_NAME].unique()
     st_no_brows = _find_st_no_brows(elan)
+    pos_dict = defaultdict(lambda: defaultdict(dict))
+    for name, series in zip(['start', 'end'], [pos_start_mean, pos_end_mean]):
+        for keys, value in series.to_dict().items():
+            sentence, pos = keys
+            pos_dict[f'pos_{name}'][sentence][pos] = value
+    additional_info = {
+        'mean_duration': dur_mean.to_dict(),
+        'filtered_videos': filtered_videos.tolist(),
+        'videos_no_brows': st_no_brows.tolist(),
+    }
+    additional_info.update(pos_dict)
+    json.dump(additional_info, open(os.path.join(save_to, 'additional_stats_from_elan.json'), 'w'))
     return elan
 
 
