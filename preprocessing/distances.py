@@ -246,20 +246,21 @@ def find_dist(df, points_1, point_2, dim=2):
 def find_mean_dist(df, inner_brows, outer_brows, point_2, dim=3, override=False):
     l_brow, r_brow = inner_brows
     column_name = f'inner_dist{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns or override:
         find_dist(df, inner_brows + outer_brows, point_2, dim=dim)
         df[column_name] = df[[f'dist{l_brow}_{point_2}_3d', f'dist{r_brow}_{point_2}_3d']].mean(axis=1)
 
     l_brow, r_brow = outer_brows
     column_name = f'outer_dist{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns or override:
         df[column_name] = df[[f'dist{l_brow}_{point_2}_3d', f'dist{r_brow}_{point_2}_3d']].mean(axis=1)
+    return df
 
 
 def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2, override=False):
     l_brow, r_brow = inner_brows
     column_name = f'inner_perp_dist{point_1}_{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns or override:
         find_perp(df,
                   brow_points=inner_brows + outer_brows,
                   perp_points=[point_1, point_2],
@@ -269,9 +270,10 @@ def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2, override
 
     l_brow, r_brow = outer_brows
     column_name = f'outer_perp_dist{point_1}_{point_2}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns or override:
         df[column_name] = df[[f'{l_brow}perp{point_1}_{point_2}_3d',
                               f'{r_brow}perp{point_1}_{point_2}_3d']].mean(axis=1)
+    return df
 
 
 def find_mean_perp_plane_dist(df, inner_brows, outer_brows, perp_points, override=False, plot_face=False):
@@ -280,7 +282,7 @@ def find_mean_perp_plane_dist(df, inner_brows, outer_brows, perp_points, overrid
     l_brow, r_brow = inner_brows
     column_name = f'inner_perp_plane_dist{points_str}_3d'
 
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns or override:
         find_perp(df,
                   brow_points=inner_brows + outer_brows,
                   perp_points=perp_points,
@@ -291,9 +293,10 @@ def find_mean_perp_plane_dist(df, inner_brows, outer_brows, perp_points, overrid
 
     l_brow, r_brow = outer_brows
     column_name = f'outer_perp_plane_dist{points_str}_3d'
-    if column_name not in df.columns and not override:
+    if column_name not in df.columns or override:
         df[column_name] = df[[f'{l_brow}perp_plane{points_str}_3d',
                               f'{r_brow}perp_plane{points_str}_3d']].mean(axis=1)
+    return df
 
 
 def plot_plane(plane, points, fp=None):

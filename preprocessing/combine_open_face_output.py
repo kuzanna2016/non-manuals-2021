@@ -22,7 +22,7 @@ def combine_of(fp, save_to):
                 dfs.append(df)
     df = pd.concat(dfs, keys=names, names=[CATEGORICAL.VIDEO_NAME])
     df = preprocess_of(df)
-    df.to_csv(os.path.join(save_to, 'open_face_data_combined.csv'))
+    df.to_csv(os.path.join(save_to, 'open_face_combined.csv'))
 
 
 def preprocess_of(df, _normalize_video_names_func=proper_name):
