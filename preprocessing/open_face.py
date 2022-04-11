@@ -3,11 +3,20 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 from sklearn.preprocessing import LabelBinarizer
+import argparse
 
-from .const import CATEGORICAL, INDEX, BROWS, SPEAKERS
-from .extractors import proper_name
-from .distances import find_mean_dist, find_mean_perp_dist, find_mean_perp_plane_dist
+from const import CATEGORICAL, INDEX, BROWS, SPEAKERS, RAW_FP
+from extractors import proper_name
+from distances import find_mean_dist, find_mean_perp_dist, find_mean_perp_plane_dist
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--elan_fp", default=os.path.join(RAW_FP, 'elan.tsv'), type=str,
+                    help="Path to a .tsv Elan file with annotated videos")
+parser.add_argument("--meta_fp", default=os.path.join(RAW_FP, 'meta_video.tsv'), type=str,
+                    help="Path to a .tsv file with meta information about videos")
+parser.add_argument("--videos_fp", default=None, type=list,
+                    help="Path to a folder with videos, to get meta information, will be used recursively")
+parser.add_argument("--save_to", default=SAVE_TO, type=str, help="Save path")
 
 class OpenFace:
 
@@ -91,6 +100,14 @@ class OpenFace:
             df = pd.read_csv(fp + 'open_face.csv', sep='\t', index_col=[0,1])
         if os.path.isfile(fp + 'open_face_transposed.csv'):
             transposed = pd.read_csv(fp + 'open_face_transposed.csv', sep='\t', index_col=[0, 1, 2])
+
+            # def f(x):
+            #     try:
+            #         return float(x)
+            #     except:
+            #         return x
+            #
+            # transposed.columns = transposed.columns.map(f)
         return df, transposed
 
     def combine_w_elan(self, elan):
@@ -131,24 +148,27 @@ class OpenFace:
         if self.transposed is not None:
             if all(metric in self.transposed.index.levels[1] for metric in metrics):
                 if not override:
+                    print('all metrics are already transposed')
                     return None
             else:
                 if not override:
                     metrics = [metric for metric in metrics if metric not in self.transposed.index.levels[1]]
                     if not metrics:
+                        print('all metrics are already transposed ')
                         return None
 
         indexes = [['outer', 'inner'], metrics, self.df.index.levels[0].tolist()]
         multi_indexes = pd.MultiIndex.from_product(indexes, names=['brows', 'metric', 'video_name'])
 
         # TODO: take shape from elsewhere
-        self.transposed = pd.DataFrame(columns=np.arange(0, 71), index=multi_indexes, dtype=np.float64)
+        if self.transposed is None or override:
+            self.transposed = pd.DataFrame(columns=np.arange(0, 71), index=multi_indexes, dtype=np.float64)
         poses = []
         for i in range(len(metrics) - 1, -1, -1):
             if 'pose' in metrics[i]:
                 poses.append(metrics.pop(i))
         for video_name in tqdm(self.df.index.levels[0]):
-            self._transpose_in_batches(video_name,metrics,poses,self.transposed)
+            self._transpose_in_batches(video_name, metrics, poses, self.transposed)
         self.transposed = self.meanfill(self.transposed)
         self._make_cat_features()
         self.transposed.columns = self.transposed.columns.map(str)
@@ -162,11 +182,13 @@ class OpenFace:
 
     @staticmethod
     def meanfill(df):
-        df_ffill = df.ffill(axis=1)
-        df_bfill = df.bfill(axis=1)
+        df_numeric = df.iloc[:,0:71]
+        df_ffill = df_numeric.ffill(axis=1)
+        df_bfill = df_numeric.bfill(axis=1)
         df_meanfill = (df_ffill + df_bfill) / 2
         df_meanfill = df_meanfill.ffill(axis=1).bfill(axis=1)
-        return df_meanfill
+        df.iloc[:,0:71] = df_meanfill
+        return df
 
     def _transpose_in_batches(self, video_name, metrics, poses, transposed):
         index = self.df.loc[(video_name), INDEX.NORM]
@@ -212,3 +234,10 @@ class OpenFace:
                 else:
                     raise ValueError('no such function')
                 self.df[f'{f}_pose_R{axis}'] = self.df[f'pose_R{axis}'].apply(func)
+
+if __name__ == "__main__":
+    args = parser.parse_args([] if "__file__" not in globals() else None)
+    preprocess_elan(args.elan_fp,
+                    meta_fp=args.meta_fp,
+                    videos_fp=args.videos_fp,
+                    save_to=args.save_to)

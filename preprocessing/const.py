@@ -1,10 +1,14 @@
 from enum import Enum
 
-POS_FP='C:/Users/Mi/Desktop/HSE/SIGN/курсовая 2020/data/export_elan/pos_dict'
+POS_DICT='pos_dict.tsv'
 SAVE_TO = 'saved/'
 CV_FP = 'cross-validation/'
 PLOTS_FP = 'plots/'
-RAW_FP = 'raw_files/'
+RAW_FP = 'raw files/'
+CONFIGS = 'configs'
+CV_LOGS = 'logs.json'
+CV_LOGS_INTERMEDIATE = 'logs_intermediate.json'
+
 
 def rate_to_delay(rate):
     if rate >= 30:
@@ -51,7 +55,6 @@ class CATEGORICAL:
     BROWS = 'brows'
 
 
-
 class STYPE(Enum):
     WH = 'part_q'
     POLAR = 'gen_q'
@@ -89,10 +92,10 @@ class CV_BEST_MODEL:
            'tol': 1e-3,
     }
 
-features = ['pose_Rx', 'cos_pose_Rx', 'pose_Tx',
-            'pose_Ry', 'cos_pose_Ry', 'pose_Ty',
-            'pose_Rz', 'cos_pose_Rz', 'pose_Tz']
+FEATURES = ['pose_Rx', 'pose_Rx_cos', 'pose_Tx',
+            'pose_Ry', 'pose_Ry_cos', 'pose_Ty',
+            'pose_Rz', 'pose_Rz_cos', 'pose_Tz']
 
 # TODO: put metrics here and rearrange distance calculation
-
+METRICS = ['rmse', 'mrae', 'mae', 'mse']
 # TODO: make name gen function here

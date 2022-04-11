@@ -14,12 +14,8 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 
 from sklearn.model_selection import ShuffleSplit
-from sklearn.model_selection import train_test_split
 
-from sklearn.metrics import mean_squared_error
-from sklearn.metrics import mean_absolute_error
-
-from .tools.forecasting_metrics import evaluate
+from forecasting_metrics import evaluate
 
 
 class Model:
@@ -35,6 +31,18 @@ class Model:
         self.weights = None
         self.features = None
         self.scaler = StandardScaler()
+
+    @classmethod
+    def get_model(self, kind='mlp', params=None, name=None, save_to=None):
+        if kind == 'mlp':
+            m = self.mlp(params or {}, name=name, save_to=save_to)
+        elif kind == 'lasso':
+            m = self.lr(params, regularizer='lasso', name=name, save_to=save_to)
+        elif kind == 'ridge':
+            m = self.lr(params, regularizer='ridge', name=name, save_to=save_to)
+        else:
+            raise ValueError('no such kind of model')
+        return m
 
     @classmethod
     def lr(cls, params, regularizer='lasso', name=None, save_to=None):

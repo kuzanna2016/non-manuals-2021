@@ -4,46 +4,43 @@ import itertools
 import json
 import warnings
 
-
-from .data import Data
-from .model import Model
-from .const import features, CATEGORICAL, SAVE_TO, CV_FP, RAW_FP
+from data import Data
+from model import Model
+from const import features, CATEGORICAL, SAVE_TO, CV_FP, RAW_FP
 
 
 def main(of_fp=None, elan_fp=None, meta_video_fp=None, video_fp=None, save_to=SAVE_TO, raw_fp=RAW_FP):
-
     # load data =========================================================================
 
     # make data from scratch
-    data = Data.from_scratch(of_fp=of_fp,
-                             elan_fp=elan_fp,
-                             video_fp=video_fp,
-                             meta_video_fp=meta_video_fp,
-                             save_to=save_to,
-                             elan_from_scratch=True,
-                             of_from_scratch=True)
+    # data = Data.from_scratch(of_fp=of_fp,
+    #                          elan_fp=elan_fp,
+    #                          video_fp=video_fp,
+    #                          meta_video_fp=meta_video_fp,
+    #                          save_to=save_to,
+    #                          elan_from_scratch=True,
+    #                          of_from_scratch=True)
 
     # load already made data
     # data = Data.from_csv(fp=raw_fp, save_to=save_to)
-
+    # data = Data.from_csv(fp='saved_2/', save_to='saved_2/')
 
     # compute distances =================================================================
 
     # write config
-    inner = (20,23)
-    outer = (18,25)
-    d = {'perp_plane':[
-             {'inner': inner,
-              'outer': outer,
-              'perp': (27,)},
-         ],
-         'perp_line': [{'inner': inner,
-                        'outer': outer,
-                        'perp': (39, 42)}]
+    inner = (20, 23)
+    outer = (18, 25)
+    d = {'perp_plane': [
+        {'inner': inner,
+         'outer': outer,
+         'perp': (27,)},
+    ],
+        'perp_line': [{'inner': inner,
+                       'outer': outer,
+                       'perp': (39, 42)}]
     }
 
-    data.of.compute_distances(d)
-
+    # data.of.compute_distances(d)
 
     # perform cross-validation ===========================================================
 
@@ -80,37 +77,34 @@ def main(of_fp=None, elan_fp=None, meta_video_fp=None, video_fp=None, save_to=SA
     ]
 
     # # cross-validate
-    for model in models:
-        for target in ['perp_plane_dist27_3d']:
-            X, Y = data.prepare_data_for_regr(features, [], target, st_no_brows=False)
-            print(target)
-            print(Y.aggregate(['mean', 'std']))
-            print(data.of.df[features + Y.columns.tolist()].corr().iloc[:, 0])
-            plot_corr(data.of.df[features + Y.columns.tolist()].corr(), features + Y.columns.tolist())
-            data.cross_validate_model(X, Y,
-                                      model=model,
-                                      params=model['params'],
-                                      st_no_brows=False
-                                      )
-    cv_logs = Model.load_logs(save_to, is_cv=True)
-    data.choose_best_model(cv_logs, metrics=('mrae', 'rmse'))
-
-
+    # for model in models:
+    #     for target in ['perp_plane_dist27_3d']:
+    #         X, Y = data.prepare_data_for_regr(features, [], target, st_no_brows=False)
+    #         print(target)
+    #         print(Y.aggregate(['mean', 'std']))
+    #         print(data.of.df[features + Y.columns.tolist()].corr().iloc[:, 0])
+    #         plot_corr(data.of.df[features + Y.columns.tolist()].corr(), features + Y.columns.tolist())
+    #         data.cross_validate_model(X, Y,
+    #                                   model=model,
+    #                                   params=model['params'],
+    #                                   st_no_brows=False
+    #                                   )
+    # cv_logs = Model.load_logs(save_to, is_cv=True)
+    # data.choose_best_model(cv_logs, metrics=('mrae', 'rmse'))
 
     # get models predictions ================================================================
 
-
     # write config
     models = [
-        {
-            'name': 'lasso',
-            'params': {
-                'alpha': 1e-5,
-                'tol': 1e-03,
-                'max_iter': 10000
-            },
-            'st_no_brow': False,
-        },
+        # {
+        #     'name': 'lasso',
+        #     'params': {
+        #         'alpha': 1e-5,
+        #         'tol': 1e-03,
+        #         'max_iter': 10000
+        #     },
+        #     'st_no_brow': False,
+        # },
         {
             'name': 'mlp',
             'params': {
@@ -118,67 +112,96 @@ def main(of_fp=None, elan_fp=None, meta_video_fp=None, video_fp=None, save_to=SA
                 'activation': 'logistic',
                 'solver': 'lbfgs',
                 'alpha': 1e-1,
-                'max_iter': 1500,
+                'max_iter': 5000,
                 'tol': 1e-3,
             },
-            'st_no_brow': False,
+            'st_no_brows': False,
         },
     ]
 
     metrics = ['pose_Rx',
-               'perp_dist39_42_3d']
-    for model in models:
-        for target in ['perp_dist39_42_3d']:
-            X, Y = data.prepare_data_for_regr(features,
-                                              [CATEGORICAL.SPEAKER, CATEGORICAL.SENTENCE],
-                                              target,
-                                              st_no_brows=model.get('st_no_brows') or True)
-            print(target)
-            print(Y.aggregate(['mean', 'std']))
-            # plot_corr(data.of.df[features+Y.columns.tolist()].corr(), features+Y.columns.tolist())
-            new_metrics = data.fit_predict(X_train=X,
-                                           y_train=Y,
-                                           model=model,
-                                           params=model['params'],
-                                           st_no_brows=False
-                                          )
-            metrics.extend(new_metrics)
-
+               'perp_dist39_42_3d',
+               'perp_dist39_42_3d_pred_mlp_8_diff']
+    # for model in models:
+    #     for target in ['perp_dist39_42_3d']:
+    #         X, Y = data.prepare_data_for_regr(features,
+    #                                           # [CATEGORICAL.SPEAKER, CATEGORICAL.SENTENCE],
+    #                                           [],
+    #                                           target,
+    #                                           st_no_brows=model.get('st_no_brows') or True)
+    #         print(target)
+    #         print(Y.aggregate(['mean', 'std']))
+    #         # plot_corr(data.of.df[features+Y.columns.tolist()].corr(), features+Y.columns.tolist())
+    #         new_metrics = data.fit_predict(X_train=X,
+    #                                        y_train=Y,
+    #                                        model=model,
+    #                                        params=model['params'],
+    #                                        st_no_brows=False
+    #                                       )
+    #         metrics.extend(new_metrics)
 
     # transpose and save =====================================================================================
-    data.of.norm_ix_transpose(metrics)
-    data.save(save_to)
-
+    # data.of.norm_ix_transpose(metrics)
+    # data.save(save_to)
 
     # plot mean metrics ======================================================================================
-    data.plot_metrics(metrics=[m for m in metrics if 'diff' in m or 'pose' in m])
+    # metrics.append('perp_dist39_42_3d_pred_mlp_8_diff')
+    # print(metrics)
+    # data.save(save_to)
+
+    metrics = [
+        'pose_Rx',
+        'perp_dist39_42_3d',
+        'perp_dist39_42_3d_pred_mlp_1_diff',
+        'perp_dist39_42_3d_pred_mlp_8_diff',
+    ]
+    data = Data.from_csv(fp='saved_2/', save_to='saved_2/')
+
+    # data.of.norm_ix_transpose(metrics, override=True)
+    # data.save('saved_2/')
+    rename_dict = {
+        'pose_Rx': 'Vertical head rotation',
+        'perp_dist39_42_3d': 'Biased distance from OF',
+        'perp_dist39_42_3d_pred_mlp_1_diff': 'Updated distance, no personal features',
+        'perp_dist39_42_3d_pred_mlp_8_diff': 'Updated distance, with personal features',
+    }
+    data.plot_metrics(metrics=[m for m in metrics if 'diff' in m or 'pose' in m], rename_dict=rename_dict)
 
     # plot one video
-    data.plot_video('gen_q-dev_upala-vik',
-                    metrics,
-                    brows_axes=1,)
+    video_names = [
+        'gen_q-mal_chit-makh',
+        'gen_q-dom_post-alt',
+        'st-uchit_smeh-tanya',
+        'st-sob_est-vik',
+        'part_q-papa_beg-shyr',
+        'part_q-okno_razb-kar',
+    ]
+    for video_name in video_names:
+        data.plot_video(video_name,
+                        metrics,
+                        brows_axes=1,
+                        rename_dict=rename_dict)
 
     # plot mean metrics with two axes for eyebrows
-    data.plot_metrics(metrics,
-                      x_axes=2,)
+    # data.plot_metrics(metrics,
+    #                   x_axes=2,)
 
     # plot multiple videos
-    data.plot_samples(models=[m[m.find('pred'):] for m in metrics if 'pred' in m] + [''], plot_pose=True)
+    # data.plot_samples(models=[m[m.find('pred'):] for m in metrics if 'pred' in m] + [''], plot_pose=False, n_samples=3)
 
     # plot faces
-    for sentence in ['st-dom_post-tanya', 'gen_q-papa_beg-kar', 'part_q-dev_upala-vik']:
-        data.plot_faces(sentence)
+    # for sentence in ['st-dom_post-tanya', 'gen_q-papa_beg-kar', 'part_q-dev_upala-vik']:
+    #     data.plot_faces(sentence)
 
     # plot deaf and hearing differences
-    data.plot_metrics(metrics,
-                      deaf=True,)
+    # data.plot_metrics(metrics,
+    #                   deaf=True,)
     plt.show()
 
-
     # save sorted logs =============================================================================================
-    cv_logs = Model.load_logs(save_to, is_cv=True)
-    top = Data.choose_best_model(cv_logs, metrics=('mrae', 'rmse'), mean_metric=True)
-    json.dump(top, open(save_to + CV_FP + 'cv_ranked.json', 'w'))
+    # cv_logs = Model.load_logs(save_to, is_cv=True)
+    # top = Data.choose_best_model(cv_logs, metrics=('mrae', 'rmse'), mean_metric=True)
+    # json.dump(top, open(save_to + CV_FP + 'cv_ranked.json', 'w'))
 
 
 def plot_corr(cor_array, names):

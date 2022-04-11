@@ -12,10 +12,10 @@ import json
 
 
 
-from .elan import Elan
-from .open_face import OpenFace
-from .model import Model
-from .const import CATEGORICAL, BROWS, STYPE, PLOTS_FP, CV_FP
+from elan import Elan
+from open_face import OpenFace
+from model import Model
+from const import CATEGORICAL, BROWS, STYPE, PLOTS_FP, CV_FP
 
 
 class Data:
@@ -52,7 +52,10 @@ class Data:
         self.elan.save_elan(fp)
         self.of.save(fp)
 
-    def plot_video(self, video_name, metrics, brows_axes=1):
+    def plot_video(self, video_name, metrics, brows_axes=1, rename_dict=None):
+        if rename_dict is None:
+            rename_dict = {}
+
         if video_name not in self.of.df.index.levels[0]:
             return None
         fig, axes = plt.subplots(len(metrics), brows_axes, figsize=(8 * brows_axes, len(metrics) * 4))
@@ -69,15 +72,21 @@ class Data:
                 metric_name = metric
                 if brows_axes > 1:
                     for j in range(brows_axes):
-                        self.of.df.loc[(video_name), metric_name].plot(ax=axes[i][j], label=metric_name)
+                        self.of.df.loc[(video_name), metric_name].plot(
+                            ax=axes[i][j],
+                            label=rename_dict.get(metric_name, metric_name)
+                        )
                         axes[i][j].invert_yaxis()
                 else:
-                    self.of.df.loc[(video_name), metric_name].plot(ax=axes[i], label=metric_name)
+                    self.of.df.loc[(video_name), metric_name].plot(
+                        ax=axes[i],
+                        label=rename_dict.get(metric_name, metric_name)
+                    )
                     axes[i].invert_yaxis()
             if brows_axes > 1:
-                axes[i][0].set_ylabel(metric)
+                axes[i][0].set_ylabel(rename_dict.get(metric, metric))
             else:
-                axes[i].set_ylabel(metric)
+                axes[i].set_ylabel(rename_dict.get(metric, metric))
 
         video_mask = self.elan.elan[CATEGORICAL.VIDEO_NAME] == video_name
         video_mask = video_mask & self.elan.elan[CATEGORICAL.POS].notna()
@@ -92,9 +101,14 @@ class Data:
                         fontsize='x-large', alpha=0.4, color='red')
         if not os.path.isdir(self.save_to + PLOTS_FP):
             os.mkdir(self.save_to + PLOTS_FP)
+        fig.legend(plt.gca().lines[:2], ['inner', 'outer'], loc='center', bbox_to_anchor=(0.35, 0.05),
+                   fontsize='x-large', ncol=2)
+        plt.suptitle(video_name)
         plt.savefig(self.save_to + PLOTS_FP + f'{video_name}-{"_".join(metrics)}.png', layout='tight')
 
-    def plot_metrics(self, metrics, x_axes=1, deaf=False):
+    def plot_metrics(self, metrics, x_axes=1, deaf=False, rename_dict=None):
+        if rename_dict is None:
+            rename_dict = {}
         cmap = plt.get_cmap('Dark2')
         linestyles = ['-', '--', '-.']
         linewidth = 2.5
@@ -195,9 +209,9 @@ class Data:
                         axes[i].invert_yaxis()
 
                 if x_axes > 1:
-                    axes[i][0].set_ylabel(metric)
+                    axes[i][0].set_ylabel(rename_dict.get(metric, metric))
                 else:
-                    axes[i].set_ylabel(metric)
+                    axes[i].set_ylabel(rename_dict.get(metric, metric))
 
         for pos, start, end in zip(self.elan.pos_start_mean.groupby(CATEGORICAL.POS).mean().round().index,
                                    self.elan.pos_start_mean.groupby(CATEGORICAL.POS).mean().round().values,
@@ -212,10 +226,10 @@ class Data:
                         fontsize='x-large', alpha=0.4, color='red')
 
         fig.legend(plt.gca().lines[::2], ['st', 'polar_q', 'wh_q'], loc='center', bbox_to_anchor=(0.35, 0.05), ncol=3,
-                   fontsize='x-large')
+                   fontsize='medium')
         if deaf or x_axes == 1:
             fig.legend(plt.gca().lines[:2], ['inner', 'outer'], loc='center', ncol=2, bbox_to_anchor=(0.65, 0.05),
-                       fontsize='x-large')
+                       fontsize='medium')
 
         if not os.path.isdir(self.save_to + PLOTS_FP):
             os.mkdir(self.save_to + PLOTS_FP)

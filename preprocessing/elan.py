@@ -28,6 +28,7 @@ def custom_postproc(elan, save_to, **kwargs):
     dur_mean, pos_start_mean, pos_end_mean = _set_means(elan)
     filtered_videos = elan[CATEGORICAL.VIDEO_NAME].unique()
     st_no_brows = _find_st_no_brows(elan)
+    frames_w_brows = _find_frames_w_brows(elan)
     pos_dict = defaultdict(lambda: defaultdict(dict))
     for name, series in zip(['start', 'end'], [pos_start_mean, pos_end_mean]):
         for keys, value in series.to_dict().items():
@@ -37,6 +38,7 @@ def custom_postproc(elan, save_to, **kwargs):
         'mean_duration': dur_mean.to_dict(),
         'filtered_videos': filtered_videos.tolist(),
         'videos_no_brows': st_no_brows.tolist(),
+        'frames_w_brows': frames_w_brows,
     }
     additional_info.update(pos_dict)
     json.dump(additional_info, open(os.path.join(save_to, 'additional_stats_from_elan.json'), 'w'))
@@ -142,12 +144,14 @@ def _find_st_no_brows(elan):
     return st_no_brows
 
 
-def _find_frames_no_brows(elan):
+def _find_frames_w_brows(elan):
     statements = elan[elan[CATEGORICAL.STYPE] == STYPE.ST.value]
-    st_w_brows = statements.groupby(CATEGORICAL.VIDEO_NAME)['brows'].value_counts()
-    st_w_brows = st_w_brows.reset_index(0)[CATEGORICAL.VIDEO_NAME].to_numpy()
-    st_no_brows = np.setdiff1d(statements[CATEGORICAL.VIDEO_NAME].unique(), st_w_brows)
-    return st_no_brows
+    frames_w_brows = statements[statements.brows.notna()]
+    frames_w_brows = frames_w_brows[['video_name', 'start_frames','end_frames']].to_dict('records')
+    index = []
+    for a in frames_w_brows:
+        index.extend([(a['video_name'], i) for i in range(int(a['start_frames']), int(a['end_frames']) + 1)])
+    return index
 
 
 def preprocess_elan(elan_fp,

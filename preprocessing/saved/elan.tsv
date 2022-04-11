@@ -1,0 +1,1130 @@
+	start_ms	end_ms	head	brows	right-hand	left-hand	body	video_name	sType	sentence	speaker	start_frames	end_frames	frame_count	main_sign	pos
+0	300	866			ДЕВОЧКА			gen_q-dev_upala-alt	gen_q	dev_upala	alt	6.0	24.0	60	ДЕВОЧКА	N
+1	866	2000		br_raise				gen_q-dev_upala-alt	gen_q	dev_upala	alt	24.0	60.0	60		
+2	933	2000	turn_forward					gen_q-dev_upala-alt	gen_q	dev_upala	alt	26.0	60.0	60		
+3	1033	2000			CLF:ЧЕЛОВЕК:УПАСТЬ			gen_q-dev_upala-alt	gen_q	dev_upala	alt	29.0	60.0	60	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+4	1233	2000				ПЛОСКОСТЬ		gen_q-dev_upala-alt	gen_q	dev_upala	alt	36.0	60.0	60		
+5	637	708			ДЕВОЧКА			gen_q-dev_upala-kar	gen_q	dev_upala	kar	16.0	18.0	52	ДЕВОЧКА	N
+6	708	1559		br_raise				gen_q-dev_upala-kar	gen_q	dev_upala	kar	18.0	44.0	52		
+7	885	1629			CLF:ЧЕЛОВЕК:УПАСТЬ			gen_q-dev_upala-kar	gen_q	dev_upala	kar	23.0	46.0	52	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+8	1169	1629				ПЛОСКОСТЬ		gen_q-dev_upala-kar	gen_q	dev_upala	kar	32.0	46.0	52		
+9	400	2033		br_raise				gen_q-dev_upala-makh	gen_q	dev_upala	makh	9.0	61.0	65		
+10	566	933			ДЕВОЧКА			gen_q-dev_upala-makh	gen_q	dev_upala	makh	14.0	26.0	65	ДЕВОЧКА	N
+11	1200	1800			CLF:ЧЕЛОВЕК:УПАСТЬ			gen_q-dev_upala-makh	gen_q	dev_upala	makh	35.0	54.0	65	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+12	1200	1966	turn_forward					gen_q-dev_upala-makh	gen_q	dev_upala	makh	35.0	59.0	65		
+13	1266	1800				ПЛОСКОСТЬ		gen_q-dev_upala-makh	gen_q	dev_upala	makh	37.0	54.0	65		
+14	400	633				ДЕВОЧКА		gen_q-dev_upala-mira	gen_q	dev_upala	mira	9.0	17.0	55	ДЕВОЧКА	N
+15	733	966	nod					gen_q-dev_upala-mira	gen_q	dev_upala	mira	20.0	27.0	55		
+16	733	1366		br_raise				gen_q-dev_upala-mira	gen_q	dev_upala	mira	20.0	40.0	55		
+17	966	1500	nod					gen_q-dev_upala-mira	gen_q	dev_upala	mira	27.0	45.0	55		
+18	1033	1766			ПЛОСКОСТЬ			gen_q-dev_upala-mira	gen_q	dev_upala	mira	30.0	53.0	55		
+19	1100	1766				CLF:ЧЕЛОВЕК:УПАСТЬ		gen_q-dev_upala-mira	gen_q	dev_upala	mira	32.0	53.0	55	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+20	133	1766		br_raise				gen_q-dev_upala-tanya	gen_q	dev_upala	tanya	0.0	53.0	58		
+21	233	833	turn_forward					gen_q-dev_upala-tanya	gen_q	dev_upala	tanya	4.0	23.0	58		
+22	366	800			ДЕВОЧКА			gen_q-dev_upala-tanya	gen_q	dev_upala	tanya	8.0	22.0	58	ДЕВОЧКА	N
+23	866	1233	nod					gen_q-dev_upala-tanya	gen_q	dev_upala	tanya	24.0	36.0	58		
+24	1000	1666			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		gen_q-dev_upala-tanya	gen_q	dev_upala	tanya	28.0	50.0	58	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+50	266	933			ДЕВОЧКА			st-dev_upala-alt	st	dev_upala	alt	5.0	26.0	87	ДЕВОЧКА	N
+51	1133	1933			CLF:ЧЕЛОВЕК:УПАСТЬ			st-dev_upala-alt	st	dev_upala	alt	32.0	57.0	87	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+52	1366	1933				ПЛОСКОСТЬ		st-dev_upala-alt	st	dev_upala	alt	39.0	57.0	87		
+53	602	921			ДЕВОЧКА			st-dev_upala-kar	st	dev_upala	kar	14.0	24.0	57	ДЕВОЧКА	N
+54	1062	1736			CLF:ЧЕЛОВЕК:УПАСТЬ			st-dev_upala-kar	st	dev_upala	kar	28.0	49.0	57	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+55	1062	1807				ПЛОСКОСТЬ		st-dev_upala-kar	st	dev_upala	kar	28.0	51.0	57		
+56	1000	1400			ДЕВОЧКА			st-dev_upala-makh	st	dev_upala	makh	28.0	40.0	81	ДЕВОЧКА	N
+57	1233	2200				ПЛОСКОСТЬ		st-dev_upala-makh	st	dev_upala	makh	35.0	66.0	81		
+58	1600	2200			CLF:ЧЕЛОВЕК:УПАСТЬ			st-dev_upala-makh	st	dev_upala	makh	47.0	66.0	81	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+59	266	800				ДЕВОЧКА		st-dev_upala-mira	st	dev_upala	mira	5.0	22.0	61	ДЕВОЧКА	N
+60	1100	1833				CLF:ЧЕЛОВЕК:УПАСТЬ		st-dev_upala-mira	st	dev_upala	mira	32.0	55.0	61	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+61	1133	1833			ПЛОСКОСТЬ			st-dev_upala-mira	st	dev_upala	mira	33.0	55.0	61		
+62	500	966			ДЕВОЧКА			st-dev_upala-tanya	st	dev_upala	tanya	12.0	27.0	70	ДЕВОЧКА	N
+63	1100	2066				ПЛОСКОСТЬ		st-dev_upala-tanya	st	dev_upala	tanya	31.0	62.0	70		
+64	1133	1966			CLF:ЧЕЛОВЕК:УПАСТЬ			st-dev_upala-tanya	st	dev_upala	tanya	32.0	59.0	70	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+65	400	2466	turn_forward	br_raise				gen_q-dom_post-alt	gen_q	dom_post	alt	9.0	74.0	89		
+66	633	1166			ДОМ	ДОМ		gen_q-dom_post-alt	gen_q	dom_post	alt	16.0	33.0	89	ДОМ	N
+67	1566	2433			СТРОИТЬ	СТРОИТЬ		gen_q-dom_post-alt	gen_q	dom_post	alt	46.0	73.0	89	СТРОИТЬ	V
+68	174	2008		br_raise				gen_q-dom_post-kar	gen_q	dom_post	kar	0.0	46.0	49		
+69	305	873			ДОМ	ДОМ		gen_q-dom_post-kar	gen_q	dom_post	kar	4.0	18.0	49	ДОМ	N
+70	349	1048	nod					gen_q-dom_post-kar	gen_q	dom_post	kar	5.0	22.0	49		
+71	1004	2008			СТРОИТЬ			gen_q-dom_post-kar	gen_q	dom_post	kar	21.0	46.0	49	СТРОИТЬ	V
+72	1091	2008				СТРОИТЬ		gen_q-dom_post-kar	gen_q	dom_post	kar	23.0	46.0	49		
+73	433	1800		br_raise				gen_q-dom_post-makh	gen_q	dom_post	makh	10.0	54.0	67		
+74	566	933			ДОМ	ДОМ		gen_q-dom_post-makh	gen_q	dom_post	makh	14.0	26.0	67	ДОМ	N
+75	1200	1666	nod					gen_q-dom_post-makh	gen_q	dom_post	makh	35.0	49.0	67		
+76	1200	1833				СТРОИТЬ		gen_q-dom_post-makh	gen_q	dom_post	makh	35.0	55.0	67		
+77	1233	1766			СТРОИТЬ			gen_q-dom_post-makh	gen_q	dom_post	makh	36.0	53.0	67	СТРОИТЬ	V
+78	133	1833		br_raise				gen_q-dom_post-mira	gen_q	dom_post	mira	0.0	55.0	55		
+79	233	666			ДОМ	ДОМ		gen_q-dom_post-mira	gen_q	dom_post	mira	4.0	18.0	55	ДОМ	N
+80	1033	1733			СТРОИТЬ	СТРОИТЬ		gen_q-dom_post-mira	gen_q	dom_post	mira	30.0	52.0	55	СТРОИТЬ	V
+81	233	800	turn_forward					gen_q-dom_post-tanya	gen_q	dom_post	tanya	4.0	22.0	77		
+82	233	1966		br_raise				gen_q-dom_post-tanya	gen_q	dom_post	tanya	4.0	58.0	77		
+83	500	1133			ДОМ	ДОМ		gen_q-dom_post-tanya	gen_q	dom_post	tanya	12.0	32.0	77	ДОМ	N
+84	1300	2266			СТРОИТЬ			gen_q-dom_post-tanya	gen_q	dom_post	tanya	37.0	68.0	77	СТРОИТЬ	V
+85	1333	2266				СТРОИТЬ		gen_q-dom_post-tanya	gen_q	dom_post	tanya	38.0	68.0	77		
+114	733	1233			ДОМ	ДОМ		st-dom_post-alt	st	dom_post	alt	19.0	35.0	107	ДОМ	N
+115	1533	2900				СТРОИТЬ		st-dom_post-alt	st	dom_post	alt	44.0	87.0	107		
+116	1566	2900			СТРОИТЬ			st-dom_post-alt	st	dom_post	alt	45.0	87.0	107	СТРОИТЬ	V
+117	174	873			ДОМ	ДОМ		st-dom_post-kar	st	dom_post	kar	0.0	18.0	45	ДОМ	N
+118	960	1834			СТРОИТЬ			st-dom_post-kar	st	dom_post	kar	20.0	42.0	45	СТРОИТЬ	V
+119	1048	1834				СТРОИТЬ		st-dom_post-kar	st	dom_post	kar	22.0	42.0	45		
+120	466	1100			ДОМ	ДОМ		st-dom_post-makh	st	dom_post	makh	11.0	31.0	79	ДОМ	N
+121	1300	1900			СТРОИТЬ			st-dom_post-makh	st	dom_post	makh	37.0	56.0	79	СТРОИТЬ	V
+122	1333	1900				СТРОИТЬ		st-dom_post-makh	st	dom_post	makh	38.0	56.0	79		
+123	233	800			ДОМ	ДОМ		st-dom_post-mira	st	dom_post	mira	4.0	22.0	71	ДОМ	N
+124	1033	2100			СТРОИТЬ			st-dom_post-mira	st	dom_post	mira	29.0	63.0	71	СТРОИТЬ	V
+125	1100	2100				СТРОИТЬ		st-dom_post-mira	st	dom_post	mira	31.0	63.0	71		
+126	500	1300			ДОМ	ДОМ		st-dom_post-tanya	st	dom_post	tanya	12.0	37.0	82	ДОМ	N
+127	1433	2433			СТРОИТЬ			st-dom_post-tanya	st	dom_post	tanya	41.0	73.0	82	СТРОИТЬ	V
+128	1466	2433				СТРОИТЬ		st-dom_post-tanya	st	dom_post	tanya	43.0	73.0	82		
+129	200	1099		br_raise				gen_q-mal_chit-alt	gen_q	mal_chit	alt	3.0	31.0	80		
+130	400	933			МАЛЬЧИК			gen_q-mal_chit-alt	gen_q	mal_chit	alt	9.0	26.0	80	МАЛЬЧИК	N
+131	1099	2233		br_raise				gen_q-mal_chit-alt	gen_q	mal_chit	alt	31.0	67.0	80		
+132	1333	2266	turn_forward					gen_q-mal_chit-alt	gen_q	mal_chit	alt	38.0	68.0	80		
+133	1466	2233			ЧИТАТЬ	ЧИТАТЬ		gen_q-mal_chit-alt	gen_q	mal_chit	alt	43.0	67.0	80	ЧИТАТЬ	V
+134	358	920			МАЛЬЧИК			gen_q-mal_chit-kar	gen_q	mal_chit	kar	4.0	16.0	47	МАЛЬЧИК	N
+135	972	2046		br_raise				gen_q-mal_chit-kar	gen_q	mal_chit	kar	17.0	40.0	47		
+136	1074	2046				ЧИТАТЬ		gen_q-mal_chit-kar	gen_q	mal_chit	kar	19.0	40.0	47		
+137	1176	2046			ЧИТАТЬ			gen_q-mal_chit-kar	gen_q	mal_chit	kar	21.0	40.0	47	ЧИТАТЬ	V
+138	233	833		br_raise				gen_q-mal_chit-makh	gen_q	mal_chit	makh	4.0	23.0	64		
+139	433	966			МАЛЬЧИК			gen_q-mal_chit-makh	gen_q	mal_chit	makh	10.0	27.0	64	МАЛЬЧИК	N
+140	1000	1800	turn_forward					gen_q-mal_chit-makh	gen_q	mal_chit	makh	28.0	54.0	64		
+141	1166	1800				ЧИТАТЬ		gen_q-mal_chit-makh	gen_q	mal_chit	makh	34.0	54.0	64		
+142	1200	1800			ЧИТАТЬ			gen_q-mal_chit-makh	gen_q	mal_chit	makh	35.0	54.0	64	ЧИТАТЬ	V
+143	1200	1833		br_raise				gen_q-mal_chit-makh	gen_q	mal_chit	makh	35.0	55.0	64		
+144	466	733				МАЛЬЧИК		gen_q-mal_chit-mira	gen_q	mal_chit	mira	11.0	20.0	64	МАЛЬЧИК	N
+145	733	1500		br_raise				gen_q-mal_chit-mira	gen_q	mal_chit	mira	20.0	44.0	64		
+146	833	1400	nod					gen_q-mal_chit-mira	gen_q	mal_chit	mira	23.0	41.0	64		
+147	966	1833			ЧИТАТЬ			gen_q-mal_chit-mira	gen_q	mal_chit	mira	27.0	55.0	64		
+148	1166	1833				ЧИТАТЬ		gen_q-mal_chit-mira	gen_q	mal_chit	mira	34.0	55.0	64	ЧИТАТЬ	V
+149	466	900			МАЛЬЧИК			gen_q-mal_chit-tanya	gen_q	mal_chit	tanya	11.0	25.0	77	МАЛЬЧИК	N
+150	1033	2133		br_raise				gen_q-mal_chit-tanya	gen_q	mal_chit	tanya	29.0	64.0	77		
+151	1100	1733	nod					gen_q-mal_chit-tanya	gen_q	mal_chit	tanya	31.0	51.0	77		
+152	1133	2100				ЧИТАТЬ		gen_q-mal_chit-tanya	gen_q	mal_chit	tanya	32.0	63.0	77		
+153	1300	2100			ЧИТАТЬ			gen_q-mal_chit-tanya	gen_q	mal_chit	tanya	37.0	63.0	77	ЧИТАТЬ	V
+179	500	933				МАЛЬЧИК		st-mal_chit-mira	st	mal_chit	mira	12.0	26.0	69	МАЛЬЧИК	N
+180	1233	1900				ЧИТАТЬ		st-mal_chit-mira	st	mal_chit	mira	36.0	57.0	69	ЧИТАТЬ	V
+181	1300	1900			ЧИТАТЬ			st-mal_chit-mira	st	mal_chit	mira	38.0	57.0	69		
+182	500	1100			МАЛЬЧИК			st-mal_chit-alt	st	mal_chit	alt	12.0	31.0	96	МАЛЬЧИК	N
+183	566	1533		br_raise				st-mal_chit-alt	st	mal_chit	alt	14.0	44.0	96		
+184	1366	2733				ЧИТАТЬ		st-mal_chit-alt	st	mal_chit	alt	39.0	82.0	96		
+185	1400	2733			ЧИТАТЬ			st-mal_chit-alt	st	mal_chit	alt	40.0	82.0	96	ЧИТАТЬ	V
+186	613	1176			МАЛЬЧИК			st-mal_chit-kar	st	mal_chit	kar	9.0	21.0	59	МАЛЬЧИК	N
+187	1432	2200				ЧИТАТЬ		st-mal_chit-kar	st	mal_chit	kar	26.0	42.0	59		
+188	1483	2200			ЧИТАТЬ			st-mal_chit-kar	st	mal_chit	kar	27.0	42.0	59	ЧИТАТЬ	V
+189	666	1366			МАЛЬЧИК			st-mal_chit-makh	st	mal_chit	makh	17.0	39.0	92	МАЛЬЧИК	N
+190	1600	2133			ЧИТАТЬ			st-mal_chit-makh	st	mal_chit	makh	47.0	63.0	92	ЧИТАТЬ	V
+191	1633	2166				ЧИТАТЬ		st-mal_chit-makh	st	mal_chit	makh	48.0	64.0	92		
+192	433	1200			МАЛЬЧИК			st-mal_chit-tanya	st	mal_chit	tanya	10.0	34.0	77	МАЛЬЧИК	N
+193	1300	2000				ЧИТАТЬ		st-mal_chit-tanya	st	mal_chit	tanya	37.0	60.0	77		
+194	1400	2000			ЧИТАТЬ			st-mal_chit-tanya	st	mal_chit	tanya	41.0	60.0	77	ЧИТАТЬ	V
+195	175	2016		br_low				gen_q-mama_ust-kar	gen_q	mama_ust	kar	0.0	46.0	46		
+196	394	1052			МАМА			gen_q-mama_ust-kar	gen_q	mama_ust	kar	6.0	22.0	46	МАМА	N
+197	438	1183	nod					gen_q-mama_ust-kar	gen_q	mama_ust	kar	7.0	26.0	46		
+198	1358	1928	turn_forward					gen_q-mama_ust-kar	gen_q	mama_ust	kar	30.0	44.0	46		
+199	1402	1884			УСТАЛЫЙ			gen_q-mama_ust-kar	gen_q	mama_ust	kar	31.0	43.0	46	УСТАЛЫЙ	V
+200	1490	1884				УСТАЛЫЙ		gen_q-mama_ust-kar	gen_q	mama_ust	kar	33.0	43.0	46		
+201	300	2466		br_raise				gen_q-mama_ust-alt	gen_q	mama_ust	alt	6.0	74.0	82		
+202	600	1200			МАМА			gen_q-mama_ust-alt	gen_q	mama_ust	alt	15.0	34.0	82	МАМА	N
+203	1833	2333			УСТАЛЫЙ			gen_q-mama_ust-alt	gen_q	mama_ust	alt	54.0	70.0	82	УСТАЛЫЙ	V
+204	1866	2333				УСТАЛЫЙ		gen_q-mama_ust-alt	gen_q	mama_ust	alt	55.0	70.0	82		
+205	400	2066		br_raise				gen_q-mama_ust-makh	gen_q	mama_ust	makh	9.0	61.0	90		
+206	666	1166			МАМА			gen_q-mama_ust-makh	gen_q	mama_ust	makh	17.0	33.0	90	МАМА	N
+207	1433	2066	nod					gen_q-mama_ust-makh	gen_q	mama_ust	makh	41.0	61.0	90		
+208	1466	2000				УСТАЛЫЙ		gen_q-mama_ust-makh	gen_q	mama_ust	makh	42.0	59.0	90		
+209	1500	2000			УСТАЛЫЙ			gen_q-mama_ust-makh	gen_q	mama_ust	makh	43.0	59.0	90	УСТАЛЫЙ	V
+210	266	1066		br_raise				gen_q-mama_ust-mira	gen_q	mama_ust	mira	5.0	30.0	69		
+211	366	966			МАМА			gen_q-mama_ust-mira	gen_q	mama_ust	mira	8.0	27.0	69	МАМА	N
+212	1000	1433	nod					gen_q-mama_ust-mira	gen_q	mama_ust	mira	28.0	42.0	69		
+213	1333	1666			УСТАЛЫЙ	УСТАЛЫЙ		gen_q-mama_ust-mira	gen_q	mama_ust	mira	39.0	49.0	69	УСТАЛЫЙ	V
+214	133	966	chin_up					gen_q-mama_ust-tanya	gen_q	mama_ust	tanya	0.0	27.0	72		
+215	533	1633			МАМА			gen_q-mama_ust-tanya	gen_q	mama_ust	tanya	13.0	48.0	72	МАМА	N
+216	1700	2400			УСТАЛЫЙ			gen_q-mama_ust-tanya	gen_q	mama_ust	tanya	50.0	72.0	72	УСТАЛЫЙ	V
+217	1833	2333	nod					gen_q-mama_ust-tanya	gen_q	mama_ust	tanya	54.0	70.0	72		
+218	1900	2400				УСТАЛЫЙ		gen_q-mama_ust-tanya	gen_q	mama_ust	tanya	57.0	72.0	72		
+246	306	1052			МАМА			st-mama_ust-kar	st	mama_ust	kar	4.0	22.0	48	МАМА	N
+247	1227	1841				УСТАЛЫЙ		st-mama_ust-kar	st	mama_ust	kar	27.0	42.0	48		
+248	1271	1884			УСТАЛЫЙ			st-mama_ust-kar	st	mama_ust	kar	28.0	43.0	48	УСТАЛЫЙ	V
+249	566	966			МАМА			st-mama_ust-alt	st	mama_ust	alt	14.0	27.0	64	МАМА	N
+250	1100	1733			УСТАЛЫЙ			st-mama_ust-alt	st	mama_ust	alt	31.0	52.0	64	УСТАЛЫЙ	V
+251	1233	1733				УСТАЛЫЙ		st-mama_ust-alt	st	mama_ust	alt	36.0	52.0	64		
+252	766	1366			МАМА			st-mama_ust-makh	st	mama_ust	makh	20.0	39.0	86	МАМА	N
+253	1466	2200				УСТАЛЫЙ		st-mama_ust-makh	st	mama_ust	makh	42.0	66.0	86		
+254	1600	2200			УСТАЛЫЙ			st-mama_ust-makh	st	mama_ust	makh	47.0	66.0	86	УСТАЛЫЙ	V
+255	366	933			МАМА			st-mama_ust-mira	st	mama_ust	mira	8.0	26.0	73	МАМА	N
+256	1100	2200			УСТАЛЫЙ			st-mama_ust-mira	st	mama_ust	mira	31.0	66.0	73	УСТАЛЫЙ	V
+257	1166	2200				УСТАЛЫЙ		st-mama_ust-mira	st	mama_ust	mira	33.0	66.0	73		
+258	200	766		br_raise				st-mama_ust-tanya	st	mama_ust	tanya	3.0	21.0	53		
+259	333	1033			МАМА			st-mama_ust-tanya	st	mama_ust	tanya	7.0	30.0	53	МАМА	N
+260	1100	1733				УСТАЛЫЙ		st-mama_ust-tanya	st	mama_ust	tanya	32.0	52.0	53		
+261	1133	1733			УСТАЛЫЙ			st-mama_ust-tanya	st	mama_ust	tanya	33.0	52.0	53	УСТАЛЫЙ	V
+262	133	966		br_raise				gen_q-okno_razb-alt	gen_q	okno_razb	alt	0.0	27.0	76		
+263	400	1133			ОКНО			gen_q-okno_razb-alt	gen_q	okno_razb	alt	9.0	32.0	76	ОКНО	N
+264	1066	2166		br_raise				gen_q-okno_razb-alt	gen_q	okno_razb	alt	30.0	65.0	76		
+265	1366	2100			РАЗБИТЫЙ			gen_q-okno_razb-alt	gen_q	okno_razb	alt	40.0	63.0	76	РАЗБИТЫЙ	V
+266	1433	2100				РАЗБИТЫЙ		gen_q-okno_razb-alt	gen_q	okno_razb	alt	42.0	63.0	76		
+267	207	727			ОКНО			gen_q-okno_razb-kar	gen_q	okno_razb	kar	0.0	12.0	31	ОКНО	N
+268	779	1610				РАЗБИТЫЙ		gen_q-okno_razb-kar	gen_q	okno_razb	kar	13.0	31.0	31		
+269	935	1610		br_raise	РАЗБИТЫЙ			gen_q-okno_razb-kar	gen_q	okno_razb	kar	17.0	31.0	31	РАЗБИТЫЙ	V
+270	466	2000		br_raise				gen_q-okno_razb-makh	gen_q	okno_razb	makh	11.0	59.0	80		
+271	533	1100			ОКНО			gen_q-okno_razb-makh	gen_q	okno_razb	makh	13.0	31.0	80	ОКНО	N
+272	766	1400	nod					gen_q-okno_razb-makh	gen_q	okno_razb	makh	20.0	41.0	80		
+273	1266	1966			РАЗБИТЫЙ			gen_q-okno_razb-makh	gen_q	okno_razb	makh	36.0	58.0	80	РАЗБИТЫЙ	V
+274	1300	1966				РАЗБИТЫЙ		gen_q-okno_razb-makh	gen_q	okno_razb	makh	37.0	58.0	80		
+275	1400	2000	turn_forward					gen_q-okno_razb-makh	gen_q	okno_razb	makh	41.0	59.0	80		
+276	366	866				ОКНО		gen_q-okno_razb-mira	gen_q	okno_razb	mira	8.0	24.0	59	ОКНО	N
+277	700	1000	nod					gen_q-okno_razb-mira	gen_q	okno_razb	mira	19.0	28.0	59		
+278	1000	1466	nod					gen_q-okno_razb-mira	gen_q	okno_razb	mira	28.0	43.0	59		
+279	1200	1800			РАЗБИТЫЙ	РАЗБИТЫЙ		gen_q-okno_razb-mira	gen_q	okno_razb	mira	35.0	54.0	59	РАЗБИТЫЙ	V
+280	1466	1800	nod					gen_q-okno_razb-mira	gen_q	okno_razb	mira	43.0	54.0	59		
+281	333	1766		br_raise				gen_q-okno_razb-tanya	gen_q	okno_razb	tanya	7.0	52.0	69		
+282	433	1000			ОКНО			gen_q-okno_razb-tanya	gen_q	okno_razb	tanya	10.0	28.0	69	ОКНО	N
+283	1000	1600				РАЗБИТЫЙ		gen_q-okno_razb-tanya	gen_q	okno_razb	tanya	28.0	47.0	69		
+284	1133	1600			РАЗБИТЫЙ			gen_q-okno_razb-tanya	gen_q	okno_razb	tanya	32.0	47.0	69	РАЗБИТЫЙ	V
+285	1233	1700	nod					gen_q-okno_razb-tanya	gen_q	okno_razb	tanya	36.0	50.0	69		
+311	466	1233			ОКНО			st-okno_razb-alt	st	okno_razb	alt	11.0	35.0	93	ОКНО	N
+312	1500	2300			РАЗБИТЫЙ			st-okno_razb-alt	st	okno_razb	alt	43.0	68.0	93	РАЗБИТЫЙ	V
+313	1566	2300				РАЗБИТЫЙ		st-okno_razb-alt	st	okno_razb	alt	45.0	68.0	93		
+314	207	987			ОКНО			st-okno_razb-kar	st	okno_razb	kar	0.0	17.0	35	ОКНО	N
+315	1143	1818				РАЗБИТЫЙ		st-okno_razb-kar	st	okno_razb	kar	21.0	35.0	35		
+316	1195	1818			РАЗБИТЫЙ			st-okno_razb-kar	st	okno_razb	kar	22.0	35.0	35	РАЗБИТЫЙ	V
+317	633	1233			ОКНО			st-okno_razb-makh	st	okno_razb	makh	16.0	35.0	80	ОКНО	N
+318	1433	2033			РАЗБИТЫЙ			st-okno_razb-makh	st	okno_razb	makh	42.0	60.0	80	РАЗБИТЫЙ	V
+319	1466	2033				РАЗБИТЫЙ		st-okno_razb-makh	st	okno_razb	makh	43.0	60.0	80		
+320	500	1100				ОКНО		st-okno_razb-mira	st	okno_razb	mira	12.0	31.0	70	ОКНО	N
+321	1166	2066			РАЗБИТЫЙ			st-okno_razb-mira	st	okno_razb	mira	33.0	62.0	70		
+322	1266	2066				РАЗБИТЫЙ		st-okno_razb-mira	st	okno_razb	mira	37.0	62.0	70	РАЗБИТЫЙ	V
+323	233	833			ОКНО			st-okno_razb-tanya	st	okno_razb	tanya	4.0	23.0	59	ОКНО	N
+324	800	1466				РАЗБИТЫЙ		st-okno_razb-tanya	st	okno_razb	tanya	22.0	43.0	59		
+325	966	1466			РАЗБИТЫЙ			st-okno_razb-tanya	st	okno_razb	tanya	27.0	43.0	59	РАЗБИТЫЙ	V
+326	200	2166		br_raise				gen_q-papa_beg-tanya	gen_q	papa_beg	tanya	3.0	65.0	75		
+327	466	1200			ПАПА			gen_q-papa_beg-tanya	gen_q	papa_beg	tanya	11.0	34.0	75	ПАПА	N
+328	1233	2233				БЕЖАТЬ		gen_q-papa_beg-tanya	gen_q	papa_beg	tanya	35.0	67.0	75		
+329	1300	2233			БЕЖАТЬ			gen_q-papa_beg-tanya	gen_q	papa_beg	tanya	37.0	67.0	75	БЕЖАТЬ	V
+330	300	2033		br_raise				gen_q-papa_beg-alt	gen_q	papa_beg	alt	6.0	61.0	72		
+331	333	2033	turn_forward					gen_q-papa_beg-alt	gen_q	papa_beg	alt	7.0	61.0	72		
+332	533	1166			ПАПА			gen_q-papa_beg-alt	gen_q	papa_beg	alt	13.0	33.0	72	ПАПА	N
+333	1300	2033				БЕЖАТЬ		gen_q-papa_beg-alt	gen_q	papa_beg	alt	38.0	61.0	72		
+334	1433	2033			БЕЖАТЬ			gen_q-papa_beg-alt	gen_q	papa_beg	alt	42.0	61.0	72	БЕЖАТЬ	V
+335	166	2066		br_raise				gen_q-papa_beg-makh	gen_q	papa_beg	makh	2.0	62.0	78		
+336	266	866			ПАПА			gen_q-papa_beg-makh	gen_q	papa_beg	makh	5.0	24.0	78	ПАПА	N
+337	966	2000				БЕЖАТЬ		gen_q-papa_beg-makh	gen_q	papa_beg	makh	27.0	60.0	78		
+338	1066	2000			БЕЖАТЬ			gen_q-papa_beg-makh	gen_q	papa_beg	makh	30.0	60.0	78	БЕЖАТЬ	V
+339	1166	2033	turn_forward					gen_q-papa_beg-makh	gen_q	papa_beg	makh	33.0	61.0	78		
+340	600	2133		br_raise				gen_q-papa_beg-mira	gen_q	papa_beg	mira	15.0	64.0	77		
+341	633	1266				ПАПА		gen_q-papa_beg-mira	gen_q	papa_beg	mira	16.0	36.0	77	ПАПА	N
+342	866	1400	nod					gen_q-papa_beg-mira	gen_q	papa_beg	mira	24.0	41.0	77		
+343	1400	2166	nod					gen_q-papa_beg-mira	gen_q	papa_beg	mira	41.0	65.0	77		
+344	1533	2233				БЕЖАТЬ		gen_q-papa_beg-mira	gen_q	papa_beg	mira	45.0	67.0	77	БЕЖАТЬ	V
+345	1600	2233			БЕЖАТЬ			gen_q-papa_beg-mira	gen_q	papa_beg	mira	47.0	67.0	77		
+346	174	1091			ПАПА			gen_q-papa_beg-kar	gen_q	papa_beg	kar	0.0	23.0	51	ПАПА	N
+347	1266	1965			БЕЖАТЬ	БЕЖАТЬ		gen_q-papa_beg-kar	gen_q	papa_beg	kar	28.0	45.0	51	БЕЖАТЬ	V
+377	466	1166			ПАПА			st-papa_beg-tanya	st	papa_beg	tanya	11.0	33.0	76	ПАПА	N
+378	1300	2433			БЕЖАТЬ	БЕЖАТЬ		st-papa_beg-tanya	st	papa_beg	tanya	37.0	73.0	76	БЕЖАТЬ	V
+379	533	1433			ПАПА			st-papa_beg-alt	st	papa_beg	alt	13.0	41.0	85	ПАПА	N
+380	1566	2400			БЕЖАТЬ			st-papa_beg-alt	st	papa_beg	alt	46.0	72.0	85	БЕЖАТЬ	V
+381	1633	2400				БЕЖАТЬ		st-papa_beg-alt	st	papa_beg	alt	48.0	72.0	85		
+382	1133	1900			ПАПА			st-papa_beg-makh	st	papa_beg	makh	32.0	56.0	106	ПАПА	N
+383	1966	3033				БЕЖАТЬ		st-papa_beg-makh	st	papa_beg	makh	58.0	91.0	106		
+384	2066	3033			БЕЖАТЬ			st-papa_beg-makh	st	papa_beg	makh	61.0	91.0	106	БЕЖАТЬ	V
+385	366	1033				ПАПА		st-papa_beg-mira	st	papa_beg	mira	8.0	29.0	90	ПАПА	N
+386	1200	2700			БЕЖАТЬ			st-papa_beg-mira	st	papa_beg	mira	34.0	81.0	90		
+387	1266	2700				БЕЖАТЬ		st-papa_beg-mira	st	papa_beg	mira	36.0	81.0	90	БЕЖАТЬ	V
+388	174	1004			ПАПА			st-papa_beg-kar	st	papa_beg	kar	0.0	21.0	47	ПАПА	N
+389	1135	2008			БЕЖАТЬ	БЕЖАТЬ		st-papa_beg-kar	st	papa_beg	kar	25.0	46.0	47	БЕЖАТЬ	V
+390	200	2033	turn_forward					gen_q-reb_tanc-alt	gen_q	reb_tanc	alt	3.0	61.0	74		
+391	266	933			РЕБЕНОК			gen_q-reb_tanc-alt	gen_q	reb_tanc	alt	5.0	26.0	74	РЕБЕНОК	N
+392	400	1966		br_raise				gen_q-reb_tanc-alt	gen_q	reb_tanc	alt	9.0	59.0	74		
+393	1333	2033			ТАНЦЕВАТЬ	ТАНЦЕВАТЬ		gen_q-reb_tanc-alt	gen_q	reb_tanc	alt	39.0	61.0	74	ТАНЦЕВАТЬ	V
+394	259	2130		br_raise				gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	2.0	41.0	46		
+395	311	1039			РЕБЕНОК			gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	3.0	18.0	46	РЕБЕНОК	N
+396	363	1039	turn_forward					gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	4.0	18.0	46		
+397	1247	2078				ТАНЦЕВАТЬ		gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	22.0	40.0	46		
+398	1299	1714	nod					gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	24.0	32.0	46		
+399	1299	2078			ТАНЦЕВАТЬ			gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	24.0	40.0	46	ТАНЦЕВАТЬ	V
+400	1714	2130	nod					gen_q-reb_tanc-kar	gen_q	reb_tanc	kar	32.0	41.0	46		
+401	533	2000		br_raise				gen_q-reb_tanc-makh	gen_q	reb_tanc	makh	13.0	60.0	77		
+402	933	1133			РЕБЕНОК			gen_q-reb_tanc-makh	gen_q	reb_tanc	makh	26.0	32.0	77	РЕБЕНОК	N
+403	1233	2033				ТАНЦЕВАТЬ		gen_q-reb_tanc-makh	gen_q	reb_tanc	makh	35.0	61.0	77		
+404	1300	2033			ТАНЦЕВАТЬ			gen_q-reb_tanc-makh	gen_q	reb_tanc	makh	37.0	61.0	77	ТАНЦЕВАТЬ	V
+405	1500	2033	turn_forward					gen_q-reb_tanc-makh	gen_q	reb_tanc	makh	44.0	61.0	77		
+406	500	1033	nod					gen_q-reb_tanc-mira	gen_q	reb_tanc	mira	12.0	29.0	74		
+407	533	1100				РЕБЕНОК		gen_q-reb_tanc-mira	gen_q	reb_tanc	mira	13.0	31.0	74	РЕБЕНОК	N
+408	1300	1966			ТАНЦЕВАТЬ			gen_q-reb_tanc-mira	gen_q	reb_tanc	mira	38.0	59.0	74		
+409	1333	1966				ТАНЦЕВАТЬ		gen_q-reb_tanc-mira	gen_q	reb_tanc	mira	39.0	59.0	74	ТАНЦЕВАТЬ	V
+410	1366	1766	nod					gen_q-reb_tanc-mira	gen_q	reb_tanc	mira	40.0	52.0	74		
+411	133	2200		br_raise				gen_q-reb_tanc-tanya	gen_q	reb_tanc	tanya	0.0	66.0	70		
+412	200	1033	nod					gen_q-reb_tanc-tanya	gen_q	reb_tanc	tanya	3.0	29.0	70		
+413	233	900			РЕБЕНОК			gen_q-reb_tanc-tanya	gen_q	reb_tanc	tanya	4.0	25.0	70	РЕБЕНОК	N
+414	1033	1700				ТАНЦЕВАТЬ		gen_q-reb_tanc-tanya	gen_q	reb_tanc	tanya	29.0	50.0	70		
+415	1100	1700			ТАНЦЕВАТЬ			gen_q-reb_tanc-tanya	gen_q	reb_tanc	tanya	31.0	50.0	70	ТАНЦЕВАТЬ	V
+416	1133	1533	nod					gen_q-reb_tanc-tanya	gen_q	reb_tanc	tanya	32.0	45.0	70		
+441	311	1039			РЕБЕНОК			st-reb_tanc-kar	st	reb_tanc	kar	3.0	18.0	45	РЕБЕНОК	N
+442	1143	2078				ТАНЦЕВАТЬ		st-reb_tanc-kar	st	reb_tanc	kar	20.0	40.0	45		
+443	1195	2078			ТАНЦЕВАТЬ			st-reb_tanc-kar	st	reb_tanc	kar	21.0	40.0	45	ТАНЦЕВАТЬ	V
+444	633	1600			РЕБЕНОК			st-reb_tanc-alt	st	reb_tanc	alt	16.0	46.0	95	РЕБЕНОК	N
+445	1733	2800			ТАНЦЕВАТЬ			st-reb_tanc-alt	st	reb_tanc	alt	51.0	84.0	95	ТАНЦЕВАТЬ	V
+446	1766	2800				ТАНЦЕВАТЬ		st-reb_tanc-alt	st	reb_tanc	alt	52.0	84.0	95		
+447	933	1266			РЕБЕНОК			st-reb_tanc-makh	st	reb_tanc	makh	26.0	36.0	83	РЕБЕНОК	N
+448	1400	2133				ТАНЦЕВАТЬ		st-reb_tanc-makh	st	reb_tanc	makh	40.0	64.0	83		
+449	1500	2133			ТАНЦЕВАТЬ			st-reb_tanc-makh	st	reb_tanc	makh	44.0	64.0	83	ТАНЦЕВАТЬ	V
+450	400	966				РЕБЕНОК		st-reb_tanc-mira	st	reb_tanc	mira	9.0	27.0	75	РЕБЕНОК	N
+451	1166	2000				ТАНЦЕВАТЬ		st-reb_tanc-mira	st	reb_tanc	mira	33.0	60.0	75	ТАНЦЕВАТЬ	V
+452	1366	1966			ТАНЦЕВАТЬ			st-reb_tanc-mira	st	reb_tanc	mira	40.0	59.0	75		
+453	733	1333			РЕБЕНОК			st-reb_tanc-tanya	st	reb_tanc	tanya	19.0	38.0	81	РЕБЕНОК	N
+454	1400	2166				ТАНЦЕВАТЬ		st-reb_tanc-tanya	st	reb_tanc	tanya	40.0	65.0	81		
+455	1500	2266			ТАНЦЕВАТЬ			st-reb_tanc-tanya	st	reb_tanc	tanya	44.0	68.0	81	ТАНЦЕВАТЬ	V
+456	233	1333		br_raise				gen_q-sob_est-alt	gen_q	sob_est	alt	4.0	39.0	75		
+457	600	1300	turn_forward					gen_q-sob_est-alt	gen_q	sob_est	alt	15.0	37.0	75		
+458	833	1266			СОБАКА			gen_q-sob_est-alt	gen_q	sob_est	alt	23.0	36.0	75	СОБАКА	N
+459	1366	2200		br_raise				gen_q-sob_est-alt	gen_q	sob_est	alt	40.0	66.0	75		
+460	1633	2200	turn_forward					gen_q-sob_est-alt	gen_q	sob_est	alt	48.0	66.0	75		
+461	1666	2166			ЕСТЬ			gen_q-sob_est-alt	gen_q	sob_est	alt	49.0	65.0	75	ЕСТЬ	V
+462	174	652			СОБАКА	СОБАКА		gen_q-sob_est-kar	gen_q	sob_est	kar	0.0	13.0	40	СОБАКА	N
+463	870	1609					lf	gen_q-sob_est-kar	gen_q	sob_est	kar	18.0	37.0	40		
+464	913	1522			ЕСТЬ			gen_q-sob_est-kar	gen_q	sob_est	kar	19.0	35.0	40	ЕСТЬ	V
+465	466	2000		br_raise				gen_q-sob_est-makh	gen_q	sob_est	makh	11.0	59.0	90		
+466	666	1266			СОБАКА			gen_q-sob_est-makh	gen_q	sob_est	makh	17.0	36.0	90	СОБАКА	N
+467	966	1433	nod					gen_q-sob_est-makh	gen_q	sob_est	makh	27.0	41.0	90		
+468	1466	2000			ЕСТЬ			gen_q-sob_est-makh	gen_q	sob_est	makh	42.0	59.0	90	ЕСТЬ	V
+469	1500	1900	turn_forward					gen_q-sob_est-makh	gen_q	sob_est	makh	43.0	56.0	90		
+470	200	1066		br_raise				gen_q-sob_est-mira	gen_q	sob_est	mira	3.0	30.0	73		
+471	800	1133				СОБАКА		gen_q-sob_est-mira	gen_q	sob_est	mira	22.0	32.0	73	СОБАКА	N
+472	1400	1966				ЕСТЬ		gen_q-sob_est-mira	gen_q	sob_est	mira	41.0	59.0	73	ЕСТЬ	V
+473	200	1800		br_raise				gen_q-sob_est-tanya	gen_q	sob_est	tanya	3.0	54.0	70		
+474	533	900	turn_forward					gen_q-sob_est-tanya	gen_q	sob_est	tanya	13.0	25.0	70		
+475	566	933			СОБАКА			gen_q-sob_est-tanya	gen_q	sob_est	tanya	14.0	26.0	70	СОБАКА	N
+476	1100	1733			ЕСТЬ			gen_q-sob_est-tanya	gen_q	sob_est	tanya	31.0	51.0	70	ЕСТЬ	V
+499	866	1333			СОБАКА			st-sob_est-alt	st	sob_est	alt	24.0	38.0	80	СОБАКА	N
+500	1633	2300			ЕСТЬ			st-sob_est-alt	st	sob_est	alt	48.0	69.0	80	ЕСТЬ	V
+501	304	1000			СОБАКА	СОБАКА		st-sob_est-kar	st	sob_est	kar	4.0	21.0	46	СОБАКА	N
+502	1174	1827			ЕСТЬ			st-sob_est-kar	st	sob_est	kar	26.0	42.0	46	ЕСТЬ	V
+503	733	1300			СОБАКА			st-sob_est-makh	st	sob_est	makh	19.0	37.0	85	СОБАКА	N
+504	1566	2033			ЕСТЬ			st-sob_est-makh	st	sob_est	makh	46.0	60.0	85	ЕСТЬ	V
+505	566	966				СОБАКА		st-sob_est-mira	st	sob_est	mira	14.0	27.0	74	СОБАКА	N
+506	1333	2000				ЕСТЬ		st-sob_est-mira	st	sob_est	mira	39.0	60.0	74	ЕСТЬ	V
+507	500	1233			СОБАКА			st-sob_est-tanya	st	sob_est	tanya	12.0	35.0	83	СОБАКА	N
+508	1500	2100			ЕСТЬ			st-sob_est-tanya	st	sob_est	tanya	44.0	62.0	83	ЕСТЬ	V
+509	300	2100		br_raise				gen_q-tel_slom-alt	gen_q	tel_slom	alt	6.0	63.0	75		
+510	666	1100			ТЕЛЕВИЗОР	ТЕЛЕВИЗОР		gen_q-tel_slom-alt	gen_q	tel_slom	alt	17.0	31.0	75	ТЕЛЕВИЗОР	N
+511	1100	2100	turn_forward					gen_q-tel_slom-alt	gen_q	tel_slom	alt	31.0	63.0	75		
+512	1300	2133				СЛОМАННЫЙ		gen_q-tel_slom-alt	gen_q	tel_slom	alt	37.0	64.0	75		
+513	1466	2133			СЛОМАННЫЙ			gen_q-tel_slom-alt	gen_q	tel_slom	alt	43.0	64.0	75	СЛОМАННЫЙ	V
+514	435	740			ТЕЛЕВИЗОР	ТЕЛЕВИЗОР		gen_q-tel_slom-kar	gen_q	tel_slom	kar	7.0	15.0	47	ТЕЛЕВИЗОР	N
+515	740	1742		br_raise				gen_q-tel_slom-kar	gen_q	tel_slom	kar	15.0	40.0	47		
+516	827	1699	turn_forward					gen_q-tel_slom-kar	gen_q	tel_slom	kar	17.0	39.0	47		
+517	914	1699			СЛОМАННЫЙ	СЛОМАННЫЙ		gen_q-tel_slom-kar	gen_q	tel_slom	kar	19.0	39.0	47	СЛОМАННЫЙ	V
+518	600	2166		br_raise				gen_q-tel_slom-makh	gen_q	tel_slom	makh	15.0	65.0	80		
+519	800	1400			ТЕЛЕВИЗОР			gen_q-tel_slom-makh	gen_q	tel_slom	makh	22.0	41.0	80	ТЕЛЕВИЗОР	N
+520	933	1400				ТЕЛЕВИЗОР		gen_q-tel_slom-makh	gen_q	tel_slom	makh	26.0	41.0	80		
+521	1500	2033			СЛОМАННЫЙ			gen_q-tel_slom-makh	gen_q	tel_slom	makh	44.0	60.0	80	СЛОМАННЫЙ	V
+522	1533	2033	turn_forward			СЛОМАННЫЙ		gen_q-tel_slom-makh	gen_q	tel_slom	makh	45.0	60.0	80		
+523	133	2000		br_raise				gen_q-tel_slom-mira	gen_q	tel_slom	mira	0.0	60.0	71		
+524	300	933			ТЕЛЕВИЗОР			gen_q-tel_slom-mira	gen_q	tel_slom	mira	6.0	26.0	71		
+525	466	866				ТЕЛЕВИЗОР		gen_q-tel_slom-mira	gen_q	tel_slom	mira	11.0	24.0	71	ТЕЛЕВИЗОР	N
+526	1033	1933			СЛОМАННЫЙ	СЛОМАННЫЙ		gen_q-tel_slom-mira	gen_q	tel_slom	mira	29.0	58.0	71	СЛОМАННЫЙ	V
+527	1133	1566	turn_forward					gen_q-tel_slom-mira	gen_q	tel_slom	mira	32.0	46.0	71		
+528	466	1200			ТЕЛЕВИЗОР			gen_q-tel_slom-tanya	gen_q	tel_slom	tanya	11.0	34.0	70	ТЕЛЕВИЗОР	N
+529	700	1200				ТЕЛЕВИЗОР		gen_q-tel_slom-tanya	gen_q	tel_slom	tanya	19.0	34.0	70		
+530	1266	2033			СЛОМАННЫЙ	СЛОМАННЫЙ		gen_q-tel_slom-tanya	gen_q	tel_slom	tanya	37.0	61.0	70	СЛОМАННЫЙ	V
+531	1333	1766	nod					gen_q-tel_slom-tanya	gen_q	tel_slom	tanya	39.0	52.0	70		
+532	1766	1933	nod					gen_q-tel_slom-tanya	gen_q	tel_slom	tanya	52.0	58.0	70		
+561	433	833				ТЕЛЕВИЗОР		st-tel_slom-alt	st	tel_slom	alt	10.0	23.0	65		
+562	433	866			ТЕЛЕВИЗОР			st-tel_slom-alt	st	tel_slom	alt	10.0	24.0	65	ТЕЛЕВИЗОР	N
+563	1000	1833				СЛОМАННЫЙ		st-tel_slom-alt	st	tel_slom	alt	28.0	55.0	65		
+564	1100	1666			СЛОМАННЫЙ			st-tel_slom-alt	st	tel_slom	alt	31.0	49.0	65	СЛОМАННЫЙ	V
+565	522	1219			ТЕЛЕВИЗОР	ТЕЛЕВИЗОР		st-tel_slom-kar	st	tel_slom	kar	9.0	26.0	67	ТЕЛЕВИЗОР	N
+566	1307	2178				СЛОМАННЫЙ		st-tel_slom-kar	st	tel_slom	kar	28.0	49.0	67		
+567	1350	2178			СЛОМАННЫЙ			st-tel_slom-kar	st	tel_slom	kar	29.0	49.0	67	СЛОМАННЫЙ	V
+568	366	966				ТЕЛЕВИЗОР		st-tel_slom-makh	st	tel_slom	makh	8.0	27.0	72		
+569	366	1000			ТЕЛЕВИЗОР			st-tel_slom-makh	st	tel_slom	makh	8.0	28.0	72	ТЕЛЕВИЗОР	N
+570	1100	1733			СЛОМАННЫЙ			st-tel_slom-makh	st	tel_slom	makh	31.0	51.0	72	СЛОМАННЫЙ	V
+571	1100	1800				СЛОМАННЫЙ		st-tel_slom-makh	st	tel_slom	makh	31.0	53.0	72		
+572	533	1133			ТЕЛЕВИЗОР			st-tel_slom-mira	st	tel_slom	mira	13.0	32.0	72		
+573	566	1066				ТЕЛЕВИЗОР		st-tel_slom-mira	st	tel_slom	mira	14.0	30.0	72	ТЕЛЕВИЗОР	N
+574	1200	2000			СЛОМАННЫЙ			st-tel_slom-mira	st	tel_slom	mira	34.0	60.0	72		
+575	1266	2033				СЛОМАННЫЙ		st-tel_slom-mira	st	tel_slom	mira	36.0	61.0	72	СЛОМАННЫЙ	V
+576	266	1166			ТЕЛЕВИЗОР			st-tel_slom-tanya	st	tel_slom	tanya	5.0	33.0	79	ТЕЛЕВИЗОР	N
+577	366	1133				ТЕЛЕВИЗОР		st-tel_slom-tanya	st	tel_slom	tanya	8.0	32.0	79		
+578	1233	2133				СЛОМАННЫЙ		st-tel_slom-tanya	st	tel_slom	tanya	35.0	64.0	79		
+579	1266	2133			СЛОМАННЫЙ			st-tel_slom-tanya	st	tel_slom	tanya	36.0	64.0	79	СЛОМАННЫЙ	V
+580	200	2200		br_raise				gen_q-uchit_smeh-alt	gen_q	uchit_smeh	alt	3.0	66.0	76		
+581	433	1033			УЧИТЕЛЬ	УЧИТЕЛЬ		gen_q-uchit_smeh-alt	gen_q	uchit_smeh	alt	10.0	29.0	76	УЧИТЕЛЬ	N
+582	1333	1966	nod					gen_q-uchit_smeh-alt	gen_q	uchit_smeh	alt	38.0	59.0	76		
+583	1333	2200			СМЕЯТЬСЯ			gen_q-uchit_smeh-alt	gen_q	uchit_smeh	alt	38.0	66.0	76	СМЕЯТЬСЯ	V
+584	208	780				УЧИТЕЛЬ		gen_q-uchit_smeh-kar	gen_q	uchit_smeh	kar	-0.0	12.0	38		
+585	208	832			УЧИТЕЛЬ			gen_q-uchit_smeh-kar	gen_q	uchit_smeh	kar	-0.0	13.0	38	УЧИТЕЛЬ	N
+586	416	1613		br_low				gen_q-uchit_smeh-kar	gen_q	uchit_smeh	kar	4.0	31.0	38		
+587	1092	1873			СМЕЯТЬСЯ			gen_q-uchit_smeh-kar	gen_q	uchit_smeh	kar	19.0	36.0	38	СМЕЯТЬСЯ	V
+588	500	1166			УЧИТЕЛЬ			gen_q-uchit_smeh-makh	gen_q	uchit_smeh	makh	12.0	34.0	65	УЧИТЕЛЬ	N
+589	666	1233				УЧИТЕЛЬ		gen_q-uchit_smeh-makh	gen_q	uchit_smeh	makh	18.0	36.0	65		
+590	1233	1766		br_raise				gen_q-uchit_smeh-makh	gen_q	uchit_smeh	makh	36.0	53.0	65		
+591	1266	1733			СМЕЯТЬСЯ			gen_q-uchit_smeh-makh	gen_q	uchit_smeh	makh	37.0	52.0	65	СМЕЯТЬСЯ	V
+592	1333	1766	turn_forward					gen_q-uchit_smeh-makh	gen_q	uchit_smeh	makh	39.0	53.0	65		
+593	133	866				УЧИТЕЛЬ		gen_q-uchit_smeh-mira	gen_q	uchit_smeh	mira	0.0	24.0	56	УЧИТЕЛЬ	N
+594	133	933			УЧИТЕЛЬ			gen_q-uchit_smeh-mira	gen_q	uchit_smeh	mira	0.0	26.0	56		
+595	133	1866		br_low				gen_q-uchit_smeh-mira	gen_q	uchit_smeh	mira	0.0	56.0	56		
+596	1033	1666				СМЕЯТЬСЯ		gen_q-uchit_smeh-mira	gen_q	uchit_smeh	mira	30.0	50.0	56	СМЕЯТЬСЯ	V
+597	500	1366			УЧИТЕЛЬ			gen_q-uchit_smeh-tanya	gen_q	uchit_smeh	tanya	12.0	39.0	81	УЧИТЕЛЬ	N
+598	500	1433				УЧИТЕЛЬ		gen_q-uchit_smeh-tanya	gen_q	uchit_smeh	tanya	12.0	42.0	81		
+599	633	1333	nod					gen_q-uchit_smeh-tanya	gen_q	uchit_smeh	tanya	16.0	38.0	81		
+600	1500	1833	turn_forward					gen_q-uchit_smeh-tanya	gen_q	uchit_smeh	tanya	44.0	54.0	81		
+601	1566	2133			СМЕЯТЬСЯ			gen_q-uchit_smeh-tanya	gen_q	uchit_smeh	tanya	46.0	64.0	81	СМЕЯТЬСЯ	V
+629	633	1500			УЧИТЕЛЬ			st-uchit_smeh-tanya	st	uchit_smeh	tanya	16.0	44.0	83	УЧИТЕЛЬ	N
+630	633	1533				УЧИТЕЛЬ		st-uchit_smeh-tanya	st	uchit_smeh	tanya	16.0	45.0	83		
+631	1600	2300			СМЕЯТЬСЯ			st-uchit_smeh-tanya	st	uchit_smeh	tanya	47.0	69.0	83	СМЕЯТЬСЯ	V
+632	500	1100				УЧИТЕЛЬ		st-uchit_smeh-alt	st	uchit_smeh	alt	12.0	31.0	81		
+633	500	1133			УЧИТЕЛЬ			st-uchit_smeh-alt	st	uchit_smeh	alt	12.0	32.0	81	УЧИТЕЛЬ	N
+634	1333	2100			СМЕЯТЬСЯ			st-uchit_smeh-alt	st	uchit_smeh	alt	38.0	63.0	81	СМЕЯТЬСЯ	V
+635	208	1248			УЧИТЕЛЬ	УЧИТЕЛЬ		st-uchit_smeh-kar	st	uchit_smeh	kar	-0.0	23.0	38	УЧИТЕЛЬ	N
+636	1352	1977			СМЕЯТЬСЯ			st-uchit_smeh-kar	st	uchit_smeh	kar	25.0	38.0	38	СМЕЯТЬСЯ	V
+637	733	1400				УЧИТЕЛЬ		st-uchit_smeh-makh	st	uchit_smeh	makh	19.0	40.0	87		
+638	733	1433			УЧИТЕЛЬ			st-uchit_smeh-makh	st	uchit_smeh	makh	19.0	41.0	87	УЧИТЕЛЬ	N
+639	1533	2100			СМЕЯТЬСЯ			st-uchit_smeh-makh	st	uchit_smeh	makh	45.0	62.0	87	СМЕЯТЬСЯ	V
+640	133	900				УЧИТЕЛЬ		st-uchit_smeh-mira	st	uchit_smeh	mira	0.0	25.0	63	УЧИТЕЛЬ	N
+641	133	966			УЧИТЕЛЬ			st-uchit_smeh-mira	st	uchit_smeh	mira	0.0	27.0	63		
+642	1000	1733				СМЕЯТЬСЯ		st-uchit_smeh-mira	st	uchit_smeh	mira	28.0	52.0	63	СМЕЯТЬСЯ	V
+643	176	1697		br_raise				gen_q-dev_upala-gul	gen_q	dev_upala	gul	2.0	48.0	53		
+644	459	848			ДЕВОЧКА			gen_q-dev_upala-gul	gen_q	dev_upala	gul	10.0	22.0	53	ДЕВОЧКА	N
+645	1061	1732			УПАСТЬ			gen_q-dev_upala-gul	gen_q	dev_upala	gul	29.0	49.0	53	УПАСТЬ	V
+646	1131	1591	nod					gen_q-dev_upala-gul	gen_q	dev_upala	gul	31.0	45.0	53		
+647	1167	1732				УПАСТЬ		gen_q-dev_upala-gul	gen_q	dev_upala	gul	32.0	49.0	53		
+648	1304	3021		br_raise				gen_q-dev_upala-shyr	gen_q	dev_upala	shyr	17.0	44.0	51		
+649	1510	1854			ДЕВОЧКА			gen_q-dev_upala-shyr	gen_q	dev_upala	shyr	20.0	25.0	51	ДЕВОЧКА	N
+650	2128	3021			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		gen_q-dev_upala-shyr	gen_q	dev_upala	shyr	30.0	44.0	51	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+651	142	1739		br_raise				gen_q-dev_upala-vik	gen_q	dev_upala	vik	0.0	49.0	54		
+652	213	603			ДЕВОЧКА			gen_q-dev_upala-vik	gen_q	dev_upala	vik	3.0	15.0	54	ДЕВОЧКА	N
+653	745	1278			CLF:ЧЕЛОВЕК:УПАСТЬ			gen_q-dev_upala-vik	gen_q	dev_upala	vik	19.0	35.0	54	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+654	816	1278				ПЛОСКОСТЬ		gen_q-dev_upala-vik	gen_q	dev_upala	vik	21.0	35.0	54		
+655	966	3533		br_raise				gen_q-dev_upala-x	gen_q	dev_upala	x	26.0	106.0	129		
+656	1300	1733			ДЕВОЧКА			gen_q-dev_upala-x	gen_q	dev_upala	x	37.0	50.0	129	ДЕВОЧКА	N
+657	1866	2900			CLF:ЧЕЛОВЕК:УПАСТЬ			gen_q-dev_upala-x	gen_q	dev_upala	x	54.0	86.0	129	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+658	1900	2900				ПЛОСКОСТЬ		gen_q-dev_upala-x	gen_q	dev_upala	x	55.0	86.0	129		
+680	176	530		br_raise				st-dev_upala-gul	st	dev_upala	gul	2.0	12.0	51		
+681	282	813			ДЕВОЧКА			st-dev_upala-gul	st	dev_upala	gul	5.0	21.0	51	ДЕВОЧКА	N
+682	884	1591				УПАСТЬ		st-dev_upala-gul	st	dev_upala	gul	23.0	45.0	51		
+683	990	1591			УПАСТЬ			st-dev_upala-gul	st	dev_upala	gul	27.0	45.0	51	УПАСТЬ	V
+684	618	1098			ДЕВОЧКА			st-dev_upala-shyr	st	dev_upala	shyr	6.0	14.0	32	ДЕВОЧКА	N
+685	686	1304		br_raise				st-dev_upala-shyr	st	dev_upala	shyr	7.0	18.0	32		
+686	1236	1991			CLF:ЧЕЛОВЕК:УПАСТЬ			st-dev_upala-shyr	st	dev_upala	shyr	17.0	29.0	32	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+687	1304	1991				ПЛОСКОСТЬ		st-dev_upala-shyr	st	dev_upala	shyr	18.0	29.0	32		
+688	497	1029			ДЕВОЧКА			st-dev_upala-vik	st	dev_upala	vik	11.0	27.0	61	ДЕВОЧКА	N
+689	1171	1668			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		st-dev_upala-vik	st	dev_upala	vik	32.0	47.0	61	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+690	800	1366			ДЕВОЧКА			st-dev_upala-x	st	dev_upala	x	21.0	39.0	112	ДЕВОЧКА	N
+691	833	1133		br_raise				st-dev_upala-x	st	dev_upala	x	22.0	32.0	112		
+692	1500	2466			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		st-dev_upala-x	st	dev_upala	x	43.0	73.0	112	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+701	241	2049		br_raise				gen_q-dom_post-shyr	gen_q	dom_post	shyr	0.0	34.0	38		
+702	482	1265			ДОМ	ДОМ		gen_q-dom_post-shyr	gen_q	dom_post	shyr	5.0	19.0	38	ДОМ	N
+703	1386	2109			СТРОИТЬ	СТРОИТЬ		gen_q-dom_post-shyr	gen_q	dom_post	shyr	22.0	35.0	38	СТРОИТЬ	V
+737	142	639		br_raise				st-dom_post-gul	st	dom_post	gul	0.0	16.0	50		
+738	284	923			ДОМ	ДОМ		st-dom_post-gul	st	dom_post	gul	5.0	24.0	50	ДОМ	N
+739	1066	1705			СТРОИТЬ	СТРОИТЬ		st-dom_post-gul	st	dom_post	gul	29.0	48.0	50	СТРОИТЬ	V
+740	1101	1563	nod					st-dom_post-gul	st	dom_post	gul	30.0	44.0	50		
+741	482	964			ДОМ	ДОМ		st-dom_post-shyr	st	dom_post	shyr	5.0	14.0	37	ДОМ	N
+742	1024	1807			СТРОИТЬ			st-dom_post-shyr	st	dom_post	shyr	15.0	30.0	37	СТРОИТЬ	V
+743	1084	1868				СТРОИТЬ		st-dom_post-shyr	st	dom_post	shyr	16.0	31.0	37		
+751	133	1766		br_raise				st-dom_post-x	st	dom_post	x	0.0	52.0	85		
+752	433	1266			ДОМ			st-dom_post-x	st	dom_post	x	10.0	36.0	85	ДОМ	N
+753	500	1233				ДОМ		st-dom_post-x	st	dom_post	x	12.0	35.0	85		
+754	1400	2366			СТРОИТЬ			st-dom_post-x	st	dom_post	x	40.0	71.0	85	СТРОИТЬ	V
+755	1466	2266				СТРОИТЬ		st-dom_post-x	st	dom_post	x	42.0	68.0	85		
+756	480	2097		br_raise				gen_q-mal_chit-gul	gen_q	mal_chit	gul	8.0	48.0	58		
+757	655	1267			МАЛЬЧИК			gen_q-mal_chit-gul	gen_q	mal_chit	gul	12.0	27.0	58	МАЛЬЧИК	N
+758	1442	2097				ЧИТАТЬ		gen_q-mal_chit-gul	gen_q	mal_chit	gul	32.0	48.0	58		
+759	1485	2097			ЧИТАТЬ			gen_q-mal_chit-gul	gen_q	mal_chit	gul	33.0	48.0	58	ЧИТАТЬ	V
+760	479	2124		br_raise				gen_q-mal_chit-shyr	gen_q	mal_chit	shyr	4.0	31.0	32		
+761	685	1233			МАЛЬЧИК			gen_q-mal_chit-shyr	gen_q	mal_chit	shyr	7.0	16.0	32	МАЛЬЧИК	N
+762	1302	1987				ЧИТАТЬ		gen_q-mal_chit-shyr	gen_q	mal_chit	shyr	18.0	29.0	32		
+763	1439	1918			ЧИТАТЬ			gen_q-mal_chit-shyr	gen_q	mal_chit	shyr	20.0	28.0	32	ЧИТАТЬ	V
+764	436	2049		br_raise				gen_q-mal_chit-vik	gen_q	mal_chit	vik	7.0	46.0	62		
+765	610	1177			МАЛЬЧИК			gen_q-mal_chit-vik	gen_q	mal_chit	vik	11.0	25.0	62	МАЛЬЧИК	N
+766	1264	1962				ЧИТАТЬ		gen_q-mal_chit-vik	gen_q	mal_chit	vik	27.0	44.0	62		
+767	1308	1962			ЧИТАТЬ			gen_q-mal_chit-vik	gen_q	mal_chit	vik	28.0	44.0	62	ЧИТАТЬ	V
+768	533	2900		br_raise				gen_q-mal_chit-x	gen_q	mal_chit	x	13.0	87.0	109		
+769	800	1333			МАЛЬЧИК			gen_q-mal_chit-x	gen_q	mal_chit	x	21.0	38.0	109	МАЛЬЧИК	N
+770	1466	2766				ЧИТАТЬ		gen_q-mal_chit-x	gen_q	mal_chit	x	42.0	82.0	109		
+771	1600	2766			ЧИТАТЬ			gen_q-mal_chit-x	gen_q	mal_chit	x	46.0	82.0	109	ЧИТАТЬ	V
+793	262	611		br_raise				st-mal_chit-gul	st	mal_chit	gul	3.0	12.0	43		
+794	437	961			МАЛЬЧИК			st-mal_chit-gul	st	mal_chit	gul	7.0	20.0	43	МАЛЬЧИК	N
+795	1092	1660				ЧИТАТЬ		st-mal_chit-gul	st	mal_chit	gul	24.0	38.0	43		
+796	1179	1660			ЧИТАТЬ			st-mal_chit-gul	st	mal_chit	gul	26.0	38.0	43	ЧИТАТЬ	V
+797	753	1302			МАЛЬЧИК			st-mal_chit-shyr	st	mal_chit	shyr	8.0	18.0	33	МАЛЬЧИК	N
+798	822	2124		br_raise				st-mal_chit-shyr	st	mal_chit	shyr	10.0	31.0	33		
+799	1439	2124				ЧИТАТЬ		st-mal_chit-shyr	st	mal_chit	shyr	20.0	31.0	33		
+800	1507	2124			ЧИТАТЬ			st-mal_chit-shyr	st	mal_chit	shyr	21.0	31.0	33	ЧИТАТЬ	V
+801	348	1002			МАЛЬЧИК			st-mal_chit-vik	st	mal_chit	vik	5.0	21.0	53	МАЛЬЧИК	N
+802	1133	1918			ЧИТАТЬ	ЧИТАТЬ		st-mal_chit-vik	st	mal_chit	vik	24.0	44.0	53	ЧИТАТЬ	V
+803	833	1500			МАЛЬЧИК			st-mal_chit-x	st	mal_chit	x	22.0	43.0	109	МАЛЬЧИК	N
+804	1600	2766				ЧИТАТЬ		st-mal_chit-x	st	mal_chit	x	46.0	82.0	109		
+805	1666	2766			ЧИТАТЬ			st-mal_chit-x	st	mal_chit	x	48.0	82.0	109	ЧИТАТЬ	V
+806	787	1269			МАМА			gen_q-mama_ust-gul	gen_q	mama_ust	gul	16.0	28.0	51	МАМА	N
+807	1313	2057				УСТАЛЫЙ	lb	gen_q-mama_ust-gul	gen_q	mama_ust	gul	29.0	47.0	51		
+808	1356	2057			УСТАЛЫЙ			gen_q-mama_ust-gul	gen_q	mama_ust	gul	30.0	47.0	51	УСТАЛЫЙ	V
+809	274	1923		br_raise				gen_q-mama_ust-shyr	gen_q	mama_ust	shyr	0.0	28.0	32		
+810	893	1442			МАМА			gen_q-mama_ust-shyr	gen_q	mama_ust	shyr	11.0	20.0	32	МАМА	N
+811	1511	2129				УСТАЛЫЙ		gen_q-mama_ust-shyr	gen_q	mama_ust	shyr	21.0	31.0	32		
+812	1580	2129			УСТАЛЫЙ			gen_q-mama_ust-shyr	gen_q	mama_ust	shyr	22.0	31.0	32	УСТАЛЫЙ	V
+813	424	2897		br_raise				gen_q-mama_ust-vik	gen_q	mama_ust	vik	9.0	82.0	82		
+814	706	1908			МАМА			gen_q-mama_ust-vik	gen_q	mama_ust	vik	17.0	53.0	82	МАМА	N
+815	1943	2614				УСТАЛЫЙ		gen_q-mama_ust-vik	gen_q	mama_ust	vik	54.0	74.0	82		
+816	1978	2685			УСТАЛЫЙ			gen_q-mama_ust-vik	gen_q	mama_ust	vik	55.0	76.0	82	УСТАЛЫЙ	V
+817	2120	2544	nod					gen_q-mama_ust-vik	gen_q	mama_ust	vik	59.0	72.0	82		
+818	333	2366		br_raise				gen_q-mama_ust-x	gen_q	mama_ust	x	7.0	71.0	88		
+819	533	2433	turn_forward					gen_q-mama_ust-x	gen_q	mama_ust	x	13.0	73.0	88		
+820	666	1300			МАМА			gen_q-mama_ust-x	gen_q	mama_ust	x	17.0	37.0	88	МАМА	N
+821	1400	2333			УСТАЛЫЙ			gen_q-mama_ust-x	gen_q	mama_ust	x	40.0	70.0	88	УСТАЛЫЙ	V
+822	1433	2300				УСТАЛЫЙ		gen_q-mama_ust-x	gen_q	mama_ust	x	41.0	69.0	88		
+845	218	744		br_raise				st-mama_ust-gul	st	mama_ust	gul	2.0	15.0	38		
+846	306	1006			МАМА			st-mama_ust-gul	st	mama_ust	gul	4.0	22.0	38	МАМА	N
+847	1006	1269		br_raise				st-mama_ust-gul	st	mama_ust	gul	22.0	28.0	38		
+848	1094	1663			УСТАЛЫЙ			st-mama_ust-gul	st	mama_ust	gul	24.0	38.0	38	УСТАЛЫЙ	V
+849	1137	1663				УСТАЛЫЙ		st-mama_ust-gul	st	mama_ust	gul	25.0	38.0	38		
+850	687	1236			МАМА			st-mama_ust-shyr	st	mama_ust	shyr	7.0	17.0	29	МАМА	N
+851	1305	1923			УСТАЛЫЙ			st-mama_ust-shyr	st	mama_ust	shyr	18.0	28.0	29	УСТАЛЫЙ	V
+852	1374	1923				УСТАЛЫЙ		st-mama_ust-shyr	st	mama_ust	shyr	19.0	28.0	29		
+853	565	1272			МАМА			st-mama_ust-vik	st	mama_ust	vik	13.0	34.0	77	МАМА	N
+854	1378	1978				УСТАЛЫЙ		st-mama_ust-vik	st	mama_ust	vik	37.0	55.0	77		
+855	1413	1978			УСТАЛЫЙ			st-mama_ust-vik	st	mama_ust	vik	38.0	55.0	77	УСТАЛЫЙ	V
+856	600	2200		br_raise				st-mama_ust-x	st	mama_ust	x	15.0	65.0	99		
+857	766	1600			МАМА			st-mama_ust-x	st	mama_ust	x	20.0	46.0	99	МАМА	N
+858	1733	2433			УСТАЛЫЙ			st-mama_ust-x	st	mama_ust	x	51.0	72.0	99	УСТАЛЫЙ	V
+859	1766	2366				УСТАЛЫЙ		st-mama_ust-x	st	mama_ust	x	52.0	70.0	99		
+860	654	1918		br_raise				gen_q-okno_razb-gul	gen_q	okno_razb	gul	12.0	44.0	54		
+861	697	1264			ОКНО			gen_q-okno_razb-gul	gen_q	okno_razb	gul	13.0	27.0	54	ОКНО	N
+862	1351	1918			РАЗБИТЫЙ	РАЗБИТЫЙ		gen_q-okno_razb-gul	gen_q	okno_razb	gul	30.0	44.0	54	РАЗБИТЫЙ	V
+863	1438	1918	turn_forward					gen_q-okno_razb-gul	gen_q	okno_razb	gul	32.0	44.0	54		
+864	274	1439		br_raise				gen_q-okno_razb-shyr	gen_q	okno_razb	shyr	0.0	20.0	31		
+865	548	959			ОКНО			gen_q-okno_razb-shyr	gen_q	okno_razb	shyr	5.0	12.0	31	ОКНО	N
+866	1096	1576			РАЗБИТЫЙ	РАЗБИТЫЙ		gen_q-okno_razb-shyr	gen_q	okno_razb	shyr	14.0	22.0	31	РАЗБИТЫЙ	V
+875	700	2566		br_raise				gen_q-okno_razb-x	gen_q	okno_razb	x	18.0	76.0	115		
+876	866	1400			ОКНО			gen_q-okno_razb-x	gen_q	okno_razb	x	23.0	40.0	115	ОКНО	N
+877	1500	2333			РАЗБИТЫЙ			gen_q-okno_razb-x	gen_q	okno_razb	x	43.0	69.0	115	РАЗБИТЫЙ	V
+878	1533	2333				РАЗБИТЫЙ		gen_q-okno_razb-x	gen_q	okno_razb	x	44.0	69.0	115		
+898	261	523		br_raise				st-okno_razb-gul	st	okno_razb	gul	3.0	9.0	41		
+899	348	959			ОКНО			st-okno_razb-gul	st	okno_razb	gul	5.0	20.0	41	ОКНО	N
+900	1046	1308		br_raise				st-okno_razb-gul	st	okno_razb	gul	23.0	29.0	41		
+901	1046	1613			РАЗБИТЫЙ			st-okno_razb-gul	st	okno_razb	gul	23.0	37.0	41	РАЗБИТЫЙ	V
+902	1090	1613				РАЗБИТЫЙ		st-okno_razb-gul	st	okno_razb	gul	24.0	37.0	41		
+903	548	1028			ОКНО			st-okno_razb-shyr	st	okno_razb	shyr	5.0	13.0	30	ОКНО	N
+904	1165	1713				РАЗБИТЫЙ		st-okno_razb-shyr	st	okno_razb	shyr	15.0	25.0	30		
+905	1233	1713			РАЗБИТЫЙ			st-okno_razb-shyr	st	okno_razb	shyr	17.0	25.0	30	РАЗБИТЫЙ	V
+906	599	1234			ОКНО			st-okno_razb-vik	st	okno_razb	vik	14.0	33.0	68	ОКНО	N
+907	1340	1939				РАЗБИТЫЙ		st-okno_razb-vik	st	okno_razb	vik	37.0	55.0	68		
+908	1375	1939			РАЗБИТЫЙ			st-okno_razb-vik	st	okno_razb	vik	38.0	55.0	68	РАЗБИТЫЙ	V
+909	533	1700		br_raise				st-okno_razb-x	st	okno_razb	x	13.0	50.0	83		
+910	766	1400			ОКНО			st-okno_razb-x	st	okno_razb	x	20.0	40.0	83	ОКНО	N
+911	1433	2100				РАЗБИТЫЙ		st-okno_razb-x	st	okno_razb	x	41.0	62.0	83		
+912	1566	2100			РАЗБИТЫЙ			st-okno_razb-x	st	okno_razb	x	46.0	62.0	83	РАЗБИТЫЙ	V
+913	216	995		br_raise				gen_q-papa_beg-gul	gen_q	papa_beg	gul	2.0	21.0	48		
+914	216	1125					lf	gen_q-papa_beg-gul	gen_q	papa_beg	gul	2.0	24.0	48		
+915	346	1125			ПАПА			gen_q-papa_beg-gul	gen_q	papa_beg	gul	5.0	24.0	48	ПАПА	N
+916	1255	1991			БЕЖАТЬ			gen_q-papa_beg-gul	gen_q	papa_beg	gul	28.0	46.0	48	БЕЖАТЬ	V
+917	1472	1991				БЕЖАТЬ		gen_q-papa_beg-gul	gen_q	papa_beg	gul	33.0	46.0	48		
+918	964	1507			ПАПА			gen_q-papa_beg-shyr	gen_q	papa_beg	shyr	14.0	24.0	34	ПАПА	N
+919	1567	2050				БЕЖАТЬ		gen_q-papa_beg-shyr	gen_q	papa_beg	shyr	25.0	34.0	34		
+920	1628	2050			БЕЖАТЬ			gen_q-papa_beg-shyr	gen_q	papa_beg	shyr	27.0	34.0	34	БЕЖАТЬ	V
+921	602	2480		br_raise				gen_q-papa_beg-vik	gen_q	papa_beg	vik	14.0	70.0	70		
+922	708	1275			ПАПА			gen_q-papa_beg-vik	gen_q	papa_beg	vik	17.0	34.0	70	ПАПА	N
+923	1381	1913			БЕЖАТЬ	БЕЖАТЬ		gen_q-papa_beg-vik	gen_q	papa_beg	vik	38.0	54.0	70	БЕЖАТЬ	V
+924	1594	2019	nod					gen_q-papa_beg-vik	gen_q	papa_beg	vik	44.0	57.0	70		
+925	300	2600		br_raise				gen_q-papa_beg-x	gen_q	papa_beg	x	6.0	77.0	109		
+926	500	2566	turn_forward					gen_q-papa_beg-x	gen_q	papa_beg	x	12.0	76.0	109		
+927	533	1266			ПАПА			gen_q-papa_beg-x	gen_q	papa_beg	x	13.0	36.0	109	ПАПА	N
+928	1366	2600				БЕЖАТЬ		gen_q-papa_beg-x	gen_q	papa_beg	x	39.0	77.0	109		
+929	1400	2633			БЕЖАТЬ			gen_q-papa_beg-x	gen_q	papa_beg	x	40.0	78.0	109	БЕЖАТЬ	V
+952	173	389		br_raise				st-papa_beg-gul	st	papa_beg	gul	0.0	6.0	49		
+953	303	995			ПАПА			st-papa_beg-gul	st	papa_beg	gul	4.0	21.0	49	ПАПА	N
+954	1039	2078			БЕЖАТЬ			st-papa_beg-gul	st	papa_beg	gul	22.0	48.0	49	БЕЖАТЬ	V
+955	1125	2035				БЕЖАТЬ		st-papa_beg-gul	st	papa_beg	gul	24.0	47.0	49		
+956	542	1206			ПАПА			st-papa_beg-shyr	st	papa_beg	shyr	6.0	18.0	41	ПАПА	N
+957	1326	1869				БЕЖАТЬ		st-papa_beg-shyr	st	papa_beg	shyr	20.0	30.0	41		
+958	1447	1869			БЕЖАТЬ			st-papa_beg-shyr	st	papa_beg	shyr	23.0	30.0	41	БЕЖАТЬ	V
+959	354	1027			ПАПА			st-papa_beg-vik	st	papa_beg	vik	7.0	27.0	65	ПАПА	N
+960	1098	1629				БЕЖАТЬ		st-papa_beg-vik	st	papa_beg	vik	29.0	45.0	65		
+961	1133	1629			БЕЖАТЬ			st-papa_beg-vik	st	papa_beg	vik	30.0	45.0	65	БЕЖАТЬ	V
+962	933	1566			ПАПА			st-papa_beg-x	st	papa_beg	x	25.0	45.0	113	ПАПА	N
+963	1700	3066			БЕЖАТЬ			st-papa_beg-x	st	papa_beg	x	49.0	92.0	113	БЕЖАТЬ	V
+964	1700	3100				БЕЖАТЬ		st-papa_beg-x	st	papa_beg	x	49.0	93.0	113		
+965	437	742		br_raise				gen_q-reb_tanc-gul	gen_q	reb_tanc	gul	7.0	15.0	42		
+966	480	1092			РЕБЕНОК			gen_q-reb_tanc-gul	gen_q	reb_tanc	gul	8.0	24.0	42	РЕБЕНОК	N
+967	742	1179	turn_forward					gen_q-reb_tanc-gul	gen_q	reb_tanc	gul	15.0	26.0	42		
+968	1179	1660			ТАНЦЕВАТЬ	ТАНЦЕВАТЬ		gen_q-reb_tanc-gul	gen_q	reb_tanc	gul	26.0	38.0	42	ТАНЦЕВАТЬ	V
+969	479	1028			РЕБЕНОК			gen_q-reb_tanc-shyr	gen_q	reb_tanc	shyr	4.0	13.0	29	РЕБЕНОК	N
+970	1097	1645			ТАНЦЕВАТЬ			gen_q-reb_tanc-shyr	gen_q	reb_tanc	shyr	14.0	24.0	29	ТАНЦЕВАТЬ	V
+971	1165	1645				ТАНЦЕВАТЬ		gen_q-reb_tanc-shyr	gen_q	reb_tanc	shyr	16.0	24.0	29		
+972	176	1766		br_raise				gen_q-reb_tanc-vik	gen_q	reb_tanc	vik	2.0	50.0	64		
+973	424	777			РЕБЕНОК			gen_q-reb_tanc-vik	gen_q	reb_tanc	vik	9.0	20.0	64	РЕБЕНОК	N
+974	848	1484				ТАНЦЕВАТЬ		gen_q-reb_tanc-vik	gen_q	reb_tanc	vik	22.0	41.0	64		
+975	883	1484			ТАНЦЕВАТЬ			gen_q-reb_tanc-vik	gen_q	reb_tanc	vik	23.0	41.0	64	ТАНЦЕВАТЬ	V
+976	300	2566		br_raise				gen_q-reb_tanc-x	gen_q	reb_tanc	x	6.0	76.0	103		
+977	500	1200			РЕБЕНОК			gen_q-reb_tanc-x	gen_q	reb_tanc	x	12.0	34.0	103	РЕБЕНОК	N
+978	533	2533	turn_forward					gen_q-reb_tanc-x	gen_q	reb_tanc	x	13.0	75.0	103		
+979	1300	2333				ТАНЦЕВАТЬ		gen_q-reb_tanc-x	gen_q	reb_tanc	x	37.0	69.0	103		
+980	1300	2366			ТАНЦЕВАТЬ			gen_q-reb_tanc-x	gen_q	reb_tanc	x	37.0	70.0	103	ТАНЦЕВАТЬ	V
+1010	174	349		br_raise				st-reb_tanc-gul	st	reb_tanc	gul	0.0	5.0	39		
+1011	218	874			РЕБЕНОК			st-reb_tanc-gul	st	reb_tanc	gul	2.0	18.0	39	РЕБЕНОК	N
+1012	917	1529			ТАНЦЕВАТЬ			st-reb_tanc-gul	st	reb_tanc	gul	19.0	35.0	39	ТАНЦЕВАТЬ	V
+1013	917	1573				ТАНЦЕВАТЬ		st-reb_tanc-gul	st	reb_tanc	gul	19.0	36.0	39		
+1014	274	754		br_raise				st-reb_tanc-shyr	st	reb_tanc	shyr	0.0	9.0	27		
+1015	274	891			РЕБЕНОК			st-reb_tanc-shyr	st	reb_tanc	shyr	0.0	11.0	27	РЕБЕНОК	N
+1016	1028	1714			ТАНЦЕВАТЬ			st-reb_tanc-shyr	st	reb_tanc	shyr	13.0	25.0	27	ТАНЦЕВАТЬ	V
+1017	1097	1714				ТАНЦЕВАТЬ		st-reb_tanc-shyr	st	reb_tanc	shyr	15.0	25.0	27		
+1018	247	812			РЕБЕНОК			st-reb_tanc-vik	st	reb_tanc	vik	4.0	21.0	56	РЕБЕНОК	N
+1019	812	1625				ТАНЦЕВАТЬ		st-reb_tanc-vik	st	reb_tanc	vik	21.0	46.0	56		
+1020	989	1625			ТАНЦЕВАТЬ			st-reb_tanc-vik	st	reb_tanc	vik	26.0	46.0	56	ТАНЦЕВАТЬ	V
+1021	666	1533			РЕБЕНОК			st-reb_tanc-x	st	reb_tanc	x	17.0	44.0	106	РЕБЕНОК	N
+1022	1633	2833				ТАНЦЕВАТЬ		st-reb_tanc-x	st	reb_tanc	x	47.0	85.0	106		
+1023	1733	2900			ТАНЦЕВАТЬ			st-reb_tanc-x	st	reb_tanc	x	50.0	87.0	106	ТАНЦЕВАТЬ	V
+1024	424	671		br_raise				gen_q-sob_est-gul	gen_q	sob_est	gul	9.0	17.0	57		
+1025	495	1096			СОБАКА			gen_q-sob_est-gul	gen_q	sob_est	gul	11.0	30.0	57	СОБАКА	N
+1026	1202	1732		br_raise				gen_q-sob_est-gul	gen_q	sob_est	gul	33.0	49.0	57		
+1027	1273	1768			ЕСТЬ			gen_q-sob_est-gul	gen_q	sob_est	gul	35.0	50.0	57	ЕСТЬ	V
+1028	273	753			СОБАКА			gen_q-sob_est-shyr	gen_q	sob_est	shyr	0.0	9.0	26	СОБАКА	N
+1029	821	1163	nod					gen_q-sob_est-shyr	gen_q	sob_est	shyr	10.0	16.0	26		
+1030	821	1506			ЕСТЬ			gen_q-sob_est-shyr	gen_q	sob_est	shyr	10.0	22.0	26	ЕСТЬ	V
+1031	958	1506				ЕСТЬ		gen_q-sob_est-shyr	gen_q	sob_est	shyr	12.0	22.0	26		
+1038	200	2133		br_raise				gen_q-sob_est-x	gen_q	sob_est	x	3.0	64.0	74		
+1039	300	1000			СОБАКА			gen_q-sob_est-x	gen_q	sob_est	x	6.0	28.0	74	СОБАКА	N
+1040	400	2100	turn_forward					gen_q-sob_est-x	gen_q	sob_est	x	9.0	63.0	74		
+1041	1033	2000			ЕСТЬ			gen_q-sob_est-x	gen_q	sob_est	x	29.0	60.0	74	ЕСТЬ	V
+1062	141	601		br_raise				st-sob_est-gul	st	sob_est	gul	0.0	15.0	50		
+1063	282	848			СОБАКА			st-sob_est-gul	st	sob_est	gul	5.0	22.0	50	СОБАКА	N
+1064	990	1520			ЕСТЬ			st-sob_est-gul	st	sob_est	gul	27.0	43.0	50	ЕСТЬ	V
+1065	479	958			СОБАКА			st-sob_est-shyr	st	sob_est	shyr	4.0	12.0	28	СОБАКА	N
+1066	1027	1574			ЕСТЬ			st-sob_est-shyr	st	sob_est	shyr	13.0	23.0	28	ЕСТЬ	V
+1067	1095	1574				ЕСТЬ		st-sob_est-shyr	st	sob_est	shyr	14.0	23.0	28		
+1068	177	1739		br_raise				st-sob_est-vik	st	sob_est	vik	2.0	49.0	56		
+1069	319	887			СОБАКА			st-sob_est-vik	st	sob_est	vik	6.0	23.0	56	СОБАКА	N
+1070	1065	1597			ЕСТЬ			st-sob_est-vik	st	sob_est	vik	28.0	45.0	56	ЕСТЬ	V
+1071	133	433			СОБАКА			st-sob_est-x	st	sob_est	x	0.0	10.0	61	СОБАКА	N
+1072	133	733		br_raise				st-sob_est-x	st	sob_est	x	0.0	20.0	61		
+1073	633	1366			ЕСТЬ			st-sob_est-x	st	sob_est	x	17.0	40.0	61	ЕСТЬ	V
+1084	544	2383		br_raise				gen_q-tel_slom-shyr	gen_q	tel_slom	shyr	5.0	35.0	35		
+1085	885	1498			ТЕЛЕВИЗОР			gen_q-tel_slom-shyr	gen_q	tel_slom	shyr	11.0	21.0	35	ТЕЛЕВИЗОР	N
+1086	1021	1430				ТЕЛЕВИЗОР		gen_q-tel_slom-shyr	gen_q	tel_slom	shyr	13.0	20.0	35		
+1087	1498	2179			СЛОМАННЫЙ	СЛОМАННЫЙ		gen_q-tel_slom-shyr	gen_q	tel_slom	shyr	21.0	32.0	35	СЛОМАННЫЙ	V
+1098	700	2533		br_raise				gen_q-tel_slom-x	gen_q	tel_slom	x	18.0	75.0	118		
+1099	800	2500	turn_forward					gen_q-tel_slom-x	gen_q	tel_slom	x	21.0	74.0	118		
+1100	1033	1533				ТЕЛЕВИЗОР		gen_q-tel_slom-x	gen_q	tel_slom	x	28.0	44.0	118		
+1101	1033	1566			ТЕЛЕВИЗОР			gen_q-tel_slom-x	gen_q	tel_slom	x	28.0	45.0	118	ТЕЛЕВИЗОР	N
+1102	1633	2333				СЛОМАННЫЙ		gen_q-tel_slom-x	gen_q	tel_slom	x	47.0	69.0	118		
+1103	1733	2333			СЛОМАННЫЙ			gen_q-tel_slom-x	gen_q	tel_slom	x	50.0	69.0	118	СЛОМАННЫЙ	V
+1131	141	388		br_raise				st-tel_slom-gul	st	tel_slom	gul	0.0	8.0	44		
+1132	141	776			ТЕЛЕВИЗОР	ТЕЛЕВИЗОР		st-tel_slom-gul	st	tel_slom	gul	0.0	20.0	44	ТЕЛЕВИЗОР	N
+1133	847	1447			СЛОМАННЫЙ			st-tel_slom-gul	st	tel_slom	gul	22.0	41.0	44	СЛОМАННЫЙ	V
+1134	882	1412				СЛОМАННЫЙ		st-tel_slom-gul	st	tel_slom	gul	24.0	40.0	44		
+1135	681	1225			ТЕЛЕВИЗОР			st-tel_slom-shyr	st	tel_slom	shyr	7.0	16.0	38	ТЕЛЕВИЗОР	N
+1136	885	1293				ТЕЛЕВИЗОР		st-tel_slom-shyr	st	tel_slom	shyr	11.0	17.0	38		
+1137	1362	1974			СЛОМАННЫЙ			st-tel_slom-shyr	st	tel_slom	shyr	18.0	28.0	38	СЛОМАННЫЙ	V
+1138	1430	1906				СЛОМАННЫЙ		st-tel_slom-shyr	st	tel_slom	shyr	20.0	27.0	38		
+1139	352	2184		br_raise				st-tel_slom-vik	st	tel_slom	vik	7.0	62.0	63		
+1140	493	1057				ТЕЛЕВИЗОР		st-tel_slom-vik	st	tel_slom	vik	11.0	28.0	63		
+1141	493	1092			ТЕЛЕВИЗОР			st-tel_slom-vik	st	tel_slom	vik	11.0	29.0	63	ТЕЛЕВИЗОР	N
+1142	1127	1726				СЛОМАННЫЙ		st-tel_slom-vik	st	tel_slom	vik	30.0	49.0	63		
+1143	1233	1726			СЛОМАННЫЙ			st-tel_slom-vik	st	tel_slom	vik	34.0	49.0	63	СЛОМАННЫЙ	V
+1144	266	2300		br_raise				st-tel_slom-x	st	tel_slom	x	5.0	68.0	99		
+1145	733	1433			ТЕЛЕВИЗОР			st-tel_slom-x	st	tel_slom	x	19.0	41.0	99	ТЕЛЕВИЗОР	N
+1146	766	1400				ТЕЛЕВИЗОР		st-tel_slom-x	st	tel_slom	x	20.0	40.0	99		
+1147	1466	2066				СЛОМАННЫЙ		st-tel_slom-x	st	tel_slom	x	42.0	61.0	99		
+1148	1566	2133			СЛОМАННЫЙ			st-tel_slom-x	st	tel_slom	x	45.0	63.0	99	СЛОМАННЫЙ	V
+1149	481	1049		br_raise				gen_q-uchit_smeh-gul	gen_q	uchit_smeh	gul	8.0	22.0	55		
+1150	656	1180			УЧИТЕЛЬ			gen_q-uchit_smeh-gul	gen_q	uchit_smeh	gul	12.0	25.0	55	УЧИТЕЛЬ	N
+1151	656	1224				УЧИТЕЛЬ		gen_q-uchit_smeh-gul	gen_q	uchit_smeh	gul	12.0	26.0	55		
+1152	1224	1749		br_raise				gen_q-uchit_smeh-gul	gen_q	uchit_smeh	gul	26.0	39.0	55		
+1153	1268	1793			СМЕЯТЬСЯ			gen_q-uchit_smeh-gul	gen_q	uchit_smeh	gul	27.0	40.0	55	СМЕЯТЬСЯ	V
+1154	1355	1836	turn_forward					gen_q-uchit_smeh-gul	gen_q	uchit_smeh	gul	30.0	41.0	55		
+1160	212	2084		br_raise				gen_q-uchit_smeh-vik	gen_q	uchit_smeh	vik	3.0	59.0	62		
+1161	424	1130			УЧИТЕЛЬ	УЧИТЕЛЬ		gen_q-uchit_smeh-vik	gen_q	uchit_smeh	vik	9.0	30.0	62	УЧИТЕЛЬ	N
+1162	1201	1696			СМЕЯТЬСЯ			gen_q-uchit_smeh-vik	gen_q	uchit_smeh	vik	33.0	48.0	62	СМЕЯТЬСЯ	V
+1163	600	3166		br_raise				gen_q-uchit_smeh-x	gen_q	uchit_smeh	x	15.0	95.0	98		
+1164	800	1366			УЧИТЕЛЬ			gen_q-uchit_smeh-x	gen_q	uchit_smeh	x	21.0	39.0	98	УЧИТЕЛЬ	N
+1165	800	1400				УЧИТЕЛЬ		gen_q-uchit_smeh-x	gen_q	uchit_smeh	x	21.0	40.0	98		
+1166	800	2966	turn_forward					gen_q-uchit_smeh-x	gen_q	uchit_smeh	x	21.0	89.0	98		
+1167	1533	2700			СМЕЯТЬСЯ			gen_q-uchit_smeh-x	gen_q	uchit_smeh	x	44.0	81.0	98	СМЕЯТЬСЯ	V
+1190	174	393		br_raise				st-uchit_smeh-gul	st	uchit_smeh	gul	-0.0	6.0	45		
+1191	306	1005			УЧИТЕЛЬ			st-uchit_smeh-gul	st	uchit_smeh	gul	4.0	21.0	45	УЧИТЕЛЬ	N
+1192	349	962				УЧИТЕЛЬ		st-uchit_smeh-gul	st	uchit_smeh	gul	5.0	20.0	45		
+1193	962	1224		br_raise				st-uchit_smeh-gul	st	uchit_smeh	gul	20.0	27.0	45		
+1194	1093	1661			СМЕЯТЬСЯ			st-uchit_smeh-gul	st	uchit_smeh	gul	24.0	38.0	45	СМЕЯТЬСЯ	V
+1199	424	706		br_raise				st-uchit_smeh-vik	st	uchit_smeh	vik	9.0	17.0	75		
+1200	600	1484			УЧИТЕЛЬ	УЧИТЕЛЬ		st-uchit_smeh-vik	st	uchit_smeh	vik	14.0	41.0	75	УЧИТЕЛЬ	N
+1201	1590	2190			СМЕЯТЬСЯ			st-uchit_smeh-vik	st	uchit_smeh	vik	44.0	62.0	75	СМЕЯТЬСЯ	V
+1202	733	1898		br_raise				st-uchit_smeh-x	st	uchit_smeh	x	19.0	56.0	89		
+1203	900	1766			УЧИТЕЛЬ			st-uchit_smeh-x	st	uchit_smeh	x	25.0	52.0	89	УЧИТЕЛЬ	N
+1204	933	1766				УЧИТЕЛЬ		st-uchit_smeh-x	st	uchit_smeh	x	26.0	52.0	89		
+1205	1900	2966			СМЕЯТЬСЯ			st-uchit_smeh-x	st	uchit_smeh	x	56.0	89.0	89	СМЕЯТЬСЯ	V
+25	133	666	chin_up					part_q-dev_upala-alt	part_q	dev_upala	alt	0.0	17.0	74		
+26	233	666			ГДЕ			part_q-dev_upala-alt	part_q	dev_upala	alt	4.0	17.0	74	ГДЕ	Q
+27	900	1200		br_raise				part_q-dev_upala-alt	part_q	dev_upala	alt	25.0	34.0	74		
+28	933	1200			ДЕВОЧКА			part_q-dev_upala-alt	part_q	dev_upala	alt	26.0	34.0	74	ДЕВОЧКА	N
+29	1666	2300			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		part_q-dev_upala-alt	part_q	dev_upala	alt	49.0	69.0	74	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+30	460	921			ГДЕ			part_q-dev_upala-kar	part_q	dev_upala	kar	10.0	24.0	54	ГДЕ	Q
+31	1062	1240			ДЕВОЧКА			part_q-dev_upala-kar	part_q	dev_upala	kar	29.0	34.0	54	ДЕВОЧКА	N
+32	1169	1736				ПЛОСКОСТЬ		part_q-dev_upala-kar	part_q	dev_upala	kar	32.0	49.0	54		
+33	1346	1736			CLF:ЧЕЛОВЕК:УПАСТЬ			part_q-dev_upala-kar	part_q	dev_upala	kar	37.0	49.0	54	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+34	433	1066		br_raise				part_q-dev_upala-makh	part_q	dev_upala	makh	10.0	30.0	90		
+35	500	966	chin_up					part_q-dev_upala-makh	part_q	dev_upala	makh	12.0	27.0	90		
+36	533	1033			ГДЕ			part_q-dev_upala-makh	part_q	dev_upala	makh	13.0	29.0	90	ГДЕ	Q
+37	1133	1433			ДЕВОЧКА			part_q-dev_upala-makh	part_q	dev_upala	makh	32.0	41.0	90	ДЕВОЧКА	N
+38	1300	2333	turn_forward					part_q-dev_upala-makh	part_q	dev_upala	makh	37.0	70.0	90		
+39	1633	2300			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		part_q-dev_upala-makh	part_q	dev_upala	makh	48.0	69.0	90	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+40	133	933		br_raise			lf	part_q-dev_upala-mira	part_q	dev_upala	mira	0.0	26.0	64		
+41	133	1033				ГДЕ		part_q-dev_upala-mira	part_q	dev_upala	mira	0.0	29.0	64	ГДЕ	Q
+42	1233	1600				ДЕВОЧКА		part_q-dev_upala-mira	part_q	dev_upala	mira	36.0	47.0	64	ДЕВОЧКА	N
+43	1866	2133				CLF:ЧЕЛОВЕК:УПАСТЬ		part_q-dev_upala-mira	part_q	dev_upala	mira	56.0	64.0	64	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+44	1933	2133			ПЛОСКОСТЬ			part_q-dev_upala-mira	part_q	dev_upala	mira	58.0	64.0	64		
+45	400	833	chin_up					part_q-dev_upala-tanya	part_q	dev_upala	tanya	9.0	23.0	85		
+46	533	1166			ГДЕ			part_q-dev_upala-tanya	part_q	dev_upala	tanya	13.0	33.0	85	ГДЕ	Q
+47	1333	1633			ДЕВОЧКА			part_q-dev_upala-tanya	part_q	dev_upala	tanya	38.0	48.0	85	ДЕВОЧКА	N
+48	1600	2566				ПЛОСКОСТЬ		part_q-dev_upala-tanya	part_q	dev_upala	tanya	47.0	77.0	85		
+49	1866	2566			CLF:ЧЕЛОВЕК:УПАСТЬ			part_q-dev_upala-tanya	part_q	dev_upala	tanya	55.0	77.0	85	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+86	500	1000	chin_up					part_q-dom_post-alt	part_q	dom_post	alt	12.0	28.0	93		
+87	966	1366			КОГДА			part_q-dom_post-alt	part_q	dom_post	alt	27.0	39.0	93	КОГДА	Q
+88	1466	1733			ДОМ			part_q-dom_post-alt	part_q	dom_post	alt	42.0	51.0	93	ДОМ	N
+89	1500	1733				ДОМ		part_q-dom_post-alt	part_q	dom_post	alt	43.0	51.0	93		
+90	2000	2700			СТРОИТЬ			part_q-dom_post-alt	part_q	dom_post	alt	59.0	81.0	93	СТРОИТЬ	V
+91	2033	2700				СТРОИТЬ		part_q-dom_post-alt	part_q	dom_post	alt	60.0	81.0	93		
+92	436	1179			КОГДА			part_q-dom_post-kar	part_q	dom_post	kar	7.0	25.0	63	КОГДА	Q
+93	1266	1746				ДОМ		part_q-dom_post-kar	part_q	dom_post	kar	27.0	39.0	63		
+94	1310	1746			ДОМ			part_q-dom_post-kar	part_q	dom_post	kar	28.0	39.0	63	ДОМ	N
+95	1921	2707			СТРОИТЬ	СТРОИТЬ		part_q-dom_post-kar	part_q	dom_post	kar	43.0	62.0	63	СТРОИТЬ	V
+96	200	800		br_raise				part_q-dom_post-makh	part_q	dom_post	makh	3.0	21.0	87		
+97	200	833			КОГДА			part_q-dom_post-makh	part_q	dom_post	makh	3.0	23.0	87	КОГДА	Q
+98	933	1333			ДОМ			part_q-dom_post-makh	part_q	dom_post	makh	26.0	38.0	87	ДОМ	N
+99	966	1333				ДОМ		part_q-dom_post-makh	part_q	dom_post	makh	27.0	38.0	87		
+100	1400	1866		br_raise				part_q-dom_post-makh	part_q	dom_post	makh	40.0	55.0	87		
+101	1566	2333			СТРОИТЬ	СТРОИТЬ		part_q-dom_post-makh	part_q	dom_post	makh	46.0	70.0	87	СТРОИТЬ	V
+102	133	1466		br_raise				part_q-dom_post-mira	part_q	dom_post	mira	0.0	42.0	90		
+103	533	1000			КОГДА			part_q-dom_post-mira	part_q	dom_post	mira	13.0	28.0	90	КОГДА	Q
+104	1133	1500				ДОМ		part_q-dom_post-mira	part_q	dom_post	mira	32.0	43.0	90		
+105	1233	1500			ДОМ			part_q-dom_post-mira	part_q	dom_post	mira	35.0	43.0	90	ДОМ	N
+106	1766	2766			СТРОИТЬ			part_q-dom_post-mira	part_q	dom_post	mira	52.0	83.0	90	СТРОИТЬ	V
+107	1800	2766				СТРОИТЬ		part_q-dom_post-mira	part_q	dom_post	mira	53.0	83.0	90		
+108	300	800	chin_up					part_q-dom_post-tanya	part_q	dom_post	tanya	6.0	21.0	100		
+109	800	1133			КОГДА			part_q-dom_post-tanya	part_q	dom_post	tanya	21.0	32.0	100	КОГДА	Q
+110	1266	1500			ДОМ			part_q-dom_post-tanya	part_q	dom_post	tanya	36.0	43.0	100	ДОМ	N
+111	1300	1533				ДОМ		part_q-dom_post-tanya	part_q	dom_post	tanya	37.0	44.0	100		
+112	1666	2933			СТРОИТЬ			part_q-dom_post-tanya	part_q	dom_post	tanya	48.0	88.0	100	СТРОИТЬ	V
+113	1766	2933				СТРОИТЬ		part_q-dom_post-tanya	part_q	dom_post	tanya	52.0	88.0	100		
+154	500	900			ЧТО			part_q-mal_chit-alt	part_q	mal_chit	alt	12.0	25.0	96	ЧТО	Q
+155	933	1766		br_raise				part_q-mal_chit-alt	part_q	mal_chit	alt	26.0	52.0	96		
+156	1233	1666			МАЛЬЧИК			part_q-mal_chit-alt	part_q	mal_chit	alt	35.0	48.0	96	МАЛЬЧИК	N
+157	1766	2766		br_low				part_q-mal_chit-alt	part_q	mal_chit	alt	52.0	83.0	96		
+158	2066	2766			ЧИТАТЬ			part_q-mal_chit-alt	part_q	mal_chit	alt	61.0	83.0	96	ЧИТАТЬ	V
+159	2100	2766				ЧИТАТЬ		part_q-mal_chit-alt	part_q	mal_chit	alt	62.0	83.0	96		
+160	460	920			ЧТО			part_q-mal_chit-kar	part_q	mal_chit	kar	6.0	16.0	58	ЧТО	Q
+161	1125	1586			МАЛЬЧИК			part_q-mal_chit-kar	part_q	mal_chit	kar	20.0	30.0	58	МАЛЬЧИК	N
+162	1944	2762			ЧИТАТЬ	ЧИТАТЬ		part_q-mal_chit-kar	part_q	mal_chit	kar	37.0	54.0	58	ЧИТАТЬ	V
+163	866	1700		br_raise				part_q-mal_chit-makh	part_q	mal_chit	makh	23.0	49.0	107		
+164	1033	1600			ЧТО			part_q-mal_chit-makh	part_q	mal_chit	makh	29.0	46.0	107	ЧТО	Q
+165	1633	2033			МАЛЬЧИК			part_q-mal_chit-makh	part_q	mal_chit	makh	47.0	60.0	107	МАЛЬЧИК	N
+166	2200	2900				ЧИТАТЬ		part_q-mal_chit-makh	part_q	mal_chit	makh	65.0	87.0	107		
+167	2233	2900			ЧИТАТЬ			part_q-mal_chit-makh	part_q	mal_chit	makh	66.0	87.0	107	ЧИТАТЬ	V
+168	133	866		br_raise				part_q-mal_chit-mira	part_q	mal_chit	mira	0.0	24.0	68		
+169	266	766				ЧТО		part_q-mal_chit-mira	part_q	mal_chit	mira	5.0	21.0	68	ЧТО	Q
+170	1033	1400				МАЛЬЧИК		part_q-mal_chit-mira	part_q	mal_chit	mira	29.0	41.0	68	МАЛЬЧИК	N
+171	1700	2266				ЧИТАТЬ		part_q-mal_chit-mira	part_q	mal_chit	mira	50.0	68.0	68	ЧИТАТЬ	V
+172	1900	2266			ЧИТАТЬ			part_q-mal_chit-mira	part_q	mal_chit	mira	57.0	68.0	68		
+173	133	600	chin_up					part_q-mal_chit-tanya	part_q	mal_chit	tanya	0.0	15.0	91		
+174	133	1066		br_raise				part_q-mal_chit-tanya	part_q	mal_chit	tanya	0.0	30.0	91		
+175	366	1033			ЧТО			part_q-mal_chit-tanya	part_q	mal_chit	tanya	8.0	29.0	91	ЧТО	Q
+176	1166	1566			МАЛЬЧИК			part_q-mal_chit-tanya	part_q	mal_chit	tanya	33.0	45.0	91	МАЛЬЧИК	N
+177	1700	2733				ЧИТАТЬ		part_q-mal_chit-tanya	part_q	mal_chit	tanya	50.0	82.0	91		
+178	1866	2733			ЧИТАТЬ			part_q-mal_chit-tanya	part_q	mal_chit	tanya	55.0	82.0	91	ЧИТАТЬ	V
+219	175	1008			КОГДА			part_q-mama_ust-kar	part_q	mama_ust	kar	0.0	21.0	52	КОГДА	Q
+220	175	2191	chin_up					part_q-mama_ust-kar	part_q	mama_ust	kar	0.0	50.0	52		
+221	263	2191		br_low				part_q-mama_ust-kar	part_q	mama_ust	kar	3.0	50.0	52		
+222	1183	1534			МАМА			part_q-mama_ust-kar	part_q	mama_ust	kar	25.0	34.0	52	МАМА	N
+223	1884	2235			УСТАЛЫЙ	УСТАЛЫЙ		part_q-mama_ust-kar	part_q	mama_ust	kar	43.0	51.0	52	УСТАЛЫЙ	V
+224	200	833		br_raise				part_q-mama_ust-alt	part_q	mama_ust	alt	3.0	22.0	105		
+225	533	1200			КОГДА			part_q-mama_ust-alt	part_q	mama_ust	alt	13.0	34.0	105	КОГДА	Q
+226	1100	1966		br_raise				part_q-mama_ust-alt	part_q	mama_ust	alt	31.0	58.0	105		
+227	1533	1966			МАМА			part_q-mama_ust-alt	part_q	mama_ust	alt	44.0	58.0	105	МАМА	N
+228	2500	3166			УСТАЛЫЙ	УСТАЛЫЙ		part_q-mama_ust-alt	part_q	mama_ust	alt	74.0	95.0	105	УСТАЛЫЙ	V
+229	466	1033		br_raise				part_q-mama_ust-makh	part_q	mama_ust	makh	11.0	29.0	89		
+230	633	1000			КОГДА			part_q-mama_ust-makh	part_q	mama_ust	makh	16.0	28.0	89	КОГДА	Q
+231	1200	1633			МАМА			part_q-mama_ust-makh	part_q	mama_ust	makh	34.0	48.0	89	МАМА	N
+232	1600	2466		br_raise				part_q-mama_ust-makh	part_q	mama_ust	makh	47.0	74.0	89		
+233	1833	2433			УСТАЛЫЙ			part_q-mama_ust-makh	part_q	mama_ust	makh	54.0	73.0	89	УСТАЛЫЙ	V
+234	2000	2433				УСТАЛЫЙ		part_q-mama_ust-makh	part_q	mama_ust	makh	59.0	73.0	89		
+235	133	2366					lf	part_q-mama_ust-mira	part_q	mama_ust	mira	0.0	71.0	77		
+236	266	1066			КОГДА			part_q-mama_ust-mira	part_q	mama_ust	mira	5.0	30.0	77	КОГДА	Q
+237	1233	1700			МАМА			part_q-mama_ust-mira	part_q	mama_ust	mira	35.0	50.0	77	МАМА	N
+238	1966	2333			УСТАЛЫЙ			part_q-mama_ust-mira	part_q	mama_ust	mira	58.0	70.0	77	УСТАЛЫЙ	V
+239	2066	2333				УСТАЛЫЙ		part_q-mama_ust-mira	part_q	mama_ust	mira	62.0	70.0	77		
+240	200	633	chin_up					part_q-mama_ust-tanya	part_q	mama_ust	tanya	3.0	16.0	87		
+241	200	1066		br_raise				part_q-mama_ust-tanya	part_q	mama_ust	tanya	3.0	30.0	87		
+242	433	1133			КОГДА			part_q-mama_ust-tanya	part_q	mama_ust	tanya	10.0	32.0	87	КОГДА	Q
+243	1300	1900			МАМА			part_q-mama_ust-tanya	part_q	mama_ust	tanya	37.0	56.0	87	МАМА	N
+244	1866	2500				УСТАЛЫЙ		part_q-mama_ust-tanya	part_q	mama_ust	tanya	55.0	75.0	87		
+245	2033	2500			УСТАЛЫЙ			part_q-mama_ust-tanya	part_q	mama_ust	tanya	60.0	75.0	87	УСТАЛЫЙ	V
+286	600	1300			ПОЧЕМУ			part_q-okno_razb-alt	part_q	okno_razb	alt	15.0	37.0	105	ПОЧЕМУ	Q
+287	1566	2233			ОКНО			part_q-okno_razb-alt	part_q	okno_razb	alt	45.0	66.0	105	ОКНО	N
+288	2466	3166			РАЗБИТЫЙ			part_q-okno_razb-alt	part_q	okno_razb	alt	73.0	95.0	105	РАЗБИТЫЙ	V
+289	2566	3166				РАЗБИТЫЙ		part_q-okno_razb-alt	part_q	okno_razb	alt	76.0	95.0	105		
+290	207	935			ПОЧЕМУ			part_q-okno_razb-kar	part_q	okno_razb	kar	0.0	16.0	45	ПОЧЕМУ	Q
+291	1039	1559		br_low				part_q-okno_razb-kar	part_q	okno_razb	kar	18.0	29.0	45		
+292	1039	1610			ОКНО			part_q-okno_razb-kar	part_q	okno_razb	kar	18.0	30.0	45	ОКНО	N
+293	1818	2286				РАЗБИТЫЙ		part_q-okno_razb-kar	part_q	okno_razb	kar	35.0	44.0	45		
+294	1922	2286			РАЗБИТЫЙ			part_q-okno_razb-kar	part_q	okno_razb	kar	37.0	44.0	45	РАЗБИТЫЙ	V
+295	166	1600		br_raise				part_q-okno_razb-makh	part_q	okno_razb	makh	2.0	47.0	83		
+296	366	866			ПОЧЕМУ			part_q-okno_razb-makh	part_q	okno_razb	makh	8.0	24.0	83	ПОЧЕМУ	Q
+297	1066	1500			ОКНО			part_q-okno_razb-makh	part_q	okno_razb	makh	30.0	44.0	83	ОКНО	N
+298	1666	2300				РАЗБИТЫЙ		part_q-okno_razb-makh	part_q	okno_razb	makh	49.0	69.0	83		
+299	1766	2500	turn_forward					part_q-okno_razb-makh	part_q	okno_razb	makh	52.0	75.0	83		
+300	1866	2300			РАЗБИТЫЙ			part_q-okno_razb-makh	part_q	okno_razb	makh	55.0	69.0	83	РАЗБИТЫЙ	V
+301	133	1500		br_raise				part_q-okno_razb-mira	part_q	okno_razb	mira	0.0	44.0	83		
+302	366	966				ПОЧЕМУ		part_q-okno_razb-mira	part_q	okno_razb	mira	8.0	27.0	83	ПОЧЕМУ	Q
+303	1200	1633				ОКНО		part_q-okno_razb-mira	part_q	okno_razb	mira	34.0	48.0	83	ОКНО	N
+304	1766	2500			РАЗБИТЫЙ			part_q-okno_razb-mira	part_q	okno_razb	mira	52.0	75.0	83		
+305	1933	2500				РАЗБИТЫЙ		part_q-okno_razb-mira	part_q	okno_razb	mira	57.0	75.0	83	РАЗБИТЫЙ	V
+306	366	1166			ПОЧЕМУ			part_q-okno_razb-tanya	part_q	okno_razb	tanya	8.0	33.0	84	ПОЧЕМУ	Q
+307	500	1566		br_raise				part_q-okno_razb-tanya	part_q	okno_razb	tanya	12.0	46.0	84		
+308	1333	1700			ОКНО			part_q-okno_razb-tanya	part_q	okno_razb	tanya	38.0	50.0	84	ОКНО	N
+309	1766	2433				РАЗБИТЫЙ		part_q-okno_razb-tanya	part_q	okno_razb	tanya	52.0	73.0	84		
+310	1866	2433			РАЗБИТЫЙ			part_q-okno_razb-tanya	part_q	okno_razb	tanya	55.0	73.0	84	РАЗБИТЫЙ	V
+348	133	633	chin_up					part_q-papa_beg-tanya	part_q	papa_beg	tanya	0.0	16.0	82		
+349	200	1000		br_raise				part_q-papa_beg-tanya	part_q	papa_beg	tanya	3.0	28.0	82		
+350	300	933			КУДА			part_q-papa_beg-tanya	part_q	papa_beg	tanya	6.0	26.0	82	КУДА	Q
+351	1133	1633			ПАПА			part_q-papa_beg-tanya	part_q	papa_beg	tanya	32.0	48.0	82	ПАПА	N
+352	1733	2666				БЕЖАТЬ		part_q-papa_beg-tanya	part_q	papa_beg	tanya	51.0	80.0	82		
+353	1766	2666			БЕЖАТЬ			part_q-papa_beg-tanya	part_q	papa_beg	tanya	52.0	80.0	82	БЕЖАТЬ	V
+354	266	1500	chin_up					part_q-papa_beg-alt	part_q	papa_beg	alt	5.0	43.0	110		
+355	600	1566			КУДА			part_q-papa_beg-alt	part_q	papa_beg	alt	15.0	45.0	110	КУДА	Q
+356	1600	2401		br_raise				part_q-papa_beg-alt	part_q	papa_beg	alt	46.0	71.0	110		
+357	1800	2300			ПАПА			part_q-papa_beg-alt	part_q	papa_beg	alt	52.0	68.0	110	ПАПА	N
+358	2401	3166		br_raise				part_q-papa_beg-alt	part_q	papa_beg	alt	71.0	95.0	110		
+359	2500	3100				БЕЖАТЬ		part_q-papa_beg-alt	part_q	papa_beg	alt	74.0	93.0	110		
+360	2533	3100			БЕЖАТЬ			part_q-papa_beg-alt	part_q	papa_beg	alt	75.0	93.0	110	БЕЖАТЬ	V
+361	166	1100		br_raise				part_q-papa_beg-makh	part_q	papa_beg	makh	2.0	31.0	98		
+362	333	1066			КУДА			part_q-papa_beg-makh	part_q	papa_beg	makh	7.0	30.0	98	КУДА	Q
+363	1233	1633			ПАПА			part_q-papa_beg-makh	part_q	papa_beg	makh	35.0	47.0	98	ПАПА	N
+364	1766	2666				БЕЖАТЬ		part_q-papa_beg-makh	part_q	papa_beg	makh	52.0	80.0	98		
+365	1866	2400	turn_forward					part_q-papa_beg-makh	part_q	papa_beg	makh	55.0	71.0	98		
+366	1866	2666			БЕЖАТЬ			part_q-papa_beg-makh	part_q	papa_beg	makh	55.0	80.0	98	БЕЖАТЬ	V
+367	133	700	chin_up					part_q-papa_beg-mira	part_q	papa_beg	mira	0.0	18.0	85		
+368	466	800				КУДА		part_q-papa_beg-mira	part_q	papa_beg	mira	11.0	21.0	85	КУДА	Q
+369	966	1566				ПАПА		part_q-papa_beg-mira	part_q	papa_beg	mira	27.0	46.0	85	ПАПА	N
+370	1833	2433			БЕЖАТЬ	БЕЖАТЬ		part_q-papa_beg-mira	part_q	papa_beg	mira	54.0	73.0	85	БЕЖАТЬ	V
+371	174	829			КУДА			part_q-papa_beg-kar	part_q	papa_beg	kar	0.0	17.0	47	КУДА	Q
+372	218	1048	chin_up					part_q-papa_beg-kar	part_q	papa_beg	kar	2.0	22.0	47		
+373	218	1397		br_raise				part_q-papa_beg-kar	part_q	papa_beg	kar	2.0	31.0	47		
+374	1091	1484			ПАПА			part_q-papa_beg-kar	part_q	papa_beg	kar	23.0	33.0	47	ПАПА	N
+375	1615	2052			БЕЖАТЬ			part_q-papa_beg-kar	part_q	papa_beg	kar	37.0	47.0	47	БЕЖАТЬ	V
+376	1703	2052				БЕЖАТЬ		part_q-papa_beg-kar	part_q	papa_beg	kar	39.0	47.0	47		
+417	133	833	chin_up					part_q-reb_tanc-alt	part_q	reb_tanc	alt	0.0	22.0	94		
+418	333	700			ГДЕ			part_q-reb_tanc-alt	part_q	reb_tanc	alt	7.0	18.0	94	ГДЕ	Q
+419	833	1600		br_raise				part_q-reb_tanc-alt	part_q	reb_tanc	alt	22.0	46.0	94		
+420	1100	1566			РЕБЕНОК			part_q-reb_tanc-alt	part_q	reb_tanc	alt	31.0	45.0	94	РЕБЕНОК	N
+421	2000	2633				ТАНЦЕВАТЬ		part_q-reb_tanc-alt	part_q	reb_tanc	alt	59.0	79.0	94		
+422	2166	2633			ТАНЦЕВАТЬ			part_q-reb_tanc-alt	part_q	reb_tanc	alt	64.0	79.0	94	ТАНЦЕВАТЬ	V
+423	467	987			ГДЕ			part_q-reb_tanc-kar	part_q	reb_tanc	kar	6.0	17.0	47	ГДЕ	Q
+424	1143	1507			РЕБЕНОК			part_q-reb_tanc-kar	part_q	reb_tanc	kar	20.0	28.0	47	РЕБЕНОК	N
+425	1662	2234				ТАНЦЕВАТЬ		part_q-reb_tanc-kar	part_q	reb_tanc	kar	31.0	43.0	47		
+426	1714	2234			ТАНЦЕВАТЬ			part_q-reb_tanc-kar	part_q	reb_tanc	kar	32.0	43.0	47	ТАНЦЕВАТЬ	V
+427	166	900			ГДЕ			part_q-reb_tanc-makh	part_q	reb_tanc	makh	2.0	25.0	80	ГДЕ	Q
+428	200	866		br_raise				part_q-reb_tanc-makh	part_q	reb_tanc	makh	3.0	24.0	80		
+429	1233	1500			РЕБЕНОК			part_q-reb_tanc-makh	part_q	reb_tanc	makh	35.0	44.0	80	РЕБЕНОК	N
+430	1833	2366			ТАНЦЕВАТЬ			part_q-reb_tanc-makh	part_q	reb_tanc	makh	54.0	71.0	80	ТАНЦЕВАТЬ	V
+431	1900	2366				ТАНЦЕВАТЬ		part_q-reb_tanc-makh	part_q	reb_tanc	makh	56.0	71.0	80		
+432	233	733				ГДЕ		part_q-reb_tanc-mira	part_q	reb_tanc	mira	4.0	19.0	81	ГДЕ	Q
+433	966	1566				РЕБЕНОК		part_q-reb_tanc-mira	part_q	reb_tanc	mira	27.0	46.0	81	РЕБЕНОК	N
+434	1733	2300			ТАНЦЕВАТЬ			part_q-reb_tanc-mira	part_q	reb_tanc	mira	51.0	69.0	81		
+435	1766	2300				ТАНЦЕВАТЬ		part_q-reb_tanc-mira	part_q	reb_tanc	mira	52.0	69.0	81	ТАНЦЕВАТЬ	V
+436	166	733	chin_up					part_q-reb_tanc-tanya	part_q	reb_tanc	tanya	2.0	19.0	76		
+437	300	766			ГДЕ			part_q-reb_tanc-tanya	part_q	reb_tanc	tanya	6.0	21.0	76	ГДЕ	Q
+438	933	1333			РЕБЕНОК			part_q-reb_tanc-tanya	part_q	reb_tanc	tanya	26.0	38.0	76	РЕБЕНОК	N
+439	1366	2200				ТАНЦЕВАТЬ		part_q-reb_tanc-tanya	part_q	reb_tanc	tanya	40.0	66.0	76		
+440	1500	2200			ТАНЦЕВАТЬ			part_q-reb_tanc-tanya	part_q	reb_tanc	tanya	44.0	66.0	76	ТАНЦЕВАТЬ	V
+477	266	1233	chin_up					part_q-sob_est-alt	part_q	sob_est	alt	5.0	35.0	90		
+478	566	1133			ЧТО			part_q-sob_est-alt	part_q	sob_est	alt	14.0	32.0	90	ЧТО	Q
+479	1133	2000		br_raise				part_q-sob_est-alt	part_q	sob_est	alt	32.0	59.0	90		
+480	1400	1966			СОБАКА			part_q-sob_est-alt	part_q	sob_est	alt	40.0	58.0	90	СОБАКА	N
+481	2000	2666			ЕСТЬ			part_q-sob_est-alt	part_q	sob_est	alt	59.0	80.0	90	ЕСТЬ	V
+482	174	1087		br_raise				part_q-sob_est-kar	part_q	sob_est	kar	0.0	23.0	65		
+483	174	1174			ЧТО			part_q-sob_est-kar	part_q	sob_est	kar	0.0	25.0	65	ЧТО	Q
+484	1479	2001				СОБАКА		part_q-sob_est-kar	part_q	sob_est	kar	32.0	45.0	65		
+485	1566	1870			СОБАКА			part_q-sob_est-kar	part_q	sob_est	kar	35.0	42.0	65	СОБАКА	N
+486	2088	2566			ЕСТЬ			part_q-sob_est-kar	part_q	sob_est	kar	47.0	59.0	65	ЕСТЬ	V
+487	533	1066			ЧТО			part_q-sob_est-makh	part_q	sob_est	makh	13.0	30.0	81	ЧТО	Q
+488	1233	1633			СОБАКА			part_q-sob_est-makh	part_q	sob_est	makh	35.0	48.0	81	СОБАКА	N
+489	1666	2266		br_raise				part_q-sob_est-makh	part_q	sob_est	makh	49.0	68.0	81		
+490	1800	2333			ЕСТЬ			part_q-sob_est-makh	part_q	sob_est	makh	53.0	70.0	81	ЕСТЬ	V
+491	300	933					lf	part_q-sob_est-mira	part_q	sob_est	mira	6.0	26.0	75		
+492	400	866				ЧТО		part_q-sob_est-mira	part_q	sob_est	mira	9.0	24.0	75	ЧТО	Q
+493	1400	1766				СОБАКА		part_q-sob_est-mira	part_q	sob_est	mira	41.0	52.0	75	СОБАКА	N
+494	2033	2500				ЕСТЬ		part_q-sob_est-mira	part_q	sob_est	mira	61.0	75.0	75	ЕСТЬ	V
+495	433	900	chin_up					part_q-sob_est-tanya	part_q	sob_est	tanya	10.0	25.0	72		
+496	566	1133			ЧТО			part_q-sob_est-tanya	part_q	sob_est	tanya	14.0	32.0	72	ЧТО	Q
+497	1300	1500			СОБАКА			part_q-sob_est-tanya	part_q	sob_est	tanya	38.0	44.0	72	СОБАКА	N
+498	1733	2166			ЕСТЬ			part_q-sob_est-tanya	part_q	sob_est	tanya	51.0	65.0	72	ЕСТЬ	V
+533	133	2566		br_raise				part_q-tel_slom-alt	part_q	tel_slom	alt	0.0	77.0	97		
+534	200	866			ПОЧЕМУ			part_q-tel_slom-alt	part_q	tel_slom	alt	3.0	23.0	97	ПОЧЕМУ	Q
+535	1100	1533			ТЕЛЕВИЗОР			part_q-tel_slom-alt	part_q	tel_slom	alt	31.0	44.0	97	ТЕЛЕВИЗОР	N
+536	1133	1433				ТЕЛЕВИЗОР		part_q-tel_slom-alt	part_q	tel_slom	alt	32.0	41.0	97		
+537	1700	2500				СЛОМАННЫЙ		part_q-tel_slom-alt	part_q	tel_slom	alt	50.0	75.0	97		
+538	1733	2500			СЛОМАННЫЙ			part_q-tel_slom-alt	part_q	tel_slom	alt	51.0	75.0	97	СЛОМАННЫЙ	V
+539	261	2134		br_raise				part_q-tel_slom-kar	part_q	tel_slom	kar	3.0	49.0	55		
+540	348	914			ПОЧЕМУ			part_q-tel_slom-kar	part_q	tel_slom	kar	5.0	19.0	55	ПОЧЕМУ	Q
+541	1219	1394			ТЕЛЕВИЗОР			part_q-tel_slom-kar	part_q	tel_slom	kar	26.0	31.0	55	ТЕЛЕВИЗОР	N
+542	1263	1394				ТЕЛЕВИЗОР		part_q-tel_slom-kar	part_q	tel_slom	kar	27.0	31.0	55		
+543	1481	1960				СЛОМАННЫЙ		part_q-tel_slom-kar	part_q	tel_slom	kar	33.0	45.0	55		
+544	1524	1960			СЛОМАННЫЙ			part_q-tel_slom-kar	part_q	tel_slom	kar	34.0	45.0	55	СЛОМАННЫЙ	V
+545	300	2266		br_raise				part_q-tel_slom-makh	part_q	tel_slom	makh	6.0	68.0	81		
+546	466	933			ПОЧЕМУ			part_q-tel_slom-makh	part_q	tel_slom	makh	11.0	26.0	81	ПОЧЕМУ	Q
+547	1333	1600			ТЕЛЕВИЗОР			part_q-tel_slom-makh	part_q	tel_slom	makh	38.0	47.0	81	ТЕЛЕВИЗОР	N
+548	1366	1600				ТЕЛЕВИЗОР		part_q-tel_slom-makh	part_q	tel_slom	makh	39.0	47.0	81		
+549	1766	2066			СЛОМАННЫЙ	СЛОМАННЫЙ		part_q-tel_slom-makh	part_q	tel_slom	makh	52.0	61.0	81	СЛОМАННЫЙ	V
+550	300	1200				ПОЧЕМУ		part_q-tel_slom-mira	part_q	tel_slom	mira	6.0	34.0	84	ПОЧЕМУ	Q
+551	433	1233		br_raise				part_q-tel_slom-mira	part_q	tel_slom	mira	10.0	35.0	84		
+552	1533	2033			ТЕЛЕВИЗОР	ТЕЛЕВИЗОР		part_q-tel_slom-mira	part_q	tel_slom	mira	45.0	60.0	84	ТЕЛЕВИЗОР	N
+553	2200	2633				СЛОМАННЫЙ		part_q-tel_slom-mira	part_q	tel_slom	mira	66.0	79.0	84	СЛОМАННЫЙ	V
+554	2233	2633			СЛОМАННЫЙ			part_q-tel_slom-mira	part_q	tel_slom	mira	67.0	79.0	84		
+555	466	1033			ПОЧЕМУ			part_q-tel_slom-tanya	part_q	tel_slom	tanya	11.0	29.0	82	ПОЧЕМУ	Q
+556	1166	1600			ТЕЛЕВИЗОР			part_q-tel_slom-tanya	part_q	tel_slom	tanya	33.0	47.0	82	ТЕЛЕВИЗОР	N
+557	1300	1600				ТЕЛЕВИЗОР		part_q-tel_slom-tanya	part_q	tel_slom	tanya	37.0	47.0	82		
+558	1666	2133		br_raise				part_q-tel_slom-tanya	part_q	tel_slom	tanya	49.0	64.0	82		
+559	1700	2466			СЛОМАННЫЙ			part_q-tel_slom-tanya	part_q	tel_slom	tanya	50.0	74.0	82	СЛОМАННЫЙ	V
+560	1733	2466				СЛОМАННЫЙ		part_q-tel_slom-tanya	part_q	tel_slom	tanya	51.0	74.0	82		
+602	166	800	chin_up					part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	2.0	21.0	99		
+603	300	1033		br_raise				part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	6.0	29.0	99		
+604	533	1200			ПОЧЕМУ			part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	13.0	34.0	99	ПОЧЕМУ	Q
+605	1366	2000			УЧИТЕЛЬ			part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	39.0	59.0	99	УЧИТЕЛЬ	N
+606	1417	1866		br_raise				part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	41.0	55.0	99		
+607	1500	1866				УЧИТЕЛЬ		part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	43.0	55.0	99		
+608	2100	2900			СМЕЯТЬСЯ			part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	62.0	87.0	99	СМЕЯТЬСЯ	V
+609	2233	2933	turn_forward					part_q-uchit_smeh-alt	part_q	uchit_smeh	alt	66.0	88.0	99		
+610	208	780			ПОЧЕМУ			part_q-uchit_smeh-kar	part_q	uchit_smeh	kar	-0.0	12.0	47	ПОЧЕМУ	Q
+611	988	1456				УЧИТЕЛЬ		part_q-uchit_smeh-kar	part_q	uchit_smeh	kar	16.0	26.0	47		
+612	988	1509			УЧИТЕЛЬ			part_q-uchit_smeh-kar	part_q	uchit_smeh	kar	16.0	28.0	47	УЧИТЕЛЬ	N
+613	1613	2289			СМЕЯТЬСЯ			part_q-uchit_smeh-kar	part_q	uchit_smeh	kar	30.0	44.0	47	СМЕЯТЬСЯ	V
+614	200	733		br_raise				part_q-uchit_smeh-makh	part_q	uchit_smeh	makh	3.0	19.0	86		
+615	233	866			ПОЧЕМУ			part_q-uchit_smeh-makh	part_q	uchit_smeh	makh	4.0	24.0	86	ПОЧЕМУ	Q
+616	1166	1566				УЧИТЕЛЬ		part_q-uchit_smeh-makh	part_q	uchit_smeh	makh	33.0	46.0	86		
+617	1166	1600			УЧИТЕЛЬ			part_q-uchit_smeh-makh	part_q	uchit_smeh	makh	33.0	47.0	86	УЧИТЕЛЬ	N
+618	1700	2366			СМЕЯТЬСЯ			part_q-uchit_smeh-makh	part_q	uchit_smeh	makh	50.0	71.0	86	СМЕЯТЬСЯ	V
+619	133	466	chin_up					part_q-uchit_smeh-mira	part_q	uchit_smeh	mira	0.0	11.0	69		
+620	133	700				ПОЧЕМУ		part_q-uchit_smeh-mira	part_q	uchit_smeh	mira	0.0	19.0	69	ПОЧЕМУ	Q
+621	933	1533			УЧИТЕЛЬ			part_q-uchit_smeh-mira	part_q	uchit_smeh	mira	26.0	45.0	69		
+622	1000	1466				УЧИТЕЛЬ		part_q-uchit_smeh-mira	part_q	uchit_smeh	mira	28.0	43.0	69	УЧИТЕЛЬ	N
+623	1666	2300				СМЕЯТЬСЯ		part_q-uchit_smeh-mira	part_q	uchit_smeh	mira	49.0	70.0	69	СМЕЯТЬСЯ	V
+624	433	900	chin_up					part_q-uchit_smeh-tanya	part_q	uchit_smeh	tanya	10.0	25.0	91		
+625	466	1233			ПОЧЕМУ			part_q-uchit_smeh-tanya	part_q	uchit_smeh	tanya	11.0	35.0	91	ПОЧЕМУ	Q
+626	1366	2133				УЧИТЕЛЬ		part_q-uchit_smeh-tanya	part_q	uchit_smeh	tanya	39.0	63.0	91		
+627	1466	2100			УЧИТЕЛЬ			part_q-uchit_smeh-tanya	part_q	uchit_smeh	tanya	42.0	62.0	91	УЧИТЕЛЬ	N
+628	2233	2800			СМЕЯТЬСЯ			part_q-uchit_smeh-tanya	part_q	uchit_smeh	tanya	66.0	84.0	91	СМЕЯТЬСЯ	V
+659	176	1768		br_raise				part_q-dev_upala-gul	part_q	dev_upala	gul	2.0	50.0	59		
+660	247	530	chin_up					part_q-dev_upala-gul	part_q	dev_upala	gul	4.0	12.0	59		
+661	459	884			ГДЕ	ГДЕ		part_q-dev_upala-gul	part_q	dev_upala	gul	10.0	23.0	59	ГДЕ	Q
+662	1025	1343			ДЕВОЧКА			part_q-dev_upala-gul	part_q	dev_upala	gul	27.0	37.0	59	ДЕВОЧКА	N
+663	1379	1874			УПАСТЬ			part_q-dev_upala-gul	part_q	dev_upala	gul	38.0	53.0	59	УПАСТЬ	V
+664	1485	1874				УПАСТЬ		part_q-dev_upala-gul	part_q	dev_upala	gul	41.0	53.0	59		
+665	1556	1874	turn_forward					part_q-dev_upala-gul	part_q	dev_upala	gul	43.0	53.0	59		
+666	923	2449		br_raise				part_q-dev_upala-vik	part_q	dev_upala	vik	23.0	68.0	102		
+667	958	1313				ГДЕ		part_q-dev_upala-vik	part_q	dev_upala	vik	24.0	35.0	102		
+668	958	1384			ГДЕ			part_q-dev_upala-vik	part_q	dev_upala	vik	24.0	37.0	102	ГДЕ	Q
+669	1526	1881			ДЕВОЧКА			part_q-dev_upala-vik	part_q	dev_upala	vik	41.0	51.0	102	ДЕВОЧКА	N
+670	2059	2485			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		part_q-dev_upala-vik	part_q	dev_upala	vik	57.0	69.0	102	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+671	200	2566		br_raise				part_q-dev_upala-x	part_q	dev_upala	x	3.0	76.0	109		
+672	300	2666	chin_up					part_q-dev_upala-x	part_q	dev_upala	x	6.0	79.0	109		
+673	433	866			ГДЕ	ГДЕ		part_q-dev_upala-x	part_q	dev_upala	x	10.0	23.0	109	ГДЕ	Q
+674	1000	1333			ДЕВОЧКА			part_q-dev_upala-x	part_q	dev_upala	x	27.0	38.0	109	ДЕВОЧКА	N
+675	1466	2433			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		part_q-dev_upala-x	part_q	dev_upala	x	42.0	72.0	109	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+676	412	2403		br_raise				part_q-dev_upala-shyr	part_q	dev_upala	shyr	3.0	35.0	35		
+677	618	1098			ГДЕ			part_q-dev_upala-shyr	part_q	dev_upala	shyr	6.0	14.0	35	ГДЕ	Q
+678	1236	1442			ДЕВОЧКА			part_q-dev_upala-shyr	part_q	dev_upala	shyr	16.0	20.0	35	ДЕВОЧКА	N
+679	1648	2197			CLF:ЧЕЛОВЕК:УПАСТЬ	ПЛОСКОСТЬ		part_q-dev_upala-shyr	part_q	dev_upala	shyr	23.0	32.0	35	CLF:ЧЕЛОВЕК:УПАСТЬ	V
+714	213	710	chin_up					part_q-dom_post-gul	part_q	dom_post	gul	3.0	18.0	66		
+715	248	568		br_raise				part_q-dom_post-gul	part_q	dom_post	gul	4.0	13.0	66		
+716	355	1030			КОГДА			part_q-dom_post-gul	part_q	dom_post	gul	7.0	27.0	66	КОГДА	Q
+717	1066	1599				ДОМ		part_q-dom_post-gul	part_q	dom_post	gul	28.0	44.0	66		
+718	1172	1599			ДОМ			part_q-dom_post-gul	part_q	dom_post	gul	31.0	44.0	66	ДОМ	N
+719	1670	2167			СТРОИТЬ	СТРОИТЬ		part_q-dom_post-gul	part_q	dom_post	gul	46.0	61.0	66	СТРОИТЬ	V
+720	723	1386			КОГДА			part_q-dom_post-shyr	part_q	dom_post	shyr	9.0	21.0	45	КОГДА	Q
+721	1446	1687				ДОМ		part_q-dom_post-shyr	part_q	dom_post	shyr	22.0	27.0	45		
+722	1446	1747			ДОМ			part_q-dom_post-shyr	part_q	dom_post	shyr	22.0	28.0	45	ДОМ	N
+723	1807	2591			СТРОИТЬ	СТРОИТЬ		part_q-dom_post-shyr	part_q	dom_post	shyr	29.0	43.0	45	СТРОИТЬ	V
+724	654	1178		br_raise				part_q-dom_post-vik	part_q	dom_post	vik	12.0	25.0	58		
+725	741	1178			КОГДА			part_q-dom_post-vik	part_q	dom_post	vik	14.0	25.0	58	КОГДА	Q
+726	1265	1570				ДОМ		part_q-dom_post-vik	part_q	dom_post	vik	27.0	35.0	58		
+727	1309	1570			ДОМ			part_q-dom_post-vik	part_q	dom_post	vik	28.0	35.0	58	ДОМ	N
+728	1701	2225				СТРОИТЬ		part_q-dom_post-vik	part_q	dom_post	vik	38.0	51.0	58		
+729	1701	2268			СТРОИТЬ			part_q-dom_post-vik	part_q	dom_post	vik	38.0	52.0	58	СТРОИТЬ	V
+730	133	1733		br_raise				part_q-dom_post-x	part_q	dom_post	x	0.0	50.0	100		
+731	200	933			КОГДА			part_q-dom_post-x	part_q	dom_post	x	3.0	25.0	100	КОГДА	Q
+732	766	3000	chin_up					part_q-dom_post-x	part_q	dom_post	x	20.0	90.0	100		
+733	1066	1333				ДОМ		part_q-dom_post-x	part_q	dom_post	x	30.0	38.0	100		
+734	1133	1333			ДОМ			part_q-dom_post-x	part_q	dom_post	x	32.0	38.0	100	ДОМ	N
+735	1466	2700			СТРОИТЬ			part_q-dom_post-x	part_q	dom_post	x	42.0	81.0	100	СТРОИТЬ	V
+736	1500	2700				СТРОИТЬ		part_q-dom_post-x	part_q	dom_post	x	43.0	81.0	100		
+772	262	874		br_raise				part_q-mal_chit-gul	part_q	mal_chit	gul	3.0	18.0	65		
+773	480	1136			ЧТО			part_q-mal_chit-gul	part_q	mal_chit	gul	8.0	24.0	65	ЧТО	Q
+774	1179	1529		br_raise				part_q-mal_chit-gul	part_q	mal_chit	gul	25.0	34.0	65		
+775	1223	1704			МАЛЬЧИК			part_q-mal_chit-gul	part_q	mal_chit	gul	26.0	38.0	65	МАЛЬЧИК	N
+776	1879	2578				ЧИТАТЬ		part_q-mal_chit-gul	part_q	mal_chit	gul	42.0	59.0	65		
+777	1966	2578			ЧИТАТЬ			part_q-mal_chit-gul	part_q	mal_chit	gul	44.0	59.0	65	ЧИТАТЬ	V
+778	616	2398		br_raise				part_q-mal_chit-shyr	part_q	mal_chit	shyr	6.0	35.0	41		
+779	822	1370			ЧТО			part_q-mal_chit-shyr	part_q	mal_chit	shyr	9.0	18.0	41	ЧТО	Q
+780	1439	1918			МАЛЬЧИК			part_q-mal_chit-shyr	part_q	mal_chit	shyr	19.0	27.0	41	МАЛЬЧИК	N
+781	1987	2535			ЧИТАТЬ	ЧИТАТЬ		part_q-mal_chit-shyr	part_q	mal_chit	shyr	28.0	37.0	41	ЧИТАТЬ	V
+782	523	828		br_raise				part_q-mal_chit-vik	part_q	mal_chit	vik	9.0	16.0	65		
+783	784	1220			ЧТО			part_q-mal_chit-vik	part_q	mal_chit	vik	15.0	26.0	65	ЧТО	Q
+784	828	2528		br_low				part_q-mal_chit-vik	part_q	mal_chit	vik	16.0	58.0	65		
+785	1264	1656			МАЛЬЧИК			part_q-mal_chit-vik	part_q	mal_chit	vik	27.0	37.0	65	МАЛЬЧИК	N
+786	1656	2441				ЧИТАТЬ		part_q-mal_chit-vik	part_q	mal_chit	vik	37.0	56.0	65		
+787	1787	2441			ЧИТАТЬ			part_q-mal_chit-vik	part_q	mal_chit	vik	40.0	56.0	65	ЧИТАТЬ	V
+788	133	2500		br_raise				part_q-mal_chit-x	part_q	mal_chit	x	0.0	74.0	126		
+789	333	966			ЧТО			part_q-mal_chit-x	part_q	mal_chit	x	7.0	26.0	126	ЧТО	Q
+790	1100	1666			МАЛЬЧИК			part_q-mal_chit-x	part_q	mal_chit	x	30.0	48.0	126	МАЛЬЧИК	N
+791	1833	3000				ЧИТАТЬ		part_q-mal_chit-x	part_q	mal_chit	x	53.0	89.0	126		
+792	1866	3033			ЧИТАТЬ			part_q-mal_chit-x	part_q	mal_chit	x	54.0	90.0	126	ЧИТАТЬ	V
+823	306	1094					lf	part_q-mama_ust-gul	part_q	mama_ust	gul	4.0	23.0	56		
+824	350	875		br_raise				part_q-mama_ust-gul	part_q	mama_ust	gul	5.0	18.0	56		
+825	481	875	chin_up					part_q-mama_ust-gul	part_q	mama_ust	gul	8.0	18.0	56		
+826	568	1094			КОГДА			part_q-mama_ust-gul	part_q	mama_ust	gul	10.0	23.0	56	КОГДА	Q
+827	1269	1663			МАМА			part_q-mama_ust-gul	part_q	mama_ust	gul	27.0	37.0	56	МАМА	N
+828	1750	2188			УСТАЛЫЙ	УСТАЛЫЙ		part_q-mama_ust-gul	part_q	mama_ust	gul	39.0	50.0	56	УСТАЛЫЙ	V
+829	549	1099			КОГДА			part_q-mama_ust-shyr	part_q	mama_ust	shyr	5.0	14.0	32	КОГДА	Q
+830	1099	2198		br_raise				part_q-mama_ust-shyr	part_q	mama_ust	shyr	14.0	32.0	32		
+831	1236	1580			МАМА			part_q-mama_ust-shyr	part_q	mama_ust	shyr	16.0	22.0	32	МАМА	N
+832	1648	2198				УСТАЛЫЙ		part_q-mama_ust-shyr	part_q	mama_ust	shyr	23.0	32.0	32		
+833	1717	2198			УСТАЛЫЙ			part_q-mama_ust-shyr	part_q	mama_ust	shyr	24.0	32.0	32	УСТАЛЫЙ	V
+834	742	2226			КОГДА			part_q-mama_ust-vik	part_q	mama_ust	vik	18.0	62.0	106	КОГДА	Q
+835	1625	1908		br_raise				part_q-mama_ust-vik	part_q	mama_ust	vik	44.0	52.0	106		
+836	2014	2261		br_low				part_q-mama_ust-vik	part_q	mama_ust	vik	56.0	63.0	106		
+837	2367	2826			МАМА			part_q-mama_ust-vik	part_q	mama_ust	vik	66.0	79.0	106	МАМА	N
+838	2932	3462			УСТАЛЫЙ	УСТАЛЫЙ		part_q-mama_ust-vik	part_q	mama_ust	vik	83.0	98.0	106	УСТАЛЫЙ	V
+839	200	1066		br_raise				part_q-mama_ust-x	part_q	mama_ust	x	3.0	30.0	82		
+840	333	966			КОГДА			part_q-mama_ust-x	part_q	mama_ust	x	7.0	27.0	82	КОГДА	Q
+841	500	966	chin_up					part_q-mama_ust-x	part_q	mama_ust	x	12.0	27.0	82		
+842	1066	1533			МАМА			part_q-mama_ust-x	part_q	mama_ust	x	30.0	45.0	82	МАМА	N
+843	1633	2333			УСТАЛЫЙ			part_q-mama_ust-x	part_q	mama_ust	x	48.0	70.0	82	УСТАЛЫЙ	V
+844	1733	2333				УСТАЛЫЙ		part_q-mama_ust-x	part_q	mama_ust	x	51.0	70.0	82		
+879	305	654		br_raise				part_q-okno_razb-gul	part_q	okno_razb	gul	4.0	12.0	60		
+880	523	1046			ПОЧЕМУ			part_q-okno_razb-gul	part_q	okno_razb	gul	9.0	22.0	60	ПОЧЕМУ	Q
+881	1090	1831				???		part_q-okno_razb-gul	part_q	okno_razb	gul	23.0	41.0	60		
+882	1177	1831			ОКНО			part_q-okno_razb-gul	part_q	okno_razb	gul	25.0	41.0	60	ОКНО	N
+883	1831	2354				РАЗБИТЫЙ		part_q-okno_razb-gul	part_q	okno_razb	gul	41.0	54.0	60		
+884	1962	2398			РАЗБИТЫЙ			part_q-okno_razb-gul	part_q	okno_razb	gul	44.0	55.0	60	РАЗБИТЫЙ	V
+885	548	1165			ПОЧЕМУ			part_q-okno_razb-shyr	part_q	okno_razb	shyr	5.0	15.0	36	ПОЧЕМУ	Q
+886	1233	1644			ОКНО			part_q-okno_razb-shyr	part_q	okno_razb	shyr	16.0	23.0	36	ОКНО	N
+887	1850	2467			РАЗБИТЫЙ	РАЗБИТЫЙ		part_q-okno_razb-shyr	part_q	okno_razb	shyr	26.0	36.0	36	РАЗБИТЫЙ	V
+888	493	1728	chin_up					part_q-okno_razb-vik	part_q	okno_razb	vik	11.0	48.0	84		
+889	564	1022			ПОЧЕМУ			part_q-okno_razb-vik	part_q	okno_razb	vik	13.0	27.0	84	ПОЧЕМУ	Q
+890	1128	1375			ОКНО			part_q-okno_razb-vik	part_q	okno_razb	vik	30.0	37.0	84	ОКНО	N
+891	1481	2045				РАЗБИТЫЙ		part_q-okno_razb-vik	part_q	okno_razb	vik	40.0	57.0	84		
+892	1551	2045			РАЗБИТЫЙ			part_q-okno_razb-vik	part_q	okno_razb	vik	42.0	57.0	84	РАЗБИТЫЙ	V
+893	800	1866		br_raise				part_q-okno_razb-x	part_q	okno_razb	x	21.0	54.0	124		
+894	1000	3300	chin_up					part_q-okno_razb-x	part_q	okno_razb	x	27.0	99.0	124		
+895	1100	1600			ПОЧЕМУ			part_q-okno_razb-x	part_q	okno_razb	x	30.0	46.0	124	ПОЧЕМУ	Q
+896	1666	2200			ОКНО			part_q-okno_razb-x	part_q	okno_razb	x	48.0	65.0	124	ОКНО	N
+897	2366	3100			РАЗБИТЫЙ	РАЗБИТЫЙ		part_q-okno_razb-x	part_q	okno_razb	x	70.0	92.0	124	РАЗБИТЫЙ	V
+930	303	909		br_raise				part_q-papa_beg-gul	part_q	papa_beg	gul	4.0	19.0	56		
+931	389	822	chin_up					part_q-papa_beg-gul	part_q	papa_beg	gul	6.0	17.0	56		
+932	476	995			КУДА			part_q-papa_beg-gul	part_q	papa_beg	gul	8.0	21.0	56	КУДА	Q
+933	1169	1645			ПАПА			part_q-papa_beg-gul	part_q	papa_beg	gul	25.0	37.0	56	ПАПА	N
+934	1688	2338			БЕЖАТЬ			part_q-papa_beg-gul	part_q	papa_beg	gul	38.0	54.0	56	БЕЖАТЬ	V
+935	1818	2381				БЕЖАТЬ		part_q-papa_beg-gul	part_q	papa_beg	gul	41.0	55.0	56		
+936	361	1085		br_raise				part_q-papa_beg-shyr	part_q	papa_beg	shyr	3.0	16.0	34		
+937	723	1206			ПАПА			part_q-papa_beg-shyr	part_q	papa_beg	shyr	10.0	19.0	34	ПАПА	N
+938	1266	1567			КУДА	КУДА		part_q-papa_beg-shyr	part_q	papa_beg	shyr	20.0	25.0	34	КУДА	Q
+939	1628	2050			БЕЖАТЬ	БЕЖАТЬ		part_q-papa_beg-shyr	part_q	papa_beg	shyr	27.0	34.0	34	БЕЖАТЬ	V
+940	177	814	chin_up					part_q-papa_beg-vik	part_q	papa_beg	vik	2.0	21.0	57		
+941	212	673			КУДА			part_q-papa_beg-vik	part_q	papa_beg	vik	3.0	17.0	57	КУДА	Q
+942	318	814				КУДА		part_q-papa_beg-vik	part_q	papa_beg	vik	6.0	21.0	57		
+943	814	1346			ПАПА			part_q-papa_beg-vik	part_q	papa_beg	vik	21.0	37.0	57	ПАПА	N
+944	1381	1771				БЕЖАТЬ		part_q-papa_beg-vik	part_q	papa_beg	vik	38.0	50.0	57		
+945	1417	1771			БЕЖАТЬ			part_q-papa_beg-vik	part_q	papa_beg	vik	39.0	50.0	57	БЕЖАТЬ	V
+946	133	3066	chin_up	br_low				part_q-papa_beg-x	part_q	papa_beg	x	0.0	92.0	92		
+947	166	966			КУДА			part_q-papa_beg-x	part_q	papa_beg	x	2.0	27.0	92	КУДА	Q
+948	333	1133				КУДА		part_q-papa_beg-x	part_q	papa_beg	x	7.0	32.0	92		
+949	1100	1700			ПАПА			part_q-papa_beg-x	part_q	papa_beg	x	31.0	50.0	92	ПАПА	N
+950	1800	2700				БЕЖАТЬ		part_q-papa_beg-x	part_q	papa_beg	x	53.0	81.0	92		
+951	1833	2700			БЕЖАТЬ			part_q-papa_beg-x	part_q	papa_beg	x	54.0	81.0	92	БЕЖАТЬ	V
+981	262	699		br_raise				part_q-reb_tanc-gul	part_q	reb_tanc	gul	3.0	13.0	53		
+982	349	699	chin_up					part_q-reb_tanc-gul	part_q	reb_tanc	gul	5.0	13.0	53		
+983	437	1136			ГДЕ			part_q-reb_tanc-gul	part_q	reb_tanc	gul	7.0	24.0	53	ГДЕ	Q
+984	480	1136				ГДЕ		part_q-reb_tanc-gul	part_q	reb_tanc	gul	8.0	24.0	53		
+985	1354	1704			РЕБЕНОК			part_q-reb_tanc-gul	part_q	reb_tanc	gul	30.0	38.0	53	РЕБЕНОК	N
+986	1835	2316			ТАНЦЕВАТЬ	ТАНЦЕВАТЬ		part_q-reb_tanc-gul	part_q	reb_tanc	gul	42.0	53.0	53	ТАНЦЕВАТЬ	V
+987	342	1028					lf	part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	2.0	13.0	32		
+988	411	891		br_raise				part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	3.0	11.0	32		
+989	479	891			ГДЕ			part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	4.0	11.0	32	ГДЕ	Q
+990	891	1302			РЕБЕНОК			part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	11.0	18.0	32	РЕБЕНОК	N
+991	1097	2194				ТАНЦЕВАТЬ		part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	14.0	32.0	32		
+992	1302	2194		br_low				part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	18.0	32.0	32		
+993	1371	2194			ТАНЦЕВАТЬ			part_q-reb_tanc-shyr	part_q	reb_tanc	shyr	19.0	32.0	32	ТАНЦЕВАТЬ	V
+1003	233	3100		br_raise				part_q-reb_tanc-x	part_q	reb_tanc	x	4.0	93.0	109		
+1004	333	2633	chin_up					part_q-reb_tanc-x	part_q	reb_tanc	x	7.0	78.0	109		
+1005	433	1066			ГДЕ			part_q-reb_tanc-x	part_q	reb_tanc	x	10.0	30.0	109	ГДЕ	Q
+1006	466	966				ГДЕ		part_q-reb_tanc-x	part_q	reb_tanc	x	11.0	26.0	109		
+1007	1566	1966			РЕБЕНОК			part_q-reb_tanc-x	part_q	reb_tanc	x	45.0	58.0	109	РЕБЕНОК	N
+1008	2066	2933				ТАНЦЕВАТЬ		part_q-reb_tanc-x	part_q	reb_tanc	x	61.0	88.0	109		
+1009	2066	3000			ТАНЦЕВАТЬ			part_q-reb_tanc-x	part_q	reb_tanc	x	61.0	90.0	109	ТАНЦЕВАТЬ	V
+1042	212	636		br_raise				part_q-sob_est-gul	part_q	sob_est	gul	3.0	15.0	69		
+1043	212	919					lf	part_q-sob_est-gul	part_q	sob_est	gul	3.0	24.0	69		
+1044	459	1025			ЧТО			part_q-sob_est-gul	part_q	sob_est	gul	10.0	27.0	69	ЧТО	Q
+1045	1131	1626			СОБАКА			part_q-sob_est-gul	part_q	sob_est	gul	30.0	45.0	69	СОБАКА	N
+1046	1768	1980		br_raise				part_q-sob_est-gul	part_q	sob_est	gul	49.0	56.0	69		
+1047	1768	2228			ЕСТЬ			part_q-sob_est-gul	part_q	sob_est	gul	49.0	63.0	69	ЕСТЬ	V
+1048	479	1163			ЧТО			part_q-sob_est-shyr	part_q	sob_est	shyr	4.0	15.0	36	ЧТО	Q
+1049	1232	1643			СОБАКА			part_q-sob_est-shyr	part_q	sob_est	shyr	16.0	23.0	36	СОБАКА	N
+1050	1848	2327			ЕСТЬ	ЕСТЬ		part_q-sob_est-shyr	part_q	sob_est	shyr	26.0	34.0	36	ЕСТЬ	V
+1051	177	1207	chin_up					part_q-sob_est-vik	part_q	sob_est	vik	2.0	32.0	70		
+1052	177	1278		br_raise				part_q-sob_est-vik	part_q	sob_est	vik	2.0	34.0	70		
+1053	426	781			ЧТО			part_q-sob_est-vik	part_q	sob_est	vik	9.0	20.0	70	ЧТО	Q
+1054	923	1349			СОБАКА			part_q-sob_est-vik	part_q	sob_est	vik	24.0	37.0	70	СОБАКА	N
+1055	1455	1881			ЕСТЬ			part_q-sob_est-vik	part_q	sob_est	vik	40.0	52.0	70	ЕСТЬ	V
+1056	466	1866		br_raise				part_q-sob_est-x	part_q	sob_est	x	11.0	55.0	103		
+1057	500	1933	chin_up					part_q-sob_est-x	part_q	sob_est	x	12.0	57.0	103		
+1058	600	1300			ЧТО			part_q-sob_est-x	part_q	sob_est	x	15.0	37.0	103	ЧТО	Q
+1059	1400	1900			СОБАКА			part_q-sob_est-x	part_q	sob_est	x	40.0	56.0	103	СОБАКА	N
+1060	1500	1900				СОБАКА		part_q-sob_est-x	part_q	sob_est	x	43.0	56.0	103		
+1061	1966	2800			ЕСТЬ			part_q-sob_est-x	part_q	sob_est	x	58.0	84.0	103	ЕСТЬ	V
+1104	211	458		br_raise				part_q-tel_slom-gul	part_q	tel_slom	gul	3.0	10.0	64		
+1105	388	1023			ПОЧЕМУ			part_q-tel_slom-gul	part_q	tel_slom	gul	8.0	27.0	64	ПОЧЕМУ	Q
+1106	635	882		br_raise				part_q-tel_slom-gul	part_q	tel_slom	gul	15.0	23.0	64		
+1107	1059	1623			ТЕЛЕВИЗОР			part_q-tel_slom-gul	part_q	tel_slom	gul	28.0	45.0	64	ТЕЛЕВИЗОР	N
+1108	1200	1623				ТЕЛЕВИЗОР		part_q-tel_slom-gul	part_q	tel_slom	gul	32.0	45.0	64		
+1109	1729	2223				СЛОМАННЫЙ		part_q-tel_slom-gul	part_q	tel_slom	gul	48.0	63.0	64		
+1110	1729	2259			СЛОМАННЫЙ			part_q-tel_slom-gul	part_q	tel_slom	gul	48.0	64.0	64	СЛОМАННЫЙ	V
+1111	1765	1976		br_raise				part_q-tel_slom-gul	part_q	tel_slom	gul	50.0	56.0	64		
+1112	749	1293			ПОЧЕМУ			part_q-tel_slom-shyr	part_q	tel_slom	shyr	8.0	17.0	42	ПОЧЕМУ	Q
+1113	1362	1770			ТЕЛЕВИЗОР			part_q-tel_slom-shyr	part_q	tel_slom	shyr	18.0	25.0	42	ТЕЛЕВИЗОР	N
+1114	1498	1838				ТЕЛЕВИЗОР		part_q-tel_slom-shyr	part_q	tel_slom	shyr	20.0	26.0	42		
+1115	1838	2315			СЛОМАННЫЙ			part_q-tel_slom-shyr	part_q	tel_slom	shyr	26.0	34.0	42	СЛОМАННЫЙ	V
+1116	1906	2383				СЛОМАННЫЙ		part_q-tel_slom-shyr	part_q	tel_slom	shyr	27.0	35.0	42		
+1117	1906	2587	nod					part_q-tel_slom-shyr	part_q	tel_slom	shyr	27.0	38.0	42		
+1118	435	1219		br_raise				part_q-tel_slom-vik	part_q	tel_slom	vik	7.0	26.0	67		
+1119	479	2265	chin_up					part_q-tel_slom-vik	part_q	tel_slom	vik	8.0	52.0	67		
+1120	566	1176			ПОЧЕМУ			part_q-tel_slom-vik	part_q	tel_slom	vik	10.0	25.0	67	ПОЧЕМУ	Q
+1121	1263	1829			ТЕЛЕВИЗОР	ТЕЛЕВИЗОР		part_q-tel_slom-vik	part_q	tel_slom	vik	27.0	41.0	67	ТЕЛЕВИЗОР	N
+1122	1916	2352				СЛОМАННЫЙ		part_q-tel_slom-vik	part_q	tel_slom	vik	43.0	54.0	67		
+1123	1960	2352			СЛОМАННЫЙ			part_q-tel_slom-vik	part_q	tel_slom	vik	44.0	54.0	67	СЛОМАННЫЙ	V
+1124	133	4566	chin_up					part_q-tel_slom-x	part_q	tel_slom	x	0.0	137.0	137		
+1125	1000	3566		br_raise				part_q-tel_slom-x	part_q	tel_slom	x	27.0	107.0	137		
+1126	1400	1866			ПОЧЕМУ			part_q-tel_slom-x	part_q	tel_slom	x	40.0	54.0	137	ПОЧЕМУ	Q
+1127	2000	2600			ТЕЛЕВИЗОР			part_q-tel_slom-x	part_q	tel_slom	x	58.0	77.0	137	ТЕЛЕВИЗОР	N
+1128	2033	2600				ТЕЛЕВИЗОР		part_q-tel_slom-x	part_q	tel_slom	x	59.0	77.0	137		
+1129	2633	3566				СЛОМАННЫЙ		part_q-tel_slom-x	part_q	tel_slom	x	78.0	107.0	137		
+1130	2733	3500			СЛОМАННЫЙ			part_q-tel_slom-x	part_q	tel_slom	x	81.0	105.0	137	СЛОМАННЫЙ	V
+1168	874	1180		br_raise				part_q-uchit_smeh-gul	part_q	uchit_smeh	gul	17.0	24.0	96		
+1169	918	1224	chin_up					part_q-uchit_smeh-gul	part_q	uchit_smeh	gul	18.0	26.0	96		
+1170	1049	1486			ПОЧЕМУ			part_q-uchit_smeh-gul	part_q	uchit_smeh	gul	21.0	32.0	96	ПОЧЕМУ	Q
+1171	2186	2667			УЧИТЕЛЬ			part_q-uchit_smeh-gul	part_q	uchit_smeh	gul	48.0	60.0	96	УЧИТЕЛЬ	N
+1172	2230	2667				УЧИТЕЛЬ		part_q-uchit_smeh-gul	part_q	uchit_smeh	gul	50.0	60.0	96		
+1173	2711	3105			СМЕЯТЬСЯ			part_q-uchit_smeh-gul	part_q	uchit_smeh	gul	61.0	70.0	96	СМЕЯТЬСЯ	V
+1174	950	1425			ПОЧЕМУ			part_q-uchit_smeh-shyr	part_q	uchit_smeh	shyr	11.0	19.0	47	ПОЧЕМУ	Q
+1175	1696	2103				УЧИТЕЛЬ		part_q-uchit_smeh-shyr	part_q	uchit_smeh	shyr	23.0	30.0	47		
+1176	1696	2171			УЧИТЕЛЬ			part_q-uchit_smeh-shyr	part_q	uchit_smeh	shyr	23.0	31.0	47	УЧИТЕЛЬ	N
+1177	2171	2714			СМЕЯТЬСЯ			part_q-uchit_smeh-shyr	part_q	uchit_smeh	shyr	31.0	40.0	47	СМЕЯТЬСЯ	V
+1178	565	3003		br_raise				part_q-uchit_smeh-vik	part_q	uchit_smeh	vik	13.0	85.0	99		
+1179	636	3038	chin_up					part_q-uchit_smeh-vik	part_q	uchit_smeh	vik	15.0	86.0	99		
+1180	706	1378			ПОЧЕМУ			part_q-uchit_smeh-vik	part_q	uchit_smeh	vik	17.0	37.0	99	ПОЧЕМУ	Q
+1181	1554	2332			УЧИТЕЛЬ			part_q-uchit_smeh-vik	part_q	uchit_smeh	vik	42.0	65.0	99	УЧИТЕЛЬ	N
+1182	1554	2367				УЧИТЕЛЬ		part_q-uchit_smeh-vik	part_q	uchit_smeh	vik	42.0	66.0	99		
+1183	2438	2968			СМЕЯТЬСЯ			part_q-uchit_smeh-vik	part_q	uchit_smeh	vik	68.0	84.0	99	СМЕЯТЬСЯ	V
+1184	600	3400		br_raise				part_q-uchit_smeh-x	part_q	uchit_smeh	x	15.0	102.0	127		
+1185	633	3666	chin_up					part_q-uchit_smeh-x	part_q	uchit_smeh	x	16.0	110.0	127		
+1186	766	1533			ПОЧЕМУ			part_q-uchit_smeh-x	part_q	uchit_smeh	x	20.0	44.0	127	ПОЧЕМУ	Q
+1187	1700	2266				УЧИТЕЛЬ		part_q-uchit_smeh-x	part_q	uchit_smeh	x	49.0	67.0	127		
+1188	1733	2233			УЧИТЕЛЬ			part_q-uchit_smeh-x	part_q	uchit_smeh	x	50.0	66.0	127	УЧИТЕЛЬ	N
+1189	2366	3366			СМЕЯТЬСЯ			part_q-uchit_smeh-x	part_q	uchit_smeh	x	70.0	101.0	127	СМЕЯТЬСЯ	V

@@ -1,0 +1,48 @@
+[
+  {
+    "model": "mlp",
+    "target": [
+      "inner_perp_dist39_42_3d",
+      "outer_perp_dist39_42_3d"
+    ],
+    "params": {
+      "hidden_layer_sizes": [
+        19,
+        30
+      ],
+      "activation": "logistic",
+      "solver": "lbfgs",
+      "alpha": 0.1,
+      "max_iter": 5000,
+      "tol": 0.001
+    },
+    "features": [
+      "pose_Rx",
+      "cos_pose_Rx",
+      "pose_Tx",
+      "pose_Ry",
+      "cos_pose_Ry",
+      "pose_Ty",
+      "pose_Rz",
+      "cos_pose_Rz",
+      "pose_Tz"
+    ],
+    "st_no_brows": false,
+    "train": {
+      "rmse": 1.1400485245515424,
+      "mae": 0.7761337698853636,
+      "mse": 1.3044341942254103,
+      "mrae": 1.421364481644943,
+      "std_true": [
+        4.095080270696721,
+        4.30196653896009
+      ],
+      "std_pred": 4.048971697103084,
+      "mean_true": [
+        28.19976911857175,
+        27.46222260754194
+      ],
+      "mean_pred": 27.8306758821651
+    }
+  }
+]
