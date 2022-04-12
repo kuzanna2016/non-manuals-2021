@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f5c94c-188a-44e0-abcb-ac9f8077b5b5" name="Default Changelist" comment="calculate distances pipeline">
+      <change afterPath="$PROJECT_DIR$/configs/models.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remove_bias.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FDA_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../FDA_tutorial.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/cross_validation.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/cross_validation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved/cross-validation/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/saved/cross-validation/logs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved/cross-validation/no signer features_perp_dist39_42_3d.json" beforeDir="false" afterPath="$PROJECT_DIR$/saved/cross-validation/no signer features_perp_dist39_42_3d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perform_cross_validation_of_bias_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/perform_cross_validation_of_bias_models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/raw files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -99,6 +101,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/raw files" />
       <recent name="$PROJECT_DIR$/saved_2" />
     </key>
@@ -106,7 +109,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.perform_cross_validation_of_bias_models">
+  <component name="RunManager" selected="Python.remove_bias">
     <configuration name="calculate_distances" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="preprocessing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,28 +176,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="preprocessing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="perform_cross_validation_of_bias_models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="preprocessing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,13 +198,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="remove_bias" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="preprocessing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remove_bias.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.remove_bias" />
         <item itemvalue="Python.perform_cross_validation_of_bias_models" />
         <item itemvalue="Python.elan" />
         <item itemvalue="Python.calculate_distances" />
         <item itemvalue="Python.combine_open_face_output" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +247,8 @@
       <workItem from="1649274125419" duration="283000" />
       <workItem from="1649598982766" duration="13529000" />
       <workItem from="1649708091294" duration="2191000" />
+      <workItem from="1649753469948" duration="1007000" />
+      <workItem from="1649777380220" duration="3391000" />
     </task>
     <task id="LOCAL-00001" summary="refactor elan v.1">
       <created>1647883962389</created>
@@ -335,6 +340,7 @@
     <SUITE FILE_PATH="coverage/preprocessing$perform_cross_validation_of_bias_models.coverage" NAME="perform_cross_validation_of_bias_models Coverage Results" MODIFIED="1649708748894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$elan.coverage" NAME="elan Coverage Results" MODIFIED="1649684326655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$main.coverage" NAME="main Coverage Results" MODIFIED="1647277387397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/preprocessing$remove_bias.coverage" NAME="remove_bias Coverage Results" MODIFIED="1649780749623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$combine_open_face_output.coverage" NAME="combine_open_face_output Coverage Results" MODIFIED="1647958220356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$calculate_distances.coverage" NAME="calculate_distances Coverage Results" MODIFIED="1647960820840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

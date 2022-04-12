@@ -83,10 +83,9 @@ class Model:
 
     def save_model(self):
         if self.fp is not None:
-            path = self.fp + 'model_' + self.name
-            if not os.path.isdir(path):
-                os.mkdir(path)
-            pickle.dump(self.model, open(path + '/model.pkl', 'wb'))
+            path = os.path.join(self.fp, 'model_' + self.name)
+            os.makedirs(path, exist_ok=True)
+            pickle.dump(self.model, open(os.path.join(path, 'model.pkl'), 'wb'))
 
     def load_model(self):
         self.model = pickle.load(open(self.fp + 'model_' + self.name + '/model.pkl', 'rb'))

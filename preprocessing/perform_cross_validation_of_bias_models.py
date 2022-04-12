@@ -90,7 +90,7 @@ def cross_validate_model(
         for train_index, test_index in ss.split(X):
             X_train, X_test, y_train, y_test = X.iloc[train_index], X.iloc[test_index], Y.iloc[train_index], Y.iloc[
                 test_index]
-            regr = Model.get_model(kind=model, params=param_set, **kwargs)
+            regr = Model.get_model(kind=model, params=param_set, save_to=save_to, **kwargs)
             regr.train(X_train, y_train, X_test, y_test, metrics)
 
             cv['train']['folds'].append(regr.logs['train'])
