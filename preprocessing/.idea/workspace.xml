@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f5c94c-188a-44e0-abcb-ac9f8077b5b5" name="Default Changelist" comment="calculate distances pipeline">
       <change beforePath="$PROJECT_DIR$/../FDA_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../FDA_tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculate_distances.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculate_distances.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_face.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perform_cross_validation_of_bias_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/perform_cross_validation_of_bias_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remove_bias.py" beforeDir="false" afterPath="$PROJECT_DIR$/remove_bias.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +306,7 @@
       <workItem from="1649777380220" duration="12958000" />
       <workItem from="1649797232986" duration="207000" />
       <workItem from="1649830961938" duration="85000" />
-      <workItem from="1649840205850" duration="9020000" />
+      <workItem from="1649840205850" duration="9391000" />
     </task>
     <task id="LOCAL-00001" summary="refactor elan v.1">
       <created>1647883962389</created>
@@ -390,17 +383,6 @@
     <MESSAGE value="calculate distances pipeline" />
     <option name="LAST_COMMIT_MESSAGE" value="calculate distances pipeline" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/perform_cross_validation_of_bias_models.py</url>
-          <line>166</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/preprocessing$perform_cross_validation_of_bias_models.coverage" NAME="perform_cross_validation_of_bias_models Coverage Results" MODIFIED="1649708748894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$transpose_openface.coverage" NAME="transpose_openface Coverage Results" MODIFIED="1649867904469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -411,7 +393,7 @@
     <SUITE FILE_PATH="coverage/preprocessing$plot_samples_to_compare.coverage" NAME="plot_videos Coverage Results" MODIFIED="1649847787501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$remove_bias.coverage" NAME="remove_bias Coverage Results" MODIFIED="1649781147393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$combine_open_face_output.coverage" NAME="combine_open_face_output Coverage Results" MODIFIED="1647958220356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/preprocessing$plot_mean_curves.coverage" NAME="plot_mean_curves Coverage Results" MODIFIED="1649869075054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/preprocessing$plot_mean_curves.coverage" NAME="plot_mean_curves Coverage Results" MODIFIED="1649869265121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$calculate_distances.coverage" NAME="calculate_distances Coverage Results" MODIFIED="1647960820840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">

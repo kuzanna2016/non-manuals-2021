@@ -1,6 +1,6 @@
 from enum import Enum
 
-POS_DICT='pos_dict.tsv'
+POS_DICT = 'pos_dict.tsv'
 SAVE_TO = 'saved'
 CV_FP = 'cross-validation'
 PLOTS_FP = 'plots'
@@ -61,9 +61,11 @@ class STYPE(Enum):
     POLAR = 'gen_q'
     ST = 'st'
 
+
 class BROWS(Enum):
     INNER = 'inner'
     OUTER = 'outer'
+
 
 class SPEAKERS:
     DEAF = ['alt', 'kar', 'makh', 'mira', 'tanya']
@@ -78,7 +80,7 @@ class BASELINE:
            'max_iter': 1500,
            'tol': 1e-4,
            'learning_rate': 'adaptive'
-    }
+           }
     LASSO = {'alpha': 1e-5,
              'tol': 1e-05,
              'max_iter': 10000}
@@ -91,7 +93,8 @@ class CV_BEST_MODEL:
            'alpha': 1e-1,
            'max_iter': 1500,
            'tol': 1e-3,
-    }
+           }
+
 
 FEATURES = ['pose_Rx', 'pose_Rx_cos', 'pose_Tx',
             'pose_Ry', 'pose_Ry_cos', 'pose_Ty',

@@ -54,4 +54,5 @@ def calculate_distances(openface_fp, config_fp, override, save_to):
 
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
-    calculate_distances(openface_fp=args.openface_fp, config_fp=args.config_fp, override=args.override, save_to=args.save_to)
+    calculate_distances(openface_fp=args.openface_fp, config_fp=args.config_fp, override=args.override,
+                        save_to=args.save_to)

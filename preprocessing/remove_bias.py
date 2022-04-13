@@ -110,4 +110,5 @@ def remove_bias(config_fp, openface_fp, elan_stats_fp, sentence_level, save_to):
 
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
-    remove_bias(args.configs_fp, args.openface_fp, args.elan_stats_fp, save_to=args.save_to, sentence_level=args.sentence_level)
+    remove_bias(args.configs_fp, args.openface_fp, args.elan_stats_fp, save_to=args.save_to,
+                sentence_level=args.sentence_level)

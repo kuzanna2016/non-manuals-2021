@@ -10,9 +10,9 @@ import datetime
 
 from sklearn.model_selection import ShuffleSplit
 
-from const import BROWS
 from model import Model
-from const import CATEGORICAL, CV_FP, SAVE_TO, CONFIGS_FP, STYPE, METRICS, FEATURES, CV_LOGS, CV_LOGS_INTERMEDIATE
+from const import CATEGORICAL, BROWS, CV_FP, SAVE_TO, CONFIGS_FP, STYPE, METRICS, FEATURES, CV_LOGS, \
+    CV_LOGS_INTERMEDIATE
 from tools import make_dummies, make_trig_features
 
 parser = argparse.ArgumentParser()

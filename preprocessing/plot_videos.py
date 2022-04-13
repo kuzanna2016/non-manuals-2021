@@ -6,7 +6,7 @@ import numpy as np
 
 import random
 
-from const import CATEGORICAL, BROWS, PLOTS_FP, SAVE_TO
+from const import BROWS, PLOTS_FP, SAVE_TO
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--openface_fp", default=os.path.join(SAVE_TO, 'open_face_with_bias_correction.csv'), type=str,

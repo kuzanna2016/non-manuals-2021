@@ -1,7 +1,6 @@
 import json
 import os
 from tqdm import tqdm
-tqdm.pandas()
 import pickle
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,12 +9,12 @@ from itertools import combinations
 from sklearn.linear_model import Ridge
 from sklearn.linear_model import Lasso
 from sklearn.neural_network import MLPRegressor
-
 from sklearn.preprocessing import StandardScaler
-
 from sklearn.model_selection import ShuffleSplit
 
 from forecasting_metrics import evaluate
+
+tqdm.pandas()
 
 
 class Model:
