@@ -6,7 +6,7 @@ import datetime
 
 from const import BROWS
 from model import Model
-from const import CATEGORICAL, MODELS, SAVE_TO, CONFIGS, STYPE, FEATURES
+from const import CATEGORICAL, MODELS_FP, SAVE_TO, CONFIGS_FP, STYPE, FEATURES
 from tools import make_dummies, make_trig_features
 
 parser = argparse.ArgumentParser()
@@ -16,7 +16,7 @@ parser.add_argument("--elan_stats_fp", default=os.path.join(SAVE_TO, 'additional
                     help="Path to a json file with computed frames with brows")
 parser.add_argument("--sentence_level", default=True, type=bool,
                     help="If True only sentences with no brows movement will be used for training, if False, all frames without brows movement will be used")
-parser.add_argument("--configs_fp", default=os.path.join(CONFIGS, 'models.json'), type=str,
+parser.add_argument("--configs_fp", default=os.path.join(CONFIGS_FP, 'models.json'), type=str,
                     help="Path to a .json file with the models parameters")
 parser.add_argument("--save_to", default=SAVE_TO, type=str,
                     help="Save path for OpenFace output with corrected distances")
@@ -103,7 +103,7 @@ def remove_bias(config_fp, openface_fp, elan_stats_fp, sentence_level, save_to):
             params=params,
             kwargs=kwargs,
             name=name,
-            save_to=os.path.join(save_to, MODELS),
+            save_to=os.path.join(save_to, MODELS_FP),
         )
     df.to_csv(os.path.join(save_to, 'open_face_with_bias_correction.csv'))
 

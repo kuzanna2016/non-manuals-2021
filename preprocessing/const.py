@@ -1,12 +1,12 @@
 from enum import Enum
 
 POS_DICT='pos_dict.tsv'
-SAVE_TO = 'saved/'
-CV_FP = 'cross-validation/'
-PLOTS_FP = 'plots/'
-RAW_FP = 'raw files/'
-MODELS = 'models'
-CONFIGS = 'configs'
+SAVE_TO = 'saved'
+CV_FP = 'cross-validation'
+PLOTS_FP = 'plots'
+RAW_FP = 'raw files'
+MODELS_FP = 'models'
+CONFIGS_FP = 'configs'
 CV_LOGS = 'logs.json'
 CV_LOGS_INTERMEDIATE = 'logs_intermediate.json'
 
@@ -100,3 +100,8 @@ FEATURES = ['pose_Rx', 'pose_Rx_cos', 'pose_Tx',
 # TODO: put metrics here and rearrange distance calculation
 METRICS = ['rmse', 'mrae', 'mae', 'mse']
 # TODO: make name gen function here
+
+RENAME_DICT = {
+    'part_q': 'wh_q',
+    'gen_q': 'polar_q'
+}

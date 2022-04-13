@@ -3,13 +3,13 @@ import pandas as pd
 import json
 import argparse
 
-from const import SAVE_TO, CONFIGS
+from const import SAVE_TO, CONFIGS_FP
 from distances import find_mean_dist, find_mean_perp_dist, find_mean_perp_plane_dist
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--openface_fp", default=os.path.join(SAVE_TO, 'open_face_data_combined.csv'), type=str,
                     help="Path to a .csv file with combined OpenFace results")
-parser.add_argument("--config_fp", default=os.path.join(CONFIGS, 'distances.json'), type=str,
+parser.add_argument("--config_fp", default=os.path.join(CONFIGS_FP, 'distances.json'), type=str,
                     help="Path to a json file with distances configuration")
 parser.add_argument("--override", default=False, type=bool,
                     help="To override previously calculated distances")

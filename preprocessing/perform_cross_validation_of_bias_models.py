@@ -12,7 +12,7 @@ from sklearn.model_selection import ShuffleSplit
 
 from const import BROWS
 from model import Model
-from const import CATEGORICAL, CV_FP, SAVE_TO, CONFIGS, STYPE, METRICS, FEATURES, CV_LOGS, CV_LOGS_INTERMEDIATE
+from const import CATEGORICAL, CV_FP, SAVE_TO, CONFIGS_FP, STYPE, METRICS, FEATURES, CV_LOGS, CV_LOGS_INTERMEDIATE
 from tools import make_dummies, make_trig_features
 
 parser = argparse.ArgumentParser()
@@ -22,7 +22,7 @@ parser.add_argument("--elan_stats_fp", default=os.path.join(SAVE_TO, 'additional
                     help="Path to a json file with computed frames with brows")
 parser.add_argument("--sentence_level", default=True, type=bool,
                     help="If True only sentences with no brows movement will be used for cross validation, if False, all frames without brows movement will be used")
-parser.add_argument("--config_fp", default=os.path.join(CONFIGS, 'cross_validation.json'), type=str,
+parser.add_argument("--config_fp", default=os.path.join(CONFIGS_FP, 'cross_validation.json'), type=str,
                     help="Path to a .json file with cross-validation configs")
 parser.add_argument("--save_to", default=os.path.join(SAVE_TO, CV_FP), type=str,
                     help="Save path for logs of cross-validation")

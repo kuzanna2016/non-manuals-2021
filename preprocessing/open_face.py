@@ -5,7 +5,7 @@ from tqdm import tqdm
 from sklearn.preprocessing import LabelBinarizer
 import argparse
 
-from const import CATEGORICAL, INDEX, BROWS, SPEAKERS, RAW_FP
+from const import CATEGORICAL, INDEX, BROWS, SPEAKERS, RAW_FP, SAVE_TO
 from extractors import proper_name
 from distances import find_mean_dist, find_mean_perp_dist, find_mean_perp_plane_dist
 

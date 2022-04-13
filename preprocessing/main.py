@@ -165,7 +165,7 @@ def main(of_fp=None, elan_fp=None, meta_video_fp=None, video_fp=None, save_to=SA
         'perp_dist39_42_3d_pred_mlp_1_diff': 'Updated distance, no personal features',
         'perp_dist39_42_3d_pred_mlp_8_diff': 'Updated distance, with personal features',
     }
-    data.plot_metrics(metrics=[m for m in metrics if 'diff' in m or 'pose' in m], rename_dict=rename_dict)
+    data.plot_metrics(targets=[m for m in metrics if 'diff' in m or 'pose' in m], rename_dict=rename_dict)
 
     # plot one video
     video_names = [
