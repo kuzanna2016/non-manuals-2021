@@ -17,7 +17,7 @@ parser.add_argument("--sentence", default=None, type=str,
                     help="Sentence to plot")
 parser.add_argument("--targets", default=[
     'perp_dist39_42_3d_pred_MLP_best_model_diff',
-    'perp_dist39_42_3d_pred_MLP_best_model_no_features_diff',
+    # 'perp_dist39_42_3d_pred_MLP_best_model_no_features_diff',
 ], type=list, nargs='+',
                     help="Which targets to plot")
 parser.add_argument("--n_samples", default=5, type=int,
@@ -47,6 +47,8 @@ def plot_samples(openface_fp,
 
     n_cols = len(targets) + 1 if plot_head else len(targets)
     fig, axes = plt.subplots(len(samples), n_cols, figsize=(8 * n_cols, 5 * len(samples)))
+    if not isinstance(axes, np.ndarray):
+        axes = np.asarray([axes])
     if axes.ndim == 1:
         axes = np.expand_dims(axes, axis=0)
     for n, sample in enumerate(samples):
