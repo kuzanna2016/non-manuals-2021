@@ -17,7 +17,7 @@ parser.add_argument("--sentence", default=None, type=str,
                     help="Sentence to plot")
 parser.add_argument("--targets", default=[
     'perp_dist39_42_3d_pred_MLP_best_model_diff',
-    # 'perp_dist39_42_3d_pred_MLP_best_model_no_features_diff',
+    'perp_dist39_42_3d_pred_MLP_best_model_no_features_diff',
 ], type=list, nargs='+',
                     help="Which targets to plot")
 parser.add_argument("--n_samples", default=5, type=int,
