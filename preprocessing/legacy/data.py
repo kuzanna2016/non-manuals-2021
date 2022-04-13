@@ -10,8 +10,6 @@ from sklearn.model_selection import ShuffleSplit
 from sklearn.preprocessing import StandardScaler
 import json
 
-
-
 from elan import Elan
 from open_face import OpenFace
 from model import Model

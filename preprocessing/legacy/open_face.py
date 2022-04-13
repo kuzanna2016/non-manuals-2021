@@ -9,14 +9,6 @@ from const import CATEGORICAL, INDEX, BROWS, SPEAKERS, RAW_FP, SAVE_TO
 from extractors import proper_name
 from distances import find_mean_dist, find_mean_perp_dist, find_mean_perp_plane_dist
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--elan_fp", default=os.path.join(RAW_FP, 'elan.tsv'), type=str,
-                    help="Path to a .tsv Elan file with annotated videos")
-parser.add_argument("--meta_fp", default=os.path.join(RAW_FP, 'meta_video.tsv'), type=str,
-                    help="Path to a .tsv file with meta information about videos")
-parser.add_argument("--videos_fp", default=None, type=list,
-                    help="Path to a folder with videos, to get meta information, will be used recursively")
-parser.add_argument("--save_to", default=SAVE_TO, type=str, help="Save path")
 
 class OpenFace:
 
@@ -58,7 +50,7 @@ class OpenFace:
         self.df[[CATEGORICAL.STYPE,
                  CATEGORICAL.SENTENCE,
                  CATEGORICAL.SPEAKER]] = self.df[CATEGORICAL.VIDEO_NAME].str.split('-', expand=True)
-        self.df.set_index([CATEGORICAL.VIDEO_NAME,CATEGORICAL.FRAME], inplace=True)
+        self.df.set_index([CATEGORICAL.VIDEO_NAME, CATEGORICAL.FRAME], inplace=True)
 
     def compute_distances(self, distances, override=False, plot_face=False):
         for dist, params in distances.items():
@@ -97,7 +89,7 @@ class OpenFace:
         df = None
         transposed = None
         if os.path.isfile(fp + 'open_face.csv'):
-            df = pd.read_csv(fp + 'open_face.csv', sep='\t', index_col=[0,1])
+            df = pd.read_csv(fp + 'open_face.csv', sep='\t', index_col=[0, 1])
         if os.path.isfile(fp + 'open_face_transposed.csv'):
             transposed = pd.read_csv(fp + 'open_face_transposed.csv', sep='\t', index_col=[0, 1, 2])
 
@@ -112,10 +104,10 @@ class OpenFace:
 
     def combine_w_elan(self, elan):
         elan.elan.apply(self._combine_by_row,
-                   axis=1,
-                   columns=[CATEGORICAL.BROWS],
-                   start_pos_dict=elan.pos_start_mean.groupby('pos').mean(),
-                   end_pos_dict=elan.pos_end_mean.groupby('pos').mean())
+                        axis=1,
+                        columns=[CATEGORICAL.BROWS],
+                        start_pos_dict=elan.pos_start_mean.groupby('pos').mean(),
+                        end_pos_dict=elan.pos_end_mean.groupby('pos').mean())
 
         max_frame = self.df.reset_index().groupby([CATEGORICAL.VIDEO_NAME])[CATEGORICAL.FRAME].max()
         min_frame = self.df.reset_index().groupby([CATEGORICAL.VIDEO_NAME])[CATEGORICAL.FRAME].min()
@@ -174,7 +166,8 @@ class OpenFace:
         self.transposed.columns = self.transposed.columns.map(str)
 
     def _make_cat_features(self):
-        values = self.transposed.reset_index(level=CATEGORICAL.VIDEO_NAME)[CATEGORICAL.VIDEO_NAME].str.split("-", expand=True).values
+        values = self.transposed.reset_index(level=CATEGORICAL.VIDEO_NAME)[CATEGORICAL.VIDEO_NAME].str.split("-",
+                                                                                                             expand=True).values
         self.transposed[[CATEGORICAL.STYPE,
                          CATEGORICAL.SENTENCE,
                          CATEGORICAL.SPEAKER]] = values
@@ -182,12 +175,12 @@ class OpenFace:
 
     @staticmethod
     def meanfill(df):
-        df_numeric = df.iloc[:,0:71]
+        df_numeric = df.iloc[:, 0:71]
         df_ffill = df_numeric.ffill(axis=1)
         df_bfill = df_numeric.bfill(axis=1)
         df_meanfill = (df_ffill + df_bfill) / 2
         df_meanfill = df_meanfill.ffill(axis=1).bfill(axis=1)
-        df.iloc[:,0:71] = df_meanfill
+        df.iloc[:, 0:71] = df_meanfill
         return df
 
     def _transpose_in_batches(self, video_name, metrics, poses, transposed):
@@ -208,11 +201,11 @@ class OpenFace:
                                 video_name),
                                index] = np.mean([self.df.loc[video_name,
                                                              [f'{brows}_{metric}' for metric in metrics]].values.T,
-                                                transposed.loc[(brows, metrics, video_name), index]].values, axis=0)
+                                                 transposed.loc[(brows, metrics, video_name), index]].values, axis=0)
                 transposed.loc[(brows,
                                 poses,
                                 video_name),
-                               index] = np.mean([self.df.loc[video_name,poses].values.T,
+                               index] = np.mean([self.df.loc[video_name, poses].values.T,
                                                  transposed.loc[(brows, poses, video_name).values, index]], axis=0)
 
     def make_dummies(self, columns):
@@ -234,10 +227,3 @@ class OpenFace:
                 else:
                     raise ValueError('no such function')
                 self.df[f'{f}_pose_R{axis}'] = self.df[f'pose_R{axis}'].apply(func)
-
-if __name__ == "__main__":
-    args = parser.parse_args([] if "__file__" not in globals() else None)
-    preprocess_elan(args.elan_fp,
-                    meta_fp=args.meta_fp,
-                    videos_fp=args.videos_fp,
-                    save_to=args.save_to)
