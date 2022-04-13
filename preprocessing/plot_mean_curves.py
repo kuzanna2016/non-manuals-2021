@@ -3,12 +3,6 @@ import argparse
 import os
 import pandas as pd
 import numpy as np
-from tqdm import tqdm
-
-import random
-import itertools
-from sklearn.model_selection import ShuffleSplit
-from sklearn.preprocessing import StandardScaler
 import json
 
 from const import CATEGORICAL, BROWS, STYPE, PLOTS_FP, SAVE_TO, RENAME_DICT
@@ -46,7 +40,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
     linestyles = ['-', '--', '-.']
     linewidth = 2.5
 
-    x_axes=1
+    x_axes = 1
     if deaf:
         x_axes = 2
     if separate_brows_plot:
@@ -113,30 +107,30 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
                         for j, new_mask in enumerate([mask_deaf, mask_hear]):
                             index = (BROWS.INNER.value, metric, new_mask)
                             df.loc[index, '0.0':'70.0'].mean().plot(ax=axes[i][j],
-                                                                         color=color,
-                                                                         linestyle=style,
-                                                                         label=metric,
-                                                                         linewidth=linewidth
-                                                                         )
+                                                                    color=color,
+                                                                    linestyle=style,
+                                                                    label=metric,
+                                                                    linewidth=linewidth
+                                                                    )
                             axes[i][j].invert_yaxis()
                     else:
                         for j in range(x_axes):
                             index = (BROWS.INNER.value, metric, mask)
                             df.loc[index, '0.0':'70.0'].mean().plot(ax=axes[i][j],
-                                                                     color=color,
-                                                                     linestyle=style,
-                                                                     label=metric,
-                                                                     linewidth=linewidth
-                                                                     )
+                                                                    color=color,
+                                                                    linestyle=style,
+                                                                    label=metric,
+                                                                    linewidth=linewidth
+                                                                    )
                             axes[i][j].invert_yaxis()
                 else:
                     index = (BROWS.INNER.value, metric, mask)
                     df.loc[index, '0.0':'70.0'].mean().plot(ax=axes[i],
-                                                             color=color,
-                                                             linestyle=style,
-                                                             label=metric,
-                                                             linewidth=linewidth
-                                                             )
+                                                            color=color,
+                                                            linestyle=style,
+                                                            label=metric,
+                                                            linewidth=linewidth
+                                                            )
                     axes[i].invert_yaxis()
 
             if x_axes > 1:
