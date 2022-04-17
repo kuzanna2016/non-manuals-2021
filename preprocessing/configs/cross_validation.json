@@ -108,6 +108,7 @@
     },
     "dummies": [],
     "targets": ["perp_dist39_42_3d"],
-    "metrics": ["mse","mae"]
+    "metrics": ["mse","mae"],
+    "sentence_level": true
   }
 ]

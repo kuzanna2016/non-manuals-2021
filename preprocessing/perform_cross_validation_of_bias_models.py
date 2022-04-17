@@ -20,8 +20,6 @@ parser.add_argument("--openface_fp", default=os.path.join(SAVE_TO, 'open_face_wi
                     help="Path to a .csv file with OpenFace outputs with computed distances")
 parser.add_argument("--elan_stats_fp", default=os.path.join(SAVE_TO, 'additional_stats_from_elan.json'), type=str,
                     help="Path to a json file with computed frames with brows")
-parser.add_argument("--sentence_level", default=True, type=bool,
-                    help="If True only sentences with no brows movement will be used for cross validation, if False, all frames without brows movement will be used")
 parser.add_argument("--config_fp", default=os.path.join(CONFIGS_FP, 'cross_validation.json'), type=str,
                     help="Path to a .json file with cross-validation configs")
 parser.add_argument("--save_to", default=os.path.join(SAVE_TO, CV_FP), type=str,
@@ -145,14 +143,9 @@ def choose_best_model(cv_logs, metrics=None, mean_metric=False):
     return top
 
 
-def perform_cross_validation(config_fp, openface_fp, elan_stats_fp, sentence_level, save_to):
+def perform_cross_validation(config_fp, openface_fp, elan_stats_fp, save_to):
     df = pd.read_csv(openface_fp, index_col=[0, 1])
     elan_stats = json.load(open(elan_stats_fp))
-    if sentence_level:
-        df = filter_sentences_w_brows(df, elan_stats)
-    else:
-        df = filter_frames_w_brows(df, elan_stats)
-
     configs = json.load(open(config_fp))
     for config in configs:
         name = config.get("name", datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S"))
@@ -162,7 +155,14 @@ def perform_cross_validation(config_fp, openface_fp, elan_stats_fp, sentence_lev
         features = config.get("features", FEATURES)
         dummies = config.get("dummies", [CATEGORICAL.SPEAKER, CATEGORICAL.SENTENCE])
         metrics = config.get("metrics", METRICS)
+        sentence_level = config.get("sentence_level", True)
         kwargs = config.get("kwargs", {})
+
+        if sentence_level:
+            df = filter_sentences_w_brows(df, elan_stats)
+        else:
+            df = filter_frames_w_brows(df, elan_stats)
+
         for target in targets:
             X, Y = prepare_data_for_regr(df, features, dummies, target)
             cv_logs = cross_validate_model(
@@ -189,5 +189,4 @@ def perform_cross_validation(config_fp, openface_fp, elan_stats_fp, sentence_lev
 
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
-    perform_cross_validation(args.config_fp, args.openface_fp, args.elan_stats_fp, save_to=args.save_to,
-                             sentence_level=args.sentence_level)
+    perform_cross_validation(args.config_fp, args.openface_fp, args.elan_stats_fp, save_to=args.save_to)

@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import argparse
+import json
 
 from const import CATEGORICAL, RAW_FP, SAVE_TO
 from extractors import proper_name
@@ -8,10 +9,12 @@ from extractors import proper_name
 parser = argparse.ArgumentParser()
 parser.add_argument("--open_face_fp", default=os.path.join(RAW_FP, 'of_output'), type=str,
                     help="Path to a folder with OpenFace output files")
+parser.add_argument("--elan_stats_fp", default=os.path.join(SAVE_TO, 'additional_stats_from_elan.json'), type=str,
+                    help="Path to a json file with computed means of the signs")
 parser.add_argument("--save_to", default=SAVE_TO, type=str, help="Save path")
 
 
-def combine_of(fp, save_to):
+def combine_of(fp, elan_stats_fp, save_to):
     dfs = []
     names = []
     for fp, folders, files in os.walk(fp):
@@ -22,6 +25,10 @@ def combine_of(fp, save_to):
                 dfs.append(df)
     df = pd.concat(dfs, keys=names, names=[CATEGORICAL.VIDEO_NAME])
     df = preprocess_of(df)
+
+    elan_stats = json.load(open(elan_stats_fp))
+    filtered_videos = elan_stats['filtered_videos']
+    df = df.loc[filtered_videos]
     df.to_csv(os.path.join(save_to, 'open_face_combined.csv'))
 
 
@@ -42,4 +49,4 @@ def preprocess_of(df, _normalize_video_names_func=proper_name):
 
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
-    combine_of(args.open_face_fp, save_to=args.save_to)
+    combine_of(args.open_face_fp, args.elan_stats_fp, save_to=args.save_to)
