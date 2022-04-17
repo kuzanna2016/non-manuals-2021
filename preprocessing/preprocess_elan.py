@@ -42,7 +42,16 @@ def custom_postproc(elan, save_to, **kwargs):
     }
     additional_info.update(pos_dict)
     json.dump(additional_info, open(os.path.join(save_to, 'additional_stats_from_elan.json'), 'w'))
+
+    pos_boundaries = _get_pos_boundaries(elan)
+    pos_boundaries.to_csv(os.path.join(save_to, 'pos_boundaries.csv'))
     return elan
+
+
+def _get_pos_boundaries(elan):
+    elan = elan[elan.pos.notna()]
+    df = pd.pivot(elan, index='video_name', columns='pos', values=['start_frames', 'end_frames'])
+    return df
 
 
 def _set_means(elan):
