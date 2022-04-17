@@ -1,12 +1,9 @@
 [
   {
-    "name": "MLP_best_model",
+    "name": "MLP_best_model_2",
     "model_name": "mlp",
     "params": {
-      "hidden_layer_sizes": [
-        22,
-        28
-      ],
+      "hidden_layer_sizes": [40],
       "activation": "relu",
       "solver": "adam",
       "alpha": 1e-1,
