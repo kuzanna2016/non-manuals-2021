@@ -40,7 +40,7 @@ def compute_distances(df, distances_config, override=False, plot_face=False):
                 df = find_mean_dist(df,
                                     inner_brows=inner,
                                     outer_brows=outer,
-                                    point_2=points['point'][0],
+                                    point_2=points['point'],
                                     override=override)
     return df
 

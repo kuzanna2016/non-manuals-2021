@@ -13,8 +13,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--elan_fp", default=os.path.join(RAW_FP, 'elan.tsv'), type=str,
                     help="Path to a .tsv Elan file with annotated videos")
 parser.add_argument("--meta_fp", default=os.path.join(RAW_FP, 'meta_video.tsv'), type=str,
-                    help="Path to a .tsv file with meta information about videos")
-parser.add_argument("--videos_fp", default=None, type=list,
+                    help="Path to a .tsv file with meta information about videos, if not provided will calculate the information from the videos")
+parser.add_argument("--videos_fp", default=None, type=str,
                     help="Path to a folder with videos, to get meta information, will be used recursively")
 parser.add_argument("--save_to", default=SAVE_TO, type=str, help="Save path")
 

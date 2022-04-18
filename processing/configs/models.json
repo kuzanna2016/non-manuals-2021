@@ -9,7 +9,8 @@
       "alpha": 1e-1,
       "max_iter": 1500
     },
-    "target": "perp_dist39_42_3d"
+    "target": "perp_dist39_42_3d",
+    "dummies": ["speaker", "sentence"]
   },
   {
     "name": "MLP_best_model_no_features",
@@ -25,6 +26,22 @@
       "max_iter": 1500
     },
     "dummies": [],
+    "target": "perp_dist39_42_3d"
+  },
+  {
+    "name": "MLP_22_28",
+    "model_name": "mlp",
+    "params": {
+      "hidden_layer_sizes": [
+        22,
+        28
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1e-1,
+      "max_iter": 1500
+    },
+    "dummies": ["speaker", "sentence"],
     "target": "perp_dist39_42_3d"
   }
 ]

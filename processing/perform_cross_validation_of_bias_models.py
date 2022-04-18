@@ -153,7 +153,7 @@ def perform_cross_validation(config_fp, openface_fp, elan_stats_fp, save_to):
         params = config.get("params", {})
         targets = config.get("targets")
         features = config.get("features", FEATURES)
-        dummies = config.get("dummies", [CATEGORICAL.SPEAKER, CATEGORICAL.SENTENCE])
+        dummies = config.get("dummies", [])
         metrics = config.get("metrics", METRICS)
         sentence_level = config.get("sentence_level", True)
         kwargs = config.get("kwargs", {})

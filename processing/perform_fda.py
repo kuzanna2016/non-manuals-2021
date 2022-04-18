@@ -44,12 +44,17 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
         n_fpca = config.get("n_fpca")
         rename_dict = config.get("rename_dict", {})
         fpcs = config.get("fpcs_plots", {})
+        path = os.path.join(save_to, experiment_name)
+
         variables, sentence_type, speaker_ids, sentences, norm_rng, durations, t_norms = create_variables(df, names,
                                                                                                           video_names)
         fds_variables = {name: create_fds(data, t_norms) for name, data in variables.items()}
         basis = BSpline(domain_range=norm_rng, n_basis=n_basis, order=order)
-        fd_basis_variables = {name: to_basis_fds(data, basis, w_basis_smoother=True) for name, data in
-                              fds_variables.items()}
+        fd_basis_variables = {
+            name: to_basis_fds(data, basis, w_basis_smoother=True)
+            for name, data in fds_variables.items()
+        }
+
         boundaries = boundaries.loc[
             video_names, [('start_frames', 'N'), ('end_frames', 'N'), ('start_frames', 'V'), ('end_frames', 'V')]]
         norm_boundaries = (boundaries.values.T / np.array(durations)) * np.mean(durations)
@@ -59,19 +64,28 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
                                    fd_basis_variables.items()}
         plot_registered_curves(fd_basis_variables, fd_registered_variables, names, sentence_type, rename_dict,
                                landmark_location, plots_save_to, experiment_name)
+
         fpca_variables = {name: get_fpca(data, n_fpca) for name, data in fd_registered_variables.items()}
+        variance_results = {}
         print('Explained variance ratio')
         for name in names:
             print(f'for {name}:')
             fpca = fpca_variables[name]
+            variance_results[name] = {
+                j: component_variance
+                for j, component_variance in enumerate(fpca.explained_variance_ratio_)
+            }
             variance = ['PC{} {:.0%}'.format(j + 1, component_variance) for j, component_variance in
              enumerate(fpca.explained_variance_ratio_)]
             print('\t'.join(variance))
+        json.dump(variance_results, open(os.path.join(path, 'explained_variance_ratio.json'), 'w'))
+
         scores_variables = {name: get_scores(data, fpca_variables[name]) for name, data in
                             fd_registered_variables.items()}
         plot_perturbation_graph(names, n_fpca, fpca_variables, scores_variables, landmark_location, rename_dict,
                                 plots_save_to,
                                 experiment_name)
+
         deaf = ['deaf' if speaker in SPEAKERS.DEAF else 'hearing' for speaker in speaker_ids]
         for name, score in scores_variables.items():
             scores = pd.DataFrame(score, columns=[f'PC_{i + 1}' for i in range(score.shape[1])],
@@ -80,7 +94,6 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
             scores['deaf'] = np.asarray(deaf)
             scores['speaker_id'] = speaker_ids
             scores['sentence'] = sentences
-            path = os.path.join(save_to, experiment_name)
             os.makedirs(path, exist_ok=True)
             scores.to_csv(os.path.join(path, f'{name}_fpca_scores.csv'))
             plot_configs = fpcs.get(name, [])
