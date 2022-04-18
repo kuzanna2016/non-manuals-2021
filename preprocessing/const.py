@@ -2,6 +2,7 @@ from enum import Enum
 
 POS_DICT = 'pos_dict.tsv'
 SAVE_TO = 'saved'
+FDA = 'fda'
 CV_FP = 'cross-validation'
 PLOTS_FP = 'plots'
 RAW_FP = 'raw files'
