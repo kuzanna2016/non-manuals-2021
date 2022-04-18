@@ -129,8 +129,9 @@ Config is a list of dicts, the keys of the dicts are from:
   * `components` - list of indexes of components to plot
   * `plot_deaf` - boolean, default `False`, whether to plot the difference between deaf and hearing signers
 
-
 See [example config](configs/fda.json).
+
+The plots, scores and explained ratios will be saved in `saved/fda` in the folder with the experiment name.
 
 # Plots
 

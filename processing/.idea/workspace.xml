@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f5c94c-188a-44e0-abcb-ac9f8077b5b5" name="Default Changelist" comment="filter videos">
-      <change afterPath="$PROJECT_DIR$/../processing/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FDA_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../FDA_tutorial.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved/cross-validation/cv_logs.json" beforeDir="false" />
@@ -22,35 +21,18 @@
       <change beforePath="$PROJECT_DIR$/saved/plots/gen_q-mal_chit-makh_compare_targets_1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/saved/plots/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/saved/plots/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/calculate_distances.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/calculate_distances.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/combine_open_face_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/combine_open_face_output.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/configs/distances.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/configs/distances.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/configs/models.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/configs/models.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/perform_cross_validation_of_bias_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/perform_cross_validation_of_bias_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/configs/fda.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/configs/fda.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/perform_fda.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/perform_fda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/preprocess_elan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/preprocess_elan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/raw files/open_face.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/raw files/open_face_transposed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/remove_bias.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/remove_bias.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/explained_variance_ratio.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/explained_variance_ratio.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/explained_variance_ratio.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/explained_variance_ratio.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/inner_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/inner_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/outer_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/outer_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/pose_Rx_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/pose_Rx_fpca_scores.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_2/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_2/model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_no_features/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_no_features/model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/open_face_with_bias_correction.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/open_face_with_bias_correction.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_deaf_hearing.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_deaf_hearing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_2_perturbation_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_2_perturbation_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_2_registered_landmarks.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_2_registered_landmarks.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_no_features_perturbation_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_no_features_perturbation_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_no_features_registered_landmarks.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/n_basis=14,order=3,model=MLP_best_model_no_features_registered_landmarks.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/plots/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_deaf_hearing.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/plots/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_deaf_hearing.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../statistical_analysis.R" beforeDir="false" afterPath="$PROJECT_DIR$/../statistical_analysis.R" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -509,7 +491,7 @@
       <workItem from="1649830961938" duration="85000" />
       <workItem from="1649840205850" duration="10716000" />
       <workItem from="1650217732298" duration="9495000" />
-      <workItem from="1650227409801" duration="17708000" />
+      <workItem from="1650227409801" duration="19087000" />
     </task>
     <task id="LOCAL-00001" summary="refactor elan v.1">
       <created>1647883962389</created>
@@ -622,7 +604,7 @@
     <SUITE FILE_PATH="coverage/preprocessing$remove_bias.coverage" NAME="remove_bias Coverage Results" MODIFIED="1650226373450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/processing$remove_bias__1_.coverage" NAME="remove_bias (1) Coverage Results" MODIFIED="1650270832956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
     <SUITE FILE_PATH="coverage/preprocessing$main.coverage" NAME="main Coverage Results" MODIFIED="1647277387397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/processing$perform_fda__1_.coverage" NAME="perform_fda (1) Coverage Results" MODIFIED="1650272929065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
+    <SUITE FILE_PATH="coverage/processing$perform_fda__1_.coverage" NAME="perform_fda (1) Coverage Results" MODIFIED="1650275094215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
     <SUITE FILE_PATH="coverage/preprocessing$transpose_openface.coverage" NAME="transpose_openface Coverage Results" MODIFIED="1649867904469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$calculate_distances.coverage" NAME="calculate_distances Coverage Results" MODIFIED="1650220315091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$plot_video_curves.coverage" NAME="plot_video_curves Coverage Results" MODIFIED="1649842279942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

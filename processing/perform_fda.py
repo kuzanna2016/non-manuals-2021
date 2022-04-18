@@ -13,7 +13,7 @@ from skfda.preprocessing.registration import landmark_elastic_registration
 from skfda import FDataGrid
 
 from plot_fpca import plot_significant_components, plot_registered_curves, plot_perturbation_graph
-from const import SAVE_TO, CONFIGS_FP, PLOTS_FP, SPEAKERS, FDA
+from const import SAVE_TO, CONFIGS_FP, SPEAKERS, FDA
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--openface_fp", default=os.path.join(SAVE_TO, 'open_face_with_bias_correction.csv'), type=str,
@@ -24,11 +24,9 @@ parser.add_argument("--configs_fp", default=os.path.join(CONFIGS_FP, 'fda.json')
                     help="Path to a .json file with the fda smoothing parameters")
 parser.add_argument("--save_to", default=os.path.join(SAVE_TO, FDA), type=str,
                     help="Save path for the computed pc scores")
-parser.add_argument("--plots_save_to", default=os.path.join(SAVE_TO, PLOTS_FP), type=str,
-                    help="Save path for the plots")
 
 
-def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_to):
+def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to):
     df = pd.read_csv(openface_fp, index_col=[0, 1])
 
     boundaries = pd.read_csv(pos_boundaries_fp, index_col=0, header=[0, 1])
@@ -45,6 +43,7 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
         rename_dict = config.get("rename_dict", {})
         fpcs = config.get("fpcs_plots", {})
         path = os.path.join(save_to, experiment_name)
+        os.makedirs(path, exist_ok=True)
 
         variables, sentence_type, speaker_ids, sentences, norm_rng, durations, t_norms = create_variables(df, names,
                                                                                                           video_names)
@@ -63,7 +62,7 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
         fd_registered_variables = {name: align_landmarks(data, norm_boundaries, landmark_location) for name, data in
                                    fd_basis_variables.items()}
         plot_registered_curves(fd_basis_variables, fd_registered_variables, names, sentence_type, rename_dict,
-                               landmark_location, plots_save_to, experiment_name)
+                               landmark_location, path, experiment_name)
 
         fpca_variables = {name: get_fpca(data, n_fpca) for name, data in fd_registered_variables.items()}
         variance_results = {}
@@ -83,7 +82,7 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
         scores_variables = {name: get_scores(data, fpca_variables[name]) for name, data in
                             fd_registered_variables.items()}
         plot_perturbation_graph(names, n_fpca, fpca_variables, scores_variables, landmark_location, rename_dict,
-                                plots_save_to,
+                                path,
                                 experiment_name)
 
         deaf = ['deaf' if speaker in SPEAKERS.DEAF else 'hearing' for speaker in speaker_ids]
@@ -94,13 +93,12 @@ def perform_fda(openface_fp, pos_boundaries_fp, configs_fp, save_to, plots_save_
             scores['deaf'] = np.asarray(deaf)
             scores['speaker_id'] = speaker_ids
             scores['sentence'] = sentences
-            os.makedirs(path, exist_ok=True)
             scores.to_csv(os.path.join(path, f'{name}_fpca_scores.csv'))
             plot_configs = fpcs.get(name, [])
             for c in plot_configs:
                 components = c.get("components")
                 plot_deaf = c.get("plot_deaf", False)
-                plot_significant_components(fpca_variables, scores, components, landmark_location, name, plot_deaf, plots_save_to,
+                plot_significant_components(fpca_variables, scores, components, landmark_location, name, plot_deaf, path,
                                             rename_dict)
 
 
@@ -194,5 +192,4 @@ def get_scores(fd, fpca):
 
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
-    perform_fda(args.openface_fp, args.pos_boundaries_fp, args.configs_fp, save_to=args.save_to,
-                plots_save_to=args.plots_save_to)
+    perform_fda(args.openface_fp, args.pos_boundaries_fp, args.configs_fp, save_to=args.save_to)
