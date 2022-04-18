@@ -1,0 +1,288 @@
+Cov prior  : sentence ~ wishart(df = 8.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+           : speaker_id ~ wishart(df = 5.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+Prior dev  : 8.4618
+
+Linear mixed model fit by REML ['blmerMod']
+Formula: PC_1 ~ sType * deaf + (sType | speaker_id) + (sType * deaf |      sentence)
+   Data: data
+Control: lmerControl(optimizer = "optimx", optCtrl = list(method = "nlminb"))
+
+REML criterion at convergence: 461.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.4714 -0.6082 -0.0294  0.6508  2.7629 
+
+Random effects:
+ Groups     Name                  Variance Std.Dev. Corr                         
+ sentence   (Intercept)           0.03393  0.1842                                
+            sTypepart_q           0.08293  0.2880   -0.37                        
+            sTypest               0.16766  0.4095   -0.25  0.93                  
+            deaf+deaf             0.10868  0.3297   -0.31 -0.15 -0.25            
+            sTypepart_q:deaf+deaf 0.30374  0.5511   -0.19  0.52  0.58 -0.65      
+            sTypest:deaf+deaf     0.31301  0.5595   -0.18 -0.06 -0.10 -0.56  0.39
+ speaker_id (Intercept)           0.76196  0.8729                                
+            sTypepart_q           0.80608  0.8978   -0.19                        
+            sTypest               0.94135  0.9702   -0.47  0.89                  
+ Residual                         0.21060  0.4589                                
+Number of obs: 259, groups:  sentence, 10; speaker_id, 9
+
+Fixed effects:
+                      Estimate Std. Error t value
+(Intercept)           -0.75504    0.30327  -2.490
+sTypepart_q            1.08850    0.32287   3.371
+sTypest                1.25882    0.35774   3.519
+deaf+deaf             -0.46579    0.60431  -0.771
+sTypepart_q:deaf+deaf -0.04572    0.64358  -0.071
+sTypest:deaf+deaf     -0.06861    0.69003  -0.099
+
+Correlation of Fixed Effects:
+            (Intr) sTypp_ sTypst def+df sTy_:+
+sTypepart_q -0.218                            
+sTypest     -0.455  0.877                     
+deaf+deaf   -0.123  0.019  0.037              
+sTypprt_q:+  0.017 -0.068 -0.034 -0.230       
+sTypst:df+d  0.046 -0.099 -0.113 -0.480  0.841
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: PC_1
+             Chisq Df Pr(>Chisq)   
+sType      12.9014  2   0.001579 **
+deaf        1.0235  1   0.311697   
+sType:deaf  0.0104  2   0.994801   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: blmer(formula = PC_1 ~ sType * deaf + (sType | speaker_id) + 
+    (sType * deaf | sentence), data = data, control = lmerControl(optimizer = "optimx", 
+    optCtrl = list(method = "nlminb")))
+
+Linear Hypotheses:
+                           Estimate Std. Error z value Pr(>|z|)   
+sType: part_q - gen_q == 0   1.0885     0.3229   3.371  0.00291 **
+sType: st - gen_q == 0       1.2588     0.3577   3.519  0.00160 **
+sType: st - part_q == 0      0.1703     0.1720   0.990  0.70628   
+deaf: hearing - deaf == 0    0.4658     0.6043   0.771  0.83678   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+(Adjusted p values reported -- single-step method)
+
+Cov prior  : sentence ~ wishart(df = 8.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+           : speaker_id ~ wishart(df = 5.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+Prior dev  : 21.0306
+
+Linear mixed model fit by REML ['blmerMod']
+Formula: PC_2 ~ sType * deaf + (sType | speaker_id) + (sType * deaf |      sentence)
+   Data: data
+Control: lmerControl(optimizer = "optimx", optCtrl = list(method = "nlminb"))
+
+REML criterion at convergence: 291.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0182 -0.5468 -0.0551  0.3504  4.7606 
+
+Random effects:
+ Groups     Name                  Variance Std.Dev. Corr                         
+ sentence   (Intercept)           0.01388  0.1178                                
+            sTypepart_q           0.01263  0.1124   -0.55                        
+            sTypest               0.01374  0.1172   -0.70  0.51                  
+            deaf+deaf             0.08293  0.2880    0.27 -0.18 -0.40            
+            sTypepart_q:deaf+deaf 0.14344  0.3787   -0.29  0.15  0.49 -0.91      
+            sTypest:deaf+deaf     0.05780  0.2404   -0.14  0.22  0.32 -0.79  0.75
+ speaker_id (Intercept)           0.42264  0.6501                                
+            sTypepart_q           0.20432  0.4520   -0.90                        
+            sTypest               0.33900  0.5822   -0.87  0.97                  
+ Residual                         0.12783  0.3575                                
+Number of obs: 259, groups:  sentence, 10; speaker_id, 9
+
+Fixed effects:
+                      Estimate Std. Error t value
+(Intercept)            0.11102    0.22505   0.493
+sTypepart_q           -0.12447    0.16559  -0.752
+sTypest               -0.23083    0.20665  -1.117
+deaf+deaf             -0.09327    0.45312  -0.206
+sTypepart_q:deaf+deaf  0.21817    0.34491   0.633
+sTypest:deaf+deaf      0.23384    0.41363   0.565
+
+Correlation of Fixed Effects:
+            (Intr) sTypp_ sTypst def+df sTy_:+
+sTypepart_q -0.867                            
+sTypest     -0.853  0.909                     
+deaf+deaf   -0.103  0.092  0.083              
+sTypprt_q:+  0.080 -0.100 -0.071 -0.871       
+sTypst:df+d  0.093 -0.097 -0.103 -0.855  0.901
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: PC_2
+            Chisq Df Pr(>Chisq)
+sType      1.6663  2     0.4347
+deaf       0.5487  1     0.4589
+sType:deaf 0.4002  2     0.8187
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: blmer(formula = PC_2 ~ sType * deaf + (sType | speaker_id) + 
+    (sType * deaf | sentence), data = data, control = lmerControl(optimizer = "optimx", 
+    optCtrl = list(method = "nlminb")))
+
+Linear Hypotheses:
+                           Estimate Std. Error z value Pr(>|z|)
+sType: part_q - gen_q == 0 -0.12447    0.16559  -0.752    0.837
+sType: st - gen_q == 0     -0.23083    0.20665  -1.117    0.606
+sType: st - part_q == 0    -0.10636    0.08913  -1.193    0.554
+deaf: hearing - deaf == 0   0.09327    0.45312   0.206    0.996
+(Adjusted p values reported -- single-step method)
+
+Cov prior  : sentence ~ wishart(df = 8.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+           : speaker_id ~ wishart(df = 5.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+Prior dev  : 23.188
+
+Linear mixed model fit by REML ['blmerMod']
+Formula: PC_3 ~ sType * deaf + (sType | speaker_id) + (sType * deaf |      sentence)
+   Data: data
+Control: lmerControl(optimizer = "optimx", optCtrl = list(method = "nlminb"))
+
+REML criterion at convergence: 165.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.0348 -0.4096  0.0778  0.4382  6.6379 
+
+Random effects:
+ Groups     Name                  Variance Std.Dev. Corr                         
+ sentence   (Intercept)           0.01228  0.1108                                
+            sTypepart_q           0.01849  0.1360   -0.43                        
+            sTypest               0.01078  0.1038   -0.37  0.63                  
+            deaf+deaf             0.05878  0.2425    0.25 -0.29  0.25            
+            sTypepart_q:deaf+deaf 0.05958  0.2441   -0.29 -0.12 -0.33 -0.70      
+            sTypest:deaf+deaf     0.13781  0.3712   -0.50  0.14 -0.32 -0.88  0.76
+ speaker_id (Intercept)           0.03088  0.1757                                
+            sTypepart_q           0.04860  0.2204   -0.46                        
+            sTypest               0.01831  0.1353   -0.80  0.00                  
+ Residual                         0.08037  0.2835                                
+Number of obs: 259, groups:  sentence, 10; speaker_id, 9
+
+Fixed effects:
+                      Estimate Std. Error t value
+(Intercept)           -0.08742    0.07601  -1.150
+sTypepart_q            0.11320    0.09649   1.173
+sTypest                0.12422    0.07173   1.732
+deaf+deaf              0.13607    0.15516   0.877
+sTypepart_q:deaf+deaf -0.06064    0.18922  -0.320
+sTypest:deaf+deaf     -0.07555    0.17335  -0.436
+
+Correlation of Fixed Effects:
+            (Intr) sTypp_ sTypst def+df sTy_:+
+sTypepart_q -0.508                            
+sTypest     -0.668  0.283                     
+deaf+deaf   -0.054  0.002  0.148              
+sTypprt_q:+  0.014 -0.131 -0.102 -0.560       
+sTypst:df+d -0.079  0.009 -0.201 -0.773  0.341
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: PC_3
+            Chisq Df Pr(>Chisq)
+sType      3.3039  2     0.1917
+deaf       0.7676  1     0.3810
+sType:deaf 0.2233  2     0.8944
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: blmer(formula = PC_3 ~ sType * deaf + (sType | speaker_id) + 
+    (sType * deaf | sentence), data = data, control = lmerControl(optimizer = "optimx", 
+    optCtrl = list(method = "nlminb")))
+
+Linear Hypotheses:
+                           Estimate Std. Error z value Pr(>|z|)
+sType: part_q - gen_q == 0  0.11320    0.09649   1.173    0.591
+sType: st - gen_q == 0      0.12422    0.07173   1.732    0.256
+sType: st - part_q == 0     0.01102    0.10269   0.107    0.999
+deaf: hearing - deaf == 0  -0.13607    0.15516  -0.877    0.782
+(Adjusted p values reported -- single-step method)
+
+Cov prior  : sentence ~ wishart(df = 8.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+           : speaker_id ~ wishart(df = 5.5, scale = Inf, posterior.scale = cov, common.scale = TRUE)
+Prior dev  : 17.0317
+
+Linear mixed model fit by REML ['blmerMod']
+Formula: PC_4 ~ sType * deaf + (sType | speaker_id) + (sType * deaf |      sentence)
+   Data: data
+Control: lmerControl(optimizer = "optimx", optCtrl = list(method = "nlminb"))
+
+REML criterion at convergence: -39.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5897 -0.5097 -0.0858  0.4195  4.3122 
+
+Random effects:
+ Groups     Name                  Variance Std.Dev. Corr                         
+ sentence   (Intercept)           0.010326 0.10162                               
+            sTypepart_q           0.007775 0.08818  -0.64                        
+            sTypest               0.006358 0.07974  -0.60  0.69                  
+            deaf+deaf             0.018413 0.13570  -0.33  0.66  0.64            
+            sTypepart_q:deaf+deaf 0.064430 0.25383   0.10 -0.35 -0.60 -0.79      
+            sTypest:deaf+deaf     0.038116 0.19523  -0.13 -0.24 -0.25 -0.71  0.70
+ speaker_id (Intercept)           0.029839 0.17274                               
+            sTypepart_q           0.044043 0.20986  -0.60                        
+            sTypest               0.037081 0.19257  -0.60  0.96                  
+ Residual                         0.033146 0.18206                               
+Number of obs: 259, groups:  sentence, 10; speaker_id, 9
+
+Fixed effects:
+                      Estimate Std. Error t value
+(Intercept)           -0.10127    0.06961  -1.455
+sTypepart_q            0.21608    0.08104   2.666
+sTypest                0.07816    0.07515   1.040
+deaf+deaf              0.05444    0.13074   0.416
+sTypepart_q:deaf+deaf -0.04724    0.17205  -0.275
+sTypest:deaf+deaf     -0.05209    0.15445  -0.337
+
+Correlation of Fixed Effects:
+            (Intr) sTypp_ sTypst def+df sTy_:+
+sTypepart_q -0.616                            
+sTypest     -0.613  0.869                     
+deaf+deaf   -0.159  0.149  0.147              
+sTypprt_q:+  0.088 -0.159 -0.187 -0.639       
+sTypst:df+d  0.046 -0.130 -0.144 -0.632  0.853
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: PC_4
+             Chisq Df Pr(>Chisq)   
+sType      13.6891  2   0.001065 **
+deaf        0.0767  1   0.781822   
+sType:deaf  0.1144  2   0.944420   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: blmer(formula = PC_4 ~ sType * deaf + (sType | speaker_id) + 
+    (sType * deaf | sentence), data = data, control = lmerControl(optimizer = "optimx", 
+    optCtrl = list(method = "nlminb")))
+
+Linear Hypotheses:
+                           Estimate Std. Error z value Pr(>|z|)   
+sType: part_q - gen_q == 0  0.21608    0.08104   2.666  0.02667 * 
+sType: st - gen_q == 0      0.07816    0.07515   1.040  0.67355   
+sType: st - part_q == 0    -0.13792    0.04036  -3.417  0.00229 **
+deaf: hearing - deaf == 0  -0.05444    0.13074  -0.416  0.96890   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+(Adjusted p values reported -- single-step method)
+

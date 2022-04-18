@@ -10,6 +10,7 @@ cmap = plt.get_cmap('Dark2')
 
 
 def plot_significant_components(fpca_variables, scores, components, landmark_location, name, plot_deaf, save_to, rename_dict):
+    print('Plotting', name)
     fig, axes = plt.subplots(1, len(components), figsize=(7 * (len(components)), 5))
     if not isinstance(axes, np.ndarray):
         axes = np.array([axes])
@@ -19,11 +20,13 @@ def plot_significant_components(fpca_variables, scores, components, landmark_loc
         if plot_deaf:
             for j, deaf in enumerate(scores.deaf.unique()):
                 mean_score = np.mean(scores.loc[scores.deaf == deaf].iloc[:, component])
+                print(f'PC{component + 1}_{deaf}', mean_score)
                 curve = fpca.mean_ + mean_score * fpca.components_[component]
                 curve.plot(axes=axes[i], label=deaf, linewidth=LINEWIDTH, c=cmap(j))
         else:
             for j, stype in enumerate(scores.sType.unique()):
                 mean_score = np.mean(scores.loc[scores.sType == stype].iloc[:, component])
+                print(f'PC{component + 1}_{rename_dict[stype]}', mean_score)
                 curve = fpca.mean_ + mean_score * fpca.components_[component:component + 1]
                 curve.plot(axes=axes[i], label=rename_dict[stype], linewidth=LINEWIDTH, c=cmap(j))
         axes[i].set_title(f'PC{component + 1}', fontsize=FONTSIZE + 2)
@@ -94,7 +97,7 @@ def plot_perturbation_graph(names, n_fpca, fpca_variables, scores_variables, lan
             else:
                 ln.set_color(cmap(7))
                 ln.set(linewidth=LINEWIDTH)
-    plt.savefig(os.path.join(save_to, experiment_name + '_perturbation_graph.png'), bbox_inches='tight')
+    plt.savefig(os.path.join(save_to, 'perturbation_graph.png'), bbox_inches='tight')
 
 
 def plot_registered_curves(fd_basis_variables, fd_registered_variables, names, sentence_type, rename_dict,
@@ -121,4 +124,4 @@ def plot_registered_curves(fd_basis_variables, fd_registered_variables, names, s
     fig.legend(plt.gca().lines, ['polar_q', 'polar_q_registered', 'wh_q', 'wh_q_registered', 'st', 'st_registered'],
                ncol=3, bbox_to_anchor=(0.5, -0.07), loc='lower center', fontsize=FONTSIZE)
     fig.subplots_adjust(bottom=0.2)
-    plt.savefig(os.path.join(save_to, experiment_name + '_registered_landmarks.png'), bbox_inches='tight')
+    plt.savefig(os.path.join(save_to, 'registered_landmarks.png'), bbox_inches='tight')

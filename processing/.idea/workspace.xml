@@ -5,6 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f5c94c-188a-44e0-abcb-ac9f8077b5b5" name="Default Changelist" comment="filter videos">
+      <change afterPath="$PROJECT_DIR$/../processing/saved/cross-validation/MLP,ind_features,solver=lbfgs,activation=lbfgs,max_iter=1500_perp_dist39_42_3d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP,hl=256,mse=0.34/explained_variance_ratio.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP,hl=256,mse=0.34/inner_perp_dist39_42_3d_pred_MLP,hl=256,mse=0.34_diff_fpca_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP,hl=256,mse=0.34/n_basis=14,order=3,model=MLP,hl=256,mse=0.34_perturbation_graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP,hl=256,mse=0.34/n_basis=14,order=3,model=MLP,hl=256,mse=0.34_registered_landmarks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP,hl=256,mse=0.34/outer_perp_dist39_42_3d_pred_MLP,hl=256,mse=0.34_diff_fpca_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP,hl=256,mse=0.34/pose_Rx_fpca_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/explained_variance_ratio.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/inner_perp_dist39_42_3d_pred_MLP_best_model_diff_PC1_PC2_PC4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/inner_perp_dist39_42_3d_pred_MLP_best_model_diff_PC1_deaf_hearing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/inner_perp_dist39_42_3d_pred_MLP_best_model_diff_fpca_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/n_basis=14,order=3,model=MLP_best_model_registered_landmarks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/outer_perp_dist39_42_3d_pred_MLP_best_model_diff_PC1_deaf_hearing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/outer_perp_dist39_42_3d_pred_MLP_best_model_diff_fpca_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/pose_Rx_fpca_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../processing/saved/models/model_MLP,hl=256,mse=0.34/model.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FDA_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../FDA_tutorial.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved/cross-validation/cv_logs.json" beforeDir="false" />
@@ -22,17 +39,51 @@
       <change beforePath="$PROJECT_DIR$/saved/plots/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/saved/plots/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/configs/cross_validation.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/configs/cross_validation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/configs/fda.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/configs/fda.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/perform_fda.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/perform_fda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/explained_variance_ratio.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/explained_variance_ratio.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/configs/models.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/configs/models.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/plot_fpca.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/plot_fpca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/remove_bias.py" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/remove_bias.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/cross-validation/MLP_best_model frame level_perp_dist39_42_3d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/cross-validation/MLP_best_model_perp_dist39_42_3d.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/cross-validation/MLP_22_28_perp_dist39_42_3d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/cross-validation/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/cross-validation/logs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/cross-validation/logs_intermediate.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/cross-validation/logs_intermediate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/cross-validation/no signer features frame level_perp_dist39_42_3d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/explained_variance_ratio.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/explained_variance_ratio.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/inner_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_PC2_PC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/inner_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_PC2_PC4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/inner_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_deaf_hearing.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/inner_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_deaf_hearing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/inner_perp_dist39_42_3d_pred_MLP_22_28_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/inner_perp_dist39_42_3d_pred_MLP_22_28_diff_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/n_basis=14,order=3,model=MLP_22_28_perturbation_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/n_basis=14,order=3,model=MLP_22_28_perturbation_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/n_basis=14,order=3,model=MLP_22_28_registered_landmarks.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/n_basis=14,order=3,model=MLP_22_28_registered_landmarks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/outer_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_PC2_PC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/outer_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_PC2_PC4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/outer_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_deaf_hearing.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/outer_perp_dist39_42_3d_pred_MLP_22_28_diff_PC1_deaf_hearing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/outer_perp_dist39_42_3d_pred_MLP_22_28_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/outer_perp_dist39_42_3d_pred_MLP_22_28_diff_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/pose_Rx_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_22_28/pose_Rx_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/explained_variance_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_deaf_hearing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/inner_statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/inner_statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/n_basis=14,order=3,model=MLP_best_model_2_perturbation_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/n_basis=14,order=3,model=MLP_best_model_perturbation_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/n_basis=14,order=3,model=MLP_best_model_2_registered_landmarks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_PC2_PC4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_PC1_deaf_hearing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_perp_dist39_42_3d_pred_MLP_best_model_2_diff_fpca_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/outer_statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/outer_statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_PC1_PC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/pose_Rx_PC1_PC4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_fpca_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_2/pose_Rx_statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model/pose_Rx_statistics.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/explained_variance_ratio.json" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/explained_variance_ratio.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/inner_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/inner_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/n_basis=14,order=3,model=MLP_best_model_no_features_perturbation_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/n_basis=14,order=3,model=MLP_best_model_no_features_perturbation_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/n_basis=14,order=3,model=MLP_best_model_no_features_registered_landmarks.png" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/n_basis=14,order=3,model=MLP_best_model_no_features_registered_landmarks.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/outer_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/outer_perp_dist39_42_3d_pred_MLP_best_model_no_features_diff_fpca_scores.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/pose_Rx_fpca_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/fda/n_basis=14,order=3,model=MLP_best_model_no_features/pose_Rx_fpca_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/models/model_MLP_22_28/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/models/model_MLP_22_28/model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model/model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_2/model.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_no_features/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/models/model_MLP_best_model_no_features/model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../processing/saved/open_face_with_bias_correction.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../processing/saved/open_face_with_bias_correction.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../statistical_analysis.R" beforeDir="false" afterPath="$PROJECT_DIR$/../statistical_analysis.R" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +173,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/kuzya/Desktop/non-manuals-2021/fpca_multivariate.R",
+    "last_opened_file_path": "/home/kuzya/Desktop/non-manuals-2021/processing/configs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -134,6 +185,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../processing/configs" />
       <recent name="$PROJECT_DIR$/configs" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/raw files" />
@@ -201,7 +253,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="perform_cross_validation_of_bias_models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="perform_cross_validation_of_bias_models (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,12 +261,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../processing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/perform_cross_validation_of_bias_models.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../processing/perform_cross_validation_of_bias_models.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -452,19 +504,19 @@
     <list>
       <item itemvalue="Python.plot_face_points" />
       <item itemvalue="Python.plot_videos" />
+      <item itemvalue="Python.perform_cross_validation_of_bias_models (1)" />
       <item itemvalue="Python.perform_fda" />
       <item itemvalue="Python.perform_fda (1)" />
       <item itemvalue="Python.remove_bias (1)" />
-      <item itemvalue="Python.perform_cross_validation_of_bias_models" />
       <item itemvalue="Python.remove_bias" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.perform_fda (1)" />
         <item itemvalue="Python.remove_bias (1)" />
+        <item itemvalue="Python.perform_cross_validation_of_bias_models (1)" />
         <item itemvalue="Python.perform_fda" />
         <item itemvalue="Python.remove_bias" />
-        <item itemvalue="Python.perform_cross_validation_of_bias_models" />
       </list>
     </recent_temporary>
   </component>
@@ -491,7 +543,7 @@
       <workItem from="1649830961938" duration="85000" />
       <workItem from="1649840205850" duration="10716000" />
       <workItem from="1650217732298" duration="9495000" />
-      <workItem from="1650227409801" duration="19087000" />
+      <workItem from="1650227409801" duration="27464000" />
     </task>
     <task id="LOCAL-00001" summary="refactor elan v.1">
       <created>1647883962389</created>
@@ -602,14 +654,15 @@
     <SUITE FILE_PATH="coverage/preprocessing$perform_cross_validation_of_bias_models.coverage" NAME="perform_cross_validation_of_bias_models Coverage Results" MODIFIED="1650222394128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$plot_face_points.coverage" NAME="plot_face_points Coverage Results" MODIFIED="1649841969444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$remove_bias.coverage" NAME="remove_bias Coverage Results" MODIFIED="1650226373450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/processing$remove_bias__1_.coverage" NAME="remove_bias (1) Coverage Results" MODIFIED="1650270832956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
+    <SUITE FILE_PATH="coverage/processing$remove_bias__1_.coverage" NAME="remove_bias (1) Coverage Results" MODIFIED="1650282614167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
     <SUITE FILE_PATH="coverage/preprocessing$main.coverage" NAME="main Coverage Results" MODIFIED="1647277387397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/processing$perform_fda__1_.coverage" NAME="perform_fda (1) Coverage Results" MODIFIED="1650275094215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
+    <SUITE FILE_PATH="coverage/processing$perform_fda__1_.coverage" NAME="perform_fda (1) Coverage Results" MODIFIED="1650285549365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
     <SUITE FILE_PATH="coverage/preprocessing$transpose_openface.coverage" NAME="transpose_openface Coverage Results" MODIFIED="1649867904469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$calculate_distances.coverage" NAME="calculate_distances Coverage Results" MODIFIED="1650220315091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$plot_video_curves.coverage" NAME="plot_video_curves Coverage Results" MODIFIED="1649842279942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$preprocess_elan.coverage" NAME="preprocess_elan Coverage Results" MODIFIED="1650221862564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/preprocessing$elan.coverage" NAME="elan Coverage Results" MODIFIED="1649684326655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/processing$perform_cross_validation_of_bias_models__1_.coverage" NAME="perform_cross_validation_of_bias_models (1) Coverage Results" MODIFIED="1650280559465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../processing" />
     <SUITE FILE_PATH="coverage/preprocessing$perform_fda.coverage" NAME="perform_fda Coverage Results" MODIFIED="1650239964185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">

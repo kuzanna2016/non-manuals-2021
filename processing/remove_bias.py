@@ -81,6 +81,7 @@ def remove_bias(config_fp, openface_fp, elan_stats_fp, save_to):
     configs = json.load(open(config_fp))
     for config in configs:
         name = config.get("name", datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S"))
+        print('Running', name)
         model = config.get("model_name")
         params = config.get("params", {})
         target = config.get("target")
