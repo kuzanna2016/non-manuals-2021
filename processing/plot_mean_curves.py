@@ -39,6 +39,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
     cmap = plt.get_cmap('Dark2')
     linestyles = ['-', '--', '-.']
     linewidth = 2.5
+    lines_for_legend = [None, None, None]
 
     x_axes = 1
     if deaf:
@@ -84,6 +85,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
                                         linestyle=style,
                                         label=metric,
                                         linewidth=linewidth)
+                    lines_for_legend[n] = axes[i][j].lines[-1]
                 else:
                     df.loc[(BROWS.INNER.value,
                             metric,
@@ -99,6 +101,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
                                                              label=BROWS.OUTER.value,
                                                              linestyle=style,
                                                              linewidth=linewidth - 1)
+                lines_for_legend[n] = axes[i].lines[-1]
             else:
                 if x_axes > 1:
                     if deaf:
@@ -123,6 +126,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
                                                                     linewidth=linewidth
                                                                     )
                             axes[i][j].invert_yaxis()
+                    lines_for_legend[n] = axes[i][j].lines[-1]
                 else:
                     index = (BROWS.INNER.value, metric, mask)
                     df.loc[index, '0.0':'70.0'].mean().plot(ax=axes[i],
@@ -132,6 +136,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
                                                             linewidth=linewidth
                                                             )
                     axes[i].invert_yaxis()
+                    lines_for_legend[n] = axes[i].lines[-1]
 
             if x_axes > 1:
                 axes[i][0].set_ylabel(rename_dict.get(metric, metric))
@@ -150,7 +155,7 @@ def plot_mean(openface_fp, elan_stats_fp, targets, save_to, separate_brows_plot=
                     horizontalalignment='center', verticalalignment='bottom',
                     fontsize='x-large', alpha=0.4, color='red')
 
-    fig.legend(plt.gca().lines[::2], ['st', 'polar_q', 'wh_q'], loc='center', bbox_to_anchor=(0.35, 0.05), ncol=3,
+    fig.legend(lines_for_legend, [x.value for x in STYPE], loc='center', bbox_to_anchor=(0.35, 0.05), ncol=3,
                fontsize='medium')
     if deaf or x_axes == 1:
         fig.legend(plt.gca().lines[:2], ['inner', 'outer'], loc='center', ncol=2, bbox_to_anchor=(0.65, 0.05),
