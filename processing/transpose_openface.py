@@ -77,7 +77,7 @@ def _combine_by_row(row, df, columns, start_pos_dict, end_pos_dict):
 
     for column in columns:
         value = row[column]
-        if value is None:
+        if value is None or pd.isnull(value):
             continue
         df.loc[(video_name, slice(row['start_frames'], row['end_frames'])), column] = value
 
@@ -126,15 +126,16 @@ def meanfill(df, mean_duration):
 
 def _transpose_in_batches(df, video_name, metrics, poses, transposed):
     index = df.loc[(video_name), INDEX.NORM]
+    index = index.drop_duplicates()
 
     if transposed.loc[(['inner', 'outer'], metrics, video_name), index].isna().all(axis=None):
         for brows in ['inner', 'outer']:
-            transposed.loc[(brows,
-                            metrics,
-                            video_name),
-                           index] = df.loc[video_name,
-                                           [f'{brows}_{metric}' for metric in metrics]].values.T
-            transposed.loc[(brows, poses, video_name), index] = df.loc[video_name, poses].values.T
+            values = df.loc[video_name, [f'{brows}_{metric}' for metric in metrics] + [INDEX.NORM]]
+            values = values.groupby(INDEX.NORM).mean().T
+            transposed.loc[(brows, metrics, video_name), index] = values.values
+          
+            values_pos = df.loc[video_name, poses, INDEX.NORM]
+            transposed.loc[(brows, poses, video_name), index] = values_pos.groupby(INDEX.NORM).mean().T.values
     else:
         for brows in ['inner', 'outer']:
             transposed.loc[(brows,
