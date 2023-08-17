@@ -262,14 +262,16 @@ def find_mean_dist(df, inner_brows, outer_brows, point_2, dim=3, override=False)
     return df
 
 
-def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2, override=False):
+def find_mean_perp_dist(df, inner_brows, outer_brows, point_1, point_2, override=False, upper=True):
     l_brow, r_brow = inner_brows
     column_name = f'inner_perp_dist{point_1}_{point_2}_3d'
+    if not upper:
+        column_name += '_lower' 
     if column_name not in df.columns or override:
         find_perp(df,
                   brow_points=inner_brows + outer_brows,
                   perp_points=[point_1, point_2],
-                  dist='line')
+                  dist='line', axes='XYZ' if upper else 'xyz')
         df[column_name] = df[[f'{l_brow}perp{point_1}_{point_2}_3d',
                               f'{r_brow}perp{point_1}_{point_2}_3d']].mean(axis=1)
 
