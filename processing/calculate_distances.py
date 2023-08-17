@@ -16,7 +16,7 @@ parser.add_argument("--override", default=False, type=bool,
 parser.add_argument("--save_to", default=SAVE_TO, type=str, help="Save folder path")
 
 
-def compute_distances(df, distances_config, override=False, plot_face=False, upper=True):
+def compute_distances(df, distances_config, override=False, plot_face=False):
     for dist, params in distances_config.items():
         for points in params:
             inner = points['inner']
@@ -29,7 +29,7 @@ def compute_distances(df, distances_config, override=False, plot_face=False, upp
                                              point_1=points['perp'][0],
                                              point_2=points['perp'][1],
                                              override=override,
-                                             upper=upper)
+                                             upper=points.get('upper', True))
                 else:
                     df = find_mean_perp_plane_dist(df,
                                                    inner_brows=inner,
