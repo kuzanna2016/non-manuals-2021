@@ -26,6 +26,8 @@ parser.add_argument("--brows", default=BROWS.INNER.value, type=str, nargs='+',
                     help="The eyebrow distance to plot [inner, outer]")
 parser.add_argument("--plot_head", default='', type=str,
                     help="Whether to plot the head rotation, specify which axis if plot, like 'x', or 'xy' or 'xyz'")
+parser.add_argument("--plot_head_background", default=False, type=bool,
+                    help="Whether to plot the head rotations inside the plots on the background")
 parser.add_argument("--is_normalized", default=False, type=bool,
                     help="Whether the target values are normalized")
 parser.add_argument("--save_to", default=os.path.join(SAVE_TO, PLOTS_FP), type=str,
@@ -40,6 +42,7 @@ def plot_samples(openface_fp,
                  n_samples=5,
                  brows=[BROWS.INNER.value],
                  plot_head=False,
+                 plot_head_background=False,
                  is_normalized=False):
     df = pd.read_csv(openface_fp, index_col=[0, 1])
     elan = pd.read_csv(elan_fp, sep='\t')
@@ -48,7 +51,7 @@ def plot_samples(openface_fp,
     else:
         samples = sentences
 
-    n_cols = len(targets) + len(plot_head) if plot_head else len(targets)
+    n_cols = len(targets) + len(plot_head) if plot_head and not plot_head_background else len(targets)
     n_rows = len(samples)
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(8 * n_cols, 5 * n_rows))
     if not isinstance(axes, np.ndarray):
@@ -60,19 +63,23 @@ def plot_samples(openface_fp,
         for j, target in enumerate(targets):
             for brow in brows:
                 name = f'{brow}_{target}'
-                axes[n][j].plot(df.loc[sample, name])
+                axes[n][j].plot(df.loc[sample, name], label='distance')
                 if is_normalized:
                   axes[n][j].set_ylim(0,1)
             axes[0][j].set_title(target)
         if plot_head:
             for k, pose_ax in enumerate(plot_head):
                 name = f'pose_R{pose_ax}'
-                axes[n][j + 1 + k].plot(df.loc[sample, name])
-                if is_normalized:
-                    axes[n][j + 1 + k].set_ylim(0,1)
-                if pose_ax == 'x':
-                    axes[n][j + 1 + k].invert_yaxis()
-                axes[0][j + 1 + k].set_title(name)
+                if plot_head_background:
+                    for ax in axes[n]:
+                        ax.plot(df.loc[sample, name], alpha=0.5, label=pose_ax)
+                else:
+                    axes[n][j + 1 + k].plot(df.loc[sample, name])
+                    if is_normalized:
+                        axes[n][j + 1 + k].set_ylim(0,1)
+                    if pose_ax == 'x':
+                        axes[n][j + 1 + k].invert_yaxis()
+                    axes[0][j + 1 + k].set_title(name)
         axes[n][0].set_ylabel(sample)
 
         mask = elan.video_name == sample
@@ -94,6 +101,9 @@ def plot_samples(openface_fp,
     for ax in axes.flatten():
         ax.set_xlabel('')
         ax.tick_params(reset=True)
+    if plot_head_background:
+        handles, labels = axes[0][0].get_legend_handles_labels()
+        fig.legend(handles, labels, loc='upper center')
 
     brows_str = '_'.join(brows)
     if sentences:
@@ -110,4 +120,4 @@ def plot_samples(openface_fp,
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
     plot_samples(args.openface_fp, args.elan_fp, targets=args.targets, sentences=args.sentences, n_samples=args.n_samples, brows=args.brows,
-                 plot_head=args.plot_head, save_to=args.save_to, is_normalized=args.is_normalized)
+                 plot_head=args.plot_head, plot_head_background=args.plot_head_background, save_to=args.save_to, is_normalized=args.is_normalized)
