@@ -63,7 +63,7 @@ def plot_samples(openface_fp,
             for k, pose_ax in enumerate(plot_head):
                 name = f'pose_R{pose_ax}'
                 axes[n][j + 1 + k].plot(df.loc[sample, name])
-                axes[0][j + 1 + k].set_ylim(-1,1)
+                axes[n][j + 1 + k].set_ylim(-1,1)
                 if pose_ax == 'x':
                     axes[n][j + 1 + k].invert_yaxis()
                 axes[0][j + 1 + k].set_title(name)
