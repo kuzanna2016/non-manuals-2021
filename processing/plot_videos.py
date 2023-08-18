@@ -26,6 +26,8 @@ parser.add_argument("--brows", default=BROWS.INNER.value, type=str, nargs='+',
                     help="The eyebrow distance to plot [inner, outer]")
 parser.add_argument("--plot_head", default='', type=str,
                     help="Whether to plot the head rotation, specify which axis if plot, like 'x', or 'xy' or 'xyz'")
+parser.add_argument("--is_normalized", default=False, type=bool,
+                    help="Whether the target values are normalized")
 parser.add_argument("--save_to", default=os.path.join(SAVE_TO, PLOTS_FP), type=str,
                     help="Save path for logs of cross-validation")
 
@@ -37,7 +39,8 @@ def plot_samples(openface_fp,
                  sentences=None,
                  n_samples=5,
                  brows=[BROWS.INNER.value],
-                 plot_head=False):
+                 plot_head=False,
+                 is_normalized=False):
     df = pd.read_csv(openface_fp, index_col=[0, 1])
     elan = pd.read_csv(elan_fp, sep='\t')
     if sentences is None:
@@ -58,12 +61,15 @@ def plot_samples(openface_fp,
             for brow in brows:
                 name = f'{brow}_{target}'
                 axes[n][j].plot(df.loc[sample, name])
+                if is_normalized:
+                  axes[n][j].set_ylim(0,1)
             axes[0][j].set_title(target)
         if plot_head:
             for k, pose_ax in enumerate(plot_head):
                 name = f'pose_R{pose_ax}'
                 axes[n][j + 1 + k].plot(df.loc[sample, name])
-                axes[n][j + 1 + k].set_ylim(-1,1)
+                if is_normalized:
+                    axes[n][j + 1 + k].set_ylim(0,1)
                 if pose_ax == 'x':
                     axes[n][j + 1 + k].invert_yaxis()
                 axes[0][j + 1 + k].set_title(name)
@@ -104,4 +110,4 @@ def plot_samples(openface_fp,
 if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
     plot_samples(args.openface_fp, args.elan_fp, targets=args.targets, sentences=args.sentences, n_samples=args.n_samples, brows=args.brows,
-                 plot_head=args.plot_head, save_to=args.save_to)
+                 plot_head=args.plot_head, save_to=args.save_to, is_normalized=args.is_normalized)
