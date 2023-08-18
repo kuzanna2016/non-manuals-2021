@@ -24,8 +24,8 @@ parser.add_argument("--n_samples", default=5, type=int,
                     help="If no video name, random n_samples will be plotted")
 parser.add_argument("--brow", default=BROWS.INNER.value, type=str,
                     help="The eyebrow distance to plot [inner, outer]")
-parser.add_argument("--plot_head", default=False, type=bool,
-                    help="Whether to plot the head rotation")
+parser.add_argument("--plot_head", default='', type=str,
+                    help="Whether to plot the head rotation, specify wich axis if plot, like 'x', or 'xy' or 'xyz'")
 parser.add_argument("--save_to", default=os.path.join(SAVE_TO, PLOTS_FP), type=str,
                     help="Save path for logs of cross-validation")
 
@@ -45,7 +45,7 @@ def plot_samples(openface_fp,
     else:
         samples = [sentence]
 
-    n_cols = len(targets) + 1 if plot_head else len(targets)
+    n_cols = len(targets) + len(plot_head) if plot_head else len(targets)
     fig, axes = plt.subplots(len(samples), n_cols, figsize=(8 * n_cols, 5 * len(samples)))
     if not isinstance(axes, np.ndarray):
         axes = np.asarray([axes])
@@ -57,10 +57,12 @@ def plot_samples(openface_fp,
             axes[n][j].plot(df.loc[sample, name])
             axes[0][j].set_title(target)
         if plot_head:
-            name = 'pose_Rx'
-            axes[n][j + 1].plot(df.loc[sample, name])
-            axes[n][j + 1].invert_yaxis()
-            axes[0][j + 1].set_title(name)
+            for k, pose_ax in plot_head:
+                name = f'pose_R{pose_ax}'
+                axes[n][j + 1 + k].plot(df.loc[sample, name])
+                if pose_ax == 'x':
+                    axes[n][j + 1 + k].invert_yaxis()
+                axes[0][j + 1 + k].set_title(name)
         axes[n][0].set_ylabel(sample)
 
         mask = elan.video_name == sample
