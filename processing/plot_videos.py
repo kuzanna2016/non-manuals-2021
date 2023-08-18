@@ -84,9 +84,9 @@ def plot_samples(openface_fp,
         ax.tick_params(reset=True)
 
     if sentence is not None:
-        f_name = os.path.join(save_to, f'{sentence}_compare_targets')
+        f_name = os.path.join(save_to, f'{sentence}_{brow}_compare_targets')
     else:
-        f_name = os.path.join(save_to, f'{n_samples}_samples_compare_changes')
+        f_name = os.path.join(save_to, f'{n_samples}_{brow}_samples_compare_changes')
     i = 1
     while os.path.isfile(f_name + '_' + str(i) + '.png'):
         i += 1
