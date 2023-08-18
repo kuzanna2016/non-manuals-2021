@@ -53,6 +53,7 @@ def plot_samples(openface_fp,
     if axes.ndim == 1:
         axes = np.expand_dims(axes, axis=0)
     for n, sample in enumerate(samples):
+        j = -1
         for j, target in enumerate(targets):
             for brow in brows:
                 name = f'{brow}_{target}'
