@@ -53,14 +53,13 @@ def plot_samples(openface_fp,
 
     n_cols = len(targets) + len(plot_head) if plot_head and not plot_head_background else len(targets)
     n_rows = len(samples)
-    if n_cols == 1:
-        fig, axes = plt.subplots(n_cols, n_rows, figsize=(5 * n_rows, 8 * n_cols))
-    else:
-        fig, axes = plt.subplots(n_rows, n_cols, figsize=(8 * n_cols, 5 * n_rows))
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(8 * n_cols, 5 * n_rows))
     if not isinstance(axes, np.ndarray):
         axes = np.asarray([axes])
     if axes.ndim == 1:
         axes = np.expand_dims(axes, axis=0)
+    if n_cols == 1:
+        axes = axes.T
     for n, sample in enumerate(samples):
         j = -1
         for j, target in enumerate(targets):
